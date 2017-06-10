@@ -1,7 +1,7 @@
 {
-  "name": "react-library-skeleton",
+  "name": "react-page-slider",
   "version": "0.0.0-development",
-  "description": "my personal skeleton for React library NPM packages",
+  "description": "horizontal slide transitions between components",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src test stories",
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jedwards1211/react-library-skeleton.git"
+    "url": "https://github.com/jedwards1211/react-page-slider.git"
   },
   "keywords": [
     "es2015",
@@ -50,9 +50,9 @@
   "author": "Andy Edwards",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jedwards1211/react-library-skeleton/issues"
+    "url": "https://github.com/jedwards1211/react-page-slider/issues"
   },
-  "homepage": "https://github.com/jedwards1211/react-library-skeleton#readme",
+  "homepage": "https://github.com/jedwards1211/react-page-slider#readme",
   "devDependencies": {
     "@jedwards1211/eslint-config-flow": "^1.0.0",
     "@jedwards1211/eslint-config-react": "^2.0.0",
