@@ -12,7 +12,7 @@
     "flow:watch": "flow-watch -e js,js.flow,flowconfig --ignore lib/ --ignore node_modules/ --watch .flowconfig --watch src/ --watch test/",
     "gen-flow-files": "flow gen-flow-files src/ --out-dir lib",
     "copy-flow-files": "cd src; copy *.js.flow **/*.js.flow ../lib",
-    "build": "rimraf lib && babel src --out-dir lib",
+    "build": "rimraf lib && babel src --out-dir lib && node-sass src/react-page-slider.sass > lib/react-page-slider.css",
     "test": "NODE_ENV=production BABEL_ENV=test nyc --reporter=lcov --reporter=text mocha $npm_package_config_mocha",
     "test:watch": "mocha --watch $npm_package_config_mocha",
     "commitmsg": "validate-commit-msg",
@@ -75,6 +75,7 @@
     "chai": "^3.5.0",
     "copy": "^0.3.0",
     "coveralls": "^2.11.16",
+    "css-loader": "^0.28.4",
     "enzyme": "^2.7.0",
     "eslint": "^3.13.1",
     "eslint-plugin-flowtype": "^2.30.0",
@@ -87,19 +88,27 @@
     "jsdom": "^10.1.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^3.2.0",
+    "node-sass": "^4.5.3",
     "nyc": "^10.1.2",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^3.0.0-beta.2",
+    "react-transition-context": "^1.0.0-beta9",
     "rimraf": "^2.5.4",
+    "sass-loader": "^6.0.6",
     "semantic-release": "^6.3.6",
+    "style-loader": "^0.18.2",
     "validate-commit-msg": "^2.8.2"
   },
   "peerDependencies": {
     "react": "0.14.x || ^15.0.0"
   },
   "dependencies": {
+    "class-names": "^1.0.0",
+    "get-node-dimensions": "^1.2.0",
+    "inline-style-prefixer": "^3.0.6",
+    "lodash.range": "^3.2.0",
     "prop-types": "^15.0.0"
   }
 }

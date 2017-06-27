@@ -1,0 +1,54 @@
+@mixin css3-prefix($property, $value)
+  -webkit-#{$property}: #{$value}
+  -khtml-#{$property}: #{$value}
+  -moz-#{$property}: #{$value}
+  -ms-#{$property}: #{$value}
+  -o-#{$property}: #{$value}
+  #{$property}: #{$value}
+
+@mixin transition($properties...)
+  @include css3-prefix('transition', $properties)
+
+$transition-delay: 500ms
+
+.react-page-slider__root
+  overflow: hidden
+  @include transition(height ease $transition-delay)
+
+.react-page-slider__track
+  white-space: nowrap
+  min-height: 100%
+
+.react-page-slider__child
+  position: relative
+  display: inline-block
+  vertical-align: top
+  white-space: normal
+  width: 100%
+
+.react-page-slider__root.react-page-slider__root--transitioning
+  > .react-page-slider__track
+    @include transition(transform ease $transition-delay)
+
+.react-page-slider__root.react-page-slider__root--fill-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  > .react-page-slider__track
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+  .react-page-slider__child
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    overflow: auto
+
