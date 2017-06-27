@@ -5,7 +5,7 @@ import type {Prefixer} from 'inline-style-prefixer'
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
-export type ChildProps = {
+export type PageProps = {
   index: number,
   key: number,
   active: boolean,
@@ -17,32 +17,33 @@ export type ChildProps = {
 
 export type DefaultProps = {
   animateHeight: boolean,
-  transitionTimeout: number,
+  transitionDuration: number,
+  transitionTimingFunction: string,
   prefixer: Prefixer,
   style: Object,
-  innerStyle: Object,
+  viewportStyle: Object,
 }
 
 export type Props = {
-  activeIndex: number,
-  numChildren: number,
-  renderChild: (props: ChildProps) => React.Element<any>,
+  activePage: number,
+  numPages: number,
+  renderPage: (props: PageProps) => React.Element<any>,
   animateHeight: boolean,
-  transitionTimeout: number,
+  transitionDuration: number,
+  transitionTimingFunction: string,
   prefixer: Prefixer,
   fillParent?: boolean,
-  transitionHeight?: boolean,
   className?: string,
   style: Object,
-  innerClassName?: string,
-  innerStyle: Object,
+  viewportClassName?: string,
+  viewportStyle: Object,
 }
 
 export type State = {
   height: ?number,
   transitioning: boolean,
-  activeIndex: number,
-  prevActiveIndex: ?number,
+  activePage: number,
+  prevActivePage: ?number,
 }
 
 declare export default class PageSlider extends Component<DefaultProps, Props, State> {

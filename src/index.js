@@ -9,7 +9,7 @@ import range from 'lodash.range'
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
-export type ChildProps = {
+export type PageProps = {
   index: number,
   key: number,
   active: boolean,
@@ -21,32 +21,33 @@ export type ChildProps = {
 
 export type DefaultProps = {
   animateHeight: boolean,
-  transitionTimeout: number,
+  transitionDuration: number,
+  transitionTimingFunction: string,
   prefixer: Prefixer,
   style: Object,
-  innerStyle: Object,
+  viewportStyle: Object,
 }
 
 export type Props = {
-  activeIndex: number,
-  numChildren: number,
-  renderChild: (props: ChildProps) => React.Element<any>,
+  activePage: number,
+  numPages: number,
+  renderPage: (props: PageProps) => React.Element<any>,
   animateHeight: boolean,
-  transitionTimeout: number,
+  transitionDuration: number,
+  transitionTimingFunction: string,
   prefixer: Prefixer,
   fillParent?: boolean,
-  transitionHeight?: boolean,
   className?: string,
   style: Object,
-  innerClassName?: string,
-  innerStyle: Object,
+  viewportClassName?: string,
+  viewportStyle: Object,
 }
 
 export type State = {
   height: ?number,
   transitioning: boolean,
-  activeIndex: number,
-  prevActiveIndex: ?number,
+  activePage: number,
+  prevActivePage: ?number,
 }
 
 function measureHeight(node: ?HTMLElement): ?number {
@@ -57,20 +58,21 @@ function measureHeight(node: ?HTMLElement): ?number {
 export default class PageSlider extends Component<DefaultProps, Props, State> {
   static defaultProps = {
     animateHeight: true,
-    transitionTimeout: 500,
+    transitionDuration: 500,
+    transitionTimingFunction: 'ease',
     prefixer: new Prefixer(),
     style: {},
-    innerStyle: {},
+    viewportStyle: {},
   }
   state: State = {
     height: undefined,
     transitioning: false,
-    activeIndex: this.props.activeIndex,
-    prevActiveIndex: null,
+    activePage: this.props.activePage,
+    prevActivePage: null,
   }
   root: ?HTMLDivElement
   viewport: ?HTMLDivElement
-  childElements: Array<?HTMLElement> = []
+  pages: Array<?HTMLElement> = []
   timeouts: {[name: string]: number} = {}
 
   setTimeout(name: string, callback: () => any, delay: number) {
@@ -79,33 +81,39 @@ export default class PageSlider extends Component<DefaultProps, Props, State> {
   }
 
   componentDidUpdate() {
-    const {activeIndex, transitionTimeout} = this.props
+    const {activePage, transitionDuration} = this.props
     let newState: ?$Shape<State>
-    if (activeIndex !== this.state.activeIndex && this.state.height === undefined) {
-      newState = {height: measureHeight(this.childElements[this.state.activeIndex])}
+
+    if (activePage !== this.state.activePage && this.state.height === undefined) {
+      // phase 1: set current height
+      newState = {height: measureHeight(this.pages[this.state.activePage])}
     } else if (this.state.height !== undefined && !this.state.transitioning) {
+      // phase 2: enable transitions
       newState = {transitioning: true}
-    } else if (activeIndex !== this.state.activeIndex) {
+    } else if (activePage !== this.state.activePage) {
+      // phase 3: change height/activePage
       newState = {
-        activeIndex,
-        prevActiveIndex: this.state.activeIndex,
-        height: measureHeight(this.childElements[activeIndex]),
+        activePage,
+        prevActivePage: this.state.activePage,
+        height: measureHeight(this.pages[activePage]),
       }
     }
+
     const finalNewState = newState
     if (!finalNewState) return
 
     this.setState(finalNewState, () => {
-      if (finalNewState.activeIndex != null) {
-        this.setTimeout('onTransitionEnd', this.onTransitionEnd, transitionTimeout)
+      if (finalNewState.activePage != null) {
+        this.setTimeout('onTransitionEnd', this.onTransitionEnd, transitionDuration)
       }
     })
   }
 
   onTransitionEnd = (e?: Event) => {
+    // phase 0: unset height and disable transitions
     this.setState({
       height: undefined,
-      prevActiveIndex: null,
+      prevActivePage: null,
       transitioning: false,
     })
   }
@@ -115,65 +123,79 @@ export default class PageSlider extends Component<DefaultProps, Props, State> {
   }
 
   getTransitionState: (childIndex: number) => TransitionState = (childIndex: number): TransitionState => {
-    const {activeIndex, prevActiveIndex} = this.state
-    if (prevActiveIndex == null) return childIndex === activeIndex ? 'in' : 'out'
-    if (childIndex === activeIndex) return 'entering'
-    if (childIndex === prevActiveIndex) return 'leaving'
+    const {activePage, prevActivePage} = this.state
+    if (prevActivePage == null) return childIndex === activePage ? 'in' : 'out'
+    if (childIndex === activePage) return 'entering'
+    if (childIndex === prevActivePage) return 'leaving'
     return 'out'
   }
 
-  renderChild: (index: number) => React.Element<any> = (index: number): React.Element<any> => {
+  renderPage: (index: number) => React.Element<any> = (index: number): React.Element<any> => {
     const {fillParent} = this.props
-    const {activeIndex, transitioning} = this.state
-    if (!transitioning && activeIndex !== index) {
-      return <div key={index} className="react-page-slider__child"></div>
+    const {activePage, transitioning} = this.state
+    // when not transitioning, render empty placeholder divs before the active page to push it into the right
+    // horizontal position
+    if (!transitioning && activePage !== index) {
+      return <div key={index} className="react-page-slider__page"></div>
     }
-    return this.props.renderChild({
+    return this.props.renderPage({
       index,
       key: index,
-      active: index === activeIndex,
-      className: 'react-page-slider__child',
+      active: index === activePage,
+      className: 'react-page-slider__page',
       transitionState: this.getTransitionState(index),
       style: fillParent ? {left: `${index * 100}%`} : {},
-      ref: c => this.childElements[index] = c,
+      ref: c => this.pages[index] = c,
     })
   }
 
   render(): React.Element<any> {
-    const {style, className, innerClassName, innerStyle, numChildren, prefixer, animateHeight, fillParent} = this.props
-    const {activeIndex, height, transitioning} = this.state
+    const {
+      style, className, viewportClassName, viewportStyle, numPages, prefixer, animateHeight, fillParent,
+      transitionDuration, transitionTimingFunction,
+    } = this.props
+    const {activePage, height, transitioning} = this.state
 
     const finalClassName = classNames(className, 'react-page-slider__root', {
       'react-page-slider__root--transitioning': transitioning,
       'react-page-slider__root--fill-parent': fillParent,
     })
 
-    const finalOuterStyle = prefixer.prefix(
-      animateHeight && !fillParent && height != null
-        ? {height, ...style}
-        : style
-    )
+    const finalOuterStyle = {
+      transitionProperty: 'height',
+      transitionDuration: `${transitionDuration}ms`,
+      transitionTimingFunction,
+      ...style,
+    }
+    if (animateHeight && !fillParent && height != null) finalOuterStyle.height = height
 
-    const finalInnerStyle = prefixer.prefix({
-      transform: `translateX(-${activeIndex * 100}%)`,
-      ...innerStyle,
-    })
+    const finalViewportStyle = {
+      transform: `translateX(-${activePage * 100}%)`,
+      ...viewportStyle,
+    }
+    if (transitioning) {
+      finalViewportStyle.transitionProperty = 'transform'
+      finalViewportStyle.transitionDuration = `${transitionDuration}ms`
+      finalViewportStyle.transitionTimingFunction = transitionTimingFunction
+    }
 
-    const children = range(transitioning ? numChildren : activeIndex + 1).map(this.renderChild)
+    // when not transitioning, render empty placeholder divs before the active page to push it into the right
+    // horizontal position
+    const pages = range(transitioning ? numPages : activePage + 1).map(this.renderPage)
 
     return (
       <div
-          style={finalOuterStyle}
+          style={prefixer.prefix(finalOuterStyle)}
           className={finalClassName}
           ref={c => this.root = c}
       >
         <div
-            className={classNames(innerClassName, 'react-page-slider__track')}
-            style={finalInnerStyle}
+            className={classNames(viewportClassName, 'react-page-slider__track')}
+            style={prefixer.prefix(finalViewportStyle)}
             ref={c => this.viewport = c}
             onTransitionEnd={this.onTransitionEnd}
         >
-          {children}
+          {pages}
         </div>
       </div>
     )

@@ -1,13 +1,11 @@
 // @flow
 
 import React, {Component} from 'react'
-import PageSlider from './index'
-import TransitionContext from 'react-transition-context'
 import type {Prefixer} from 'inline-style-prefixer'
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
-export type ChildProps = {
+export type PageProps = {
   index: number,
   key: number,
   active: boolean,
@@ -18,20 +16,19 @@ export type ChildProps = {
 }
 
 export type Props = {
-  activeIndex: number,
-  numChildren: number,
-  renderChild: (props: ChildProps) => React.Element<any>,
-  animateHeight?: boolean,
-  transitionTimeout?: number,
-  prefixer?: Prefixer,
+  activePage: number,
+  numPages: number,
+  renderPage: (props: PageProps) => React.Element<any>,
+  animateHeight: boolean,
+  transitionDuration: number,
+  transitionTimingFunction: string,
+  prefixer: Prefixer,
   fillParent?: boolean,
-  transitionHeight?: boolean,
   className?: string,
-  style?: Object,
-  innerClassName?: string,
-  innerStyle?: Object,
+  style: Object,
+  viewportClassName?: string,
+  viewportStyle: Object,
 }
-
 
 declare export default class PageSliderWithTransitionContext extends Component<void, Props, void> {
 }

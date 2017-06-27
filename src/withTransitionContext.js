@@ -7,7 +7,7 @@ import type {Prefixer} from 'inline-style-prefixer'
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
-export type ChildProps = {
+export type PageProps = {
   index: number,
   key: number,
   active: boolean,
@@ -18,9 +18,9 @@ export type ChildProps = {
 }
 
 export type Props = {
-  activeIndex: number,
-  numChildren: number,
-  renderChild: (props: ChildProps) => React.Element<any>,
+  activePage: number,
+  numPages: number,
+  renderPage: (props: PageProps) => React.Element<any>,
   animateHeight?: boolean,
   transitionTimeout?: number,
   prefixer?: Prefixer,
@@ -28,23 +28,23 @@ export type Props = {
   transitionHeight?: boolean,
   className?: string,
   style?: Object,
-  innerClassName?: string,
-  innerStyle?: Object,
+  viewportClassName?: string,
+  viewportStyle?: Object,
 }
 
 
 export default class PageSliderWithTransitionContext extends Component<void, Props, void> {
-  renderChild: (props: ChildProps) => React.Element<any> = (props: ChildProps): React.Element<any> => {
+  renderPage: (props: PageProps) => React.Element<any> = (props: PageProps): React.Element<any> => {
     return (
-      <TransitionContext transitionState={props.transitionState}>
-        {this.props.renderChild(props)}
+      <TransitionContext key={props.key} transitionState={props.transitionState}>
+        {this.props.renderPage(props)}
       </TransitionContext>
     )
   }
 
   render(): React.Element<any> {
     return (
-      <PageSlider {...this.props} renderChild={this.renderChild} />
+      <PageSlider {...this.props} renderPage={this.renderPage} />
     )
   }
 }

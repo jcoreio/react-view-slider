@@ -14,7 +14,7 @@ describe('PageSlider', () => {
   })
 
   it('single transition works', () => {
-    const renderChild = ({index, key, style, className, ref}) => (
+    const renderPage = ({index, key, style, className, ref}) => (
       <div
           key={key}
           ref={ref}
@@ -29,19 +29,19 @@ describe('PageSlider', () => {
     )
 
     const comp = mount(
-      <PageSlider numChildren={3} renderChild={renderChild} activeIndex={0} />
+      <PageSlider numPages={3} renderPage={renderPage} activePage={0} />
     )
 
     expect(comp.text()).to.equal('Child 0')
 
-    comp.setProps({activeIndex: 1})
+    comp.setProps({activePage: 1})
 
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(1000)
     expect(comp.text()).to.equal('Child 1')
   })
   it('multiple transitions work', () => {
-    const renderChild = ({index, key, style, className, ref}) => (
+    const renderPage = ({index, key, style, className, ref}) => (
       <div
           key={key}
           ref={ref}
@@ -56,15 +56,15 @@ describe('PageSlider', () => {
     )
 
     const comp = mount(
-      <PageSlider numChildren={3} renderChild={renderChild} activeIndex={0} />
+      <PageSlider numPages={3} renderPage={renderPage} activePage={0} />
     )
 
     expect(comp.text()).to.equal('Child 0')
 
-    comp.setProps({activeIndex: 1})
+    comp.setProps({activePage: 1})
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(200)
-    comp.setProps({activeIndex: 2})
+    comp.setProps({activePage: 2})
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(1000)
     expect(comp.text()).to.equal('Child 2')

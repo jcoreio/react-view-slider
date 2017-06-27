@@ -8,7 +8,7 @@ import Prefixer from 'inline-style-prefixer'
 
 /* eslint-env browser */
 
-const smokeTestChildren = [
+const smokeTestPages = [
   {
     height: 200,
     backgroundColor: 'red',
@@ -55,20 +55,20 @@ const styles = {
 }
 
 class SmokeTest extends React.Component {
-  state = {activeIndex: 0}
+  state = {activePage: 0}
   inputRefs: Array<HTMLInputElement> = []
 
-  childDidComeIn = index => {
+  pageDidComeIn = index => {
     if (this.inputRefs[index]) {
       this.inputRefs[index].focus()
       this.inputRefs[index].select()
     }
   }
 
-  renderChild = ({index, key, transitionState, className, style, ref}) => {
+  renderPage = ({index, key, transitionState, className, style, ref}) => {
     const finalStyle = this.props.margins
-      ? {...smokeTestChildren[index], marginTop: 20, marginBottom: 10, paddingTop: 15}
-      : smokeTestChildren[index]
+      ? {...smokeTestPages[index], marginTop: 20, marginBottom: 10, paddingTop: 15}
+      : smokeTestPages[index]
 
     if (this.props.fillParent) {
       return (
@@ -96,7 +96,7 @@ class SmokeTest extends React.Component {
         <h3>Child {index}</h3>
         <input type="text" ref={c => this.inputRefs[index] = c} />
         {this.props.PageSlider === PageSliderWithTransitionContext &&
-          <TransitionListener didComeIn={() => this.childDidComeIn(index)} />
+          <TransitionListener didComeIn={() => this.pageDidComeIn(index)} />
         }
       </div>
     )
@@ -109,17 +109,17 @@ class SmokeTest extends React.Component {
     return (
       <div style={fillParent ? styles.fillParent.root : {}}>
         <div style={fillParent ? styles.fillParent.buttons : {}}>
-          {smokeTestChildren.map((child, index) =>
-            <button key={index} onClick={() => this.setState({activeIndex: index})}>{index}</button>
+          {smokeTestPages.map((child, index) =>
+            <button key={index} onClick={() => this.setState({activePage: index})}>{index}</button>
           )}
         </div>
         <div style={fillParent ? styles.fillParent.content : {}}>
           <SliderComp
               fillParent={fillParent}
               animateHeight={Boolean(this.props.animateHeight)}
-              activeIndex={this.state.activeIndex}
-              numChildren={smokeTestChildren.length}
-              renderChild={this.renderChild}
+              activePage={this.state.activePage}
+              numPages={smokeTestPages.length}
+              renderPage={this.renderPage}
           />
         </div>
       </div>
