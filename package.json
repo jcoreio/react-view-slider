@@ -1,7 +1,7 @@
 {
-  "name": "react-page-slider",
+  "name": "react-view-slider",
   "version": "0.0.0-development",
-  "description": "horizontal slide transitions between components",
+  "description": "animates horizontal slide transitions between steps of a wizard or levels of a drilldown",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src test stories",
@@ -12,7 +12,7 @@
     "flow:watch": "flow-watch -e js,js.flow,flowconfig --ignore lib/ --ignore node_modules/ --watch .flowconfig --watch src/ --watch test/",
     "gen-flow-files": "flow gen-flow-files src/ --out-dir lib",
     "copy-flow-files": "cd src; copy *.js.flow **/*.js.flow ../lib",
-    "build": "rimraf lib && babel src --out-dir lib && node-sass src/react-page-slider.sass > lib/react-page-slider.css",
+    "build": "rimraf lib && babel src --out-dir lib && node-sass src/react-view-slider.sass > lib/react-view-slider.css",
     "test": "NODE_ENV=production BABEL_ENV=test nyc --reporter=lcov --reporter=text mocha $npm_package_config_mocha",
     "test:watch": "mocha --watch $npm_package_config_mocha",
     "commitmsg": "validate-commit-msg",
@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jcoreio/react-page-slider.git"
+    "url": "https://github.com/jcoreio/react-view-slider.git"
   },
   "keywords": [
     "es2015",
@@ -52,9 +52,9 @@
   "author": "Andy Edwards",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jcoreio/react-page-slider/issues"
+    "url": "https://github.com/jcoreio/react-view-slider/issues"
   },
-  "homepage": "https://github.com/jcoreio/react-page-slider#readme",
+  "homepage": "https://github.com/jcoreio/react-view-slider#readme",
   "devDependencies": {
     "@jedwards1211/eslint-config-flow": "^1.0.0",
     "@jedwards1211/eslint-config-react": "^2.0.1",

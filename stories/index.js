@@ -1,9 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import PageSlider from '../src'
-import PageSliderWithTransitionContext from '../src/withTransitionContext'
+import ViewSlider from '../src'
+import ViewSliderWithTransitionContext from '../src/withTransitionContext'
 import {TransitionListener} from 'react-transition-context'
-import '../src/react-page-slider.sass'
+import '../src/react-view-slider.sass'
 import Prefixer from 'inline-style-prefixer'
 
 /* eslint-env browser */
@@ -95,7 +95,7 @@ class SmokeTest extends React.Component {
       >
         <h3>Child {index}</h3>
         <input type="text" ref={c => this.inputRefs[index] = c} />
-        {this.props.PageSlider === PageSliderWithTransitionContext &&
+        {this.props.ViewSlider === ViewSliderWithTransitionContext &&
           <TransitionListener didComeIn={() => this.pageDidComeIn(index)} />
         }
       </div>
@@ -104,7 +104,7 @@ class SmokeTest extends React.Component {
 
   render(): React.Element<any> {
     const {fillParent} = this.props
-    const SliderComp = this.props.PageSlider || PageSlider
+    const SliderComp = this.props.ViewSlider || ViewSlider
 
     return (
       <div style={fillParent ? styles.fillParent.root : {}}>
@@ -127,9 +127,9 @@ class SmokeTest extends React.Component {
   }
 }
 
-storiesOf('react-page-slider', module)
+storiesOf('react-view-slider', module)
   .add('with animateHeight', () => <SmokeTest animateHeight />)
   .add('without animateHeight', () => <SmokeTest />)
   .add('with fillParent', () => <SmokeTest fillParent />)
   .add('with margins', () => <SmokeTest animateHeight margins />)
-  .add('withTransitionContext', () => <SmokeTest PageSlider={PageSliderWithTransitionContext} />)
+  .add('withTransitionContext', () => <SmokeTest ViewSlider={ViewSliderWithTransitionContext} />)

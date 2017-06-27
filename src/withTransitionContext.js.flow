@@ -30,6 +30,6 @@ export type Props = {
   viewportStyle: Object,
 }
 
-declare export default class PageSliderWithTransitionContext extends Component<void, Props, void> {
+declare export default class ViewSliderWithTransitionContext extends Component<void, Props, void> {
 }
 

@@ -55,7 +55,7 @@ function measureHeight(node: ?HTMLElement): ?number {
   return getNodeDimensions(node, {margin: true}).height
 }
 
-export default class PageSlider extends Component<DefaultProps, Props, State> {
+export default class ViewSlider extends Component<DefaultProps, Props, State> {
   static defaultProps = {
     animateHeight: true,
     transitionDuration: 500,
@@ -68,6 +68,7 @@ export default class PageSlider extends Component<DefaultProps, Props, State> {
     height: undefined,
     transitioning: false,
     activePage: this.props.activePage,
+    // this is used to determine the correct transitionState for the previous active page.
     prevActivePage: null,
   }
   root: ?HTMLDivElement
@@ -136,13 +137,13 @@ export default class PageSlider extends Component<DefaultProps, Props, State> {
     // when not transitioning, render empty placeholder divs before the active page to push it into the right
     // horizontal position
     if (!transitioning && activePage !== index) {
-      return <div key={index} className="react-page-slider__page"></div>
+      return <div key={index} className="react-view-slider__page"></div>
     }
     return this.props.renderPage({
       index,
       key: index,
       active: index === activePage,
-      className: 'react-page-slider__page',
+      className: 'react-view-slider__page',
       transitionState: this.getTransitionState(index),
       style: fillParent ? {left: `${index * 100}%`} : {},
       ref: c => this.pages[index] = c,
@@ -156,9 +157,9 @@ export default class PageSlider extends Component<DefaultProps, Props, State> {
     } = this.props
     const {activePage, height, transitioning} = this.state
 
-    const finalClassName = classNames(className, 'react-page-slider__root', {
-      'react-page-slider__root--transitioning': transitioning,
-      'react-page-slider__root--fill-parent': fillParent,
+    const finalClassName = classNames(className, 'react-view-slider__root', {
+      'react-view-slider__root--transitioning': transitioning,
+      'react-view-slider__root--fill-parent': fillParent,
     })
 
     const finalOuterStyle = {
@@ -190,7 +191,7 @@ export default class PageSlider extends Component<DefaultProps, Props, State> {
           ref={c => this.root = c}
       >
         <div
-            className={classNames(viewportClassName, 'react-page-slider__track')}
+            className={classNames(viewportClassName, 'react-view-slider__track')}
             style={prefixer.prefix(finalViewportStyle)}
             ref={c => this.viewport = c}
             onTransitionEnd={this.onTransitionEnd}

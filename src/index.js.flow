@@ -46,7 +46,7 @@ export type State = {
   prevActivePage: ?number,
 }
 
-declare export default class PageSlider extends Component<DefaultProps, Props, State> {
+declare export default class ViewSlider extends Component<DefaultProps, Props, State> {
   static defaultProps: DefaultProps;
   state: State;
 }

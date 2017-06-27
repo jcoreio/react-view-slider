@@ -1,10 +1,10 @@
 import React from 'react'
-import PageSlider from '../src'
+import ViewSlider from '../src'
 import {mount} from 'enzyme'
 import {expect} from 'chai'
 import sinon from 'sinon'
 
-describe('PageSlider', () => {
+describe('ViewSlider', () => {
   let clock
   beforeEach(() => {
     clock = sinon.useFakeTimers()
@@ -29,7 +29,7 @@ describe('PageSlider', () => {
     )
 
     const comp = mount(
-      <PageSlider numPages={3} renderPage={renderPage} activePage={0} />
+      <ViewSlider numPages={3} renderPage={renderPage} activePage={0} />
     )
 
     expect(comp.text()).to.equal('Child 0')
@@ -56,7 +56,7 @@ describe('PageSlider', () => {
     )
 
     const comp = mount(
-      <PageSlider numPages={3} renderPage={renderPage} activePage={0} />
+      <ViewSlider numPages={3} renderPage={renderPage} activePage={0} />
     )
 
     expect(comp.text()).to.equal('Child 0')

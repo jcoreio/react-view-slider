@@ -1,7 +1,7 @@
 // @flow
 
 import React, {Component} from 'react'
-import PageSlider from './index'
+import ViewSlider from './index'
 import TransitionContext from 'react-transition-context'
 import type {Prefixer} from 'inline-style-prefixer'
 
@@ -33,7 +33,7 @@ export type Props = {
 }
 
 
-export default class PageSliderWithTransitionContext extends Component<void, Props, void> {
+export default class ViewSliderWithTransitionContext extends Component<void, Props, void> {
   renderPage: (props: PageProps) => React.Element<any> = (props: PageProps): React.Element<any> => {
     return (
       <TransitionContext key={props.key} transitionState={props.transitionState}>
@@ -44,7 +44,7 @@ export default class PageSliderWithTransitionContext extends Component<void, Pro
 
   render(): React.Element<any> {
     return (
-      <PageSlider {...this.props} renderPage={this.renderPage} />
+      <ViewSlider {...this.props} renderPage={this.renderPage} />
     )
   }
 }
