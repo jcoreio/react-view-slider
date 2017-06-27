@@ -16,13 +16,13 @@ describe('PageSlider', () => {
   it('single transition works', () => {
     const renderChild = ({index, key, style, className, ref}) => (
       <div
-        key={key}
-        ref={ref}
-        className={className}
-        style={{
-          ...style,
-          height: (index + 1) * 100,
-        }}
+          key={key}
+          ref={ref}
+          className={className}
+          style={{
+            ...style,
+            height: (index + 1) * 100,
+          }}
       >
         Child {index}
       </div>
@@ -43,13 +43,13 @@ describe('PageSlider', () => {
   it('multiple transitions work', () => {
     const renderChild = ({index, key, style, className, ref}) => (
       <div
-        key={key}
-        ref={ref}
-        className={className}
-        style={{
-          ...style,
-          height: index * 100,
-        }}
+          key={key}
+          ref={ref}
+          className={className}
+          style={{
+            ...style,
+            height: index * 100,
+          }}
       >
         Child {index}
       </div>
