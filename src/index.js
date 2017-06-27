@@ -103,13 +103,11 @@ export default class PageSlider extends Component<DefaultProps, Props, State> {
   }
 
   onTransitionEnd = (e?: Event) => {
-    if (this.props.activeIndex === this.state.activeIndex && this.state.transitioning) {
-      this.setState({
-        height: undefined,
-        prevActiveIndex: null,
-        transitioning: false,
-      })
-    }
+    this.setState({
+      height: undefined,
+      prevActiveIndex: null,
+      transitioning: false,
+    })
   }
 
   componentWillUnmount() {
