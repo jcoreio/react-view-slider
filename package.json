@@ -112,5 +112,8 @@
     "inline-style-prefixer": "^3.0.6",
     "lodash.range": "^3.2.0",
     "prop-types": "^15.0.0"
+  },
+  "optionalDependencies": {
+    "react-transition-context": "^1.0.0-beta9"
   }
 }

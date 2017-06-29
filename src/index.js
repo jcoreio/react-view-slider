@@ -110,7 +110,9 @@ export default class ViewSlider extends Component<DefaultProps, Props, State> {
     })
   }
 
-  onTransitionEnd = (e?: Event) => {
+  onTransitionEnd = (event?: Event) => {
+    // ignore transitionend events from deeper components
+    if (event && event.target !== this.viewport) return
     // phase 0: unset height and disable transitions
     this.setState({
       height: undefined,
