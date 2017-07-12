@@ -1,10 +1,14 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import ViewSlider from '../src'
-import ViewSliderWithTransitionContext from '../src/withTransitionContext'
+import BaseViewSlider from '../src'
+import BaseViewSliderWithTransitionContext from '../src/withTransitionContext'
 import {TransitionListener} from 'react-transition-context'
-import '../src/react-view-slider.sass'
 import Prefixer from 'inline-style-prefixer'
+import injectSheet from 'react-jss'
+import defaultStyles from '../src/styles'
+
+const ViewSlider = injectSheet(defaultStyles)(BaseViewSlider)
+const ViewSliderWithTransitionContext = injectSheet(defaultStyles)(BaseViewSliderWithTransitionContext)
 
 /* eslint-env browser */
 

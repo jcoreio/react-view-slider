@@ -8,6 +8,13 @@
 Not another carousel; a simpler component that animates horizontal slide transitions between steps of a wizard or levels
 of a drilldown.
 
+# Table of Contents
+
+- [Usage](#usage)
+- [Using `react-jss` instead of `react-view-slider.css`](#using-react-jss-instead-of-react-view-slidercss)
+- [Props](#props)
+- [`withTransitionContext`](#withtransitioncontext)
+
 ## Usage
 
 ```sh
@@ -45,6 +52,17 @@ ReactDOM.render(
   />,
   document.getElementById('root')
 )
+```
+
+## Using `react-jss` instead of `react-view-slider.css`
+
+```js
+import React from 'react'
+import BaseViewSlider from 'react-view-slider'
+import viewSliderStyles from 'react-view-slider/lib/styles'
+import injectSheet from 'react-jss'
+
+const ViewSlider = injectSheet(viewSliderStyles)(BaseViewSlider)
 ```
 
 ## Props
@@ -107,6 +125,17 @@ Any extra class names to add to the inner "viewport" element.
 ### `viewportStyle: Object`
 
 Extra inline styles to add to the inner "viewport" element.
+
+### `classes: {root: string, viewport: string, fillParent: string, page: string}`
+
+The `className`s for the various elements `ViewSlider` renders:
+- `root` is the root `div`
+- `viewport` is the `div` inside `root` that animates horizontally
+- `fillParent` is the `className` applied to the root `div` if the `fillParent` property is `true`
+- `page` is the `className` passed to `renderPage`
+
+By default, they match those in `lib/react-view-slider.css`.
+Otherwise, you can [use `react-jss` to inject `classes`](#using-react-jss-instead-of-react-view-slidercss).
 
 ## `withTransitionContext`
 

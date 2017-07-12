@@ -8,4 +8,5 @@ coverage
 node_modules
 test
 stories
+scripts
 

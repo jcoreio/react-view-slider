@@ -2,6 +2,7 @@
 <PROJECT_ROOT>/lib/.*
 .*/node_modules/.*/tests?/.*\.json
 .*/node_modules/fbjs/.*
+.*/node_modules/jss/.*
 
 [include]
 ./src

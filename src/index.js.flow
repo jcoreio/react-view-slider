@@ -22,6 +22,14 @@ export type DefaultProps = {
   prefixer: Prefixer,
   style: Object,
   viewportStyle: Object,
+  classes: Classes,
+}
+
+export type Classes = {
+  root: string,
+  viewport: string,
+  page: string,
+  fillParent: string,
 }
 
 export type Props = {
@@ -34,6 +42,7 @@ export type Props = {
   prefixer: Prefixer,
   fillParent?: boolean,
   className?: string,
+  classes: Classes,
   style: Object,
   viewportClassName?: string,
   viewportStyle: Object,

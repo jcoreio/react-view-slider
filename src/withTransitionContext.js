@@ -17,6 +17,13 @@ export type PageProps = {
   ref: (element: HTMLElement) => any,
 }
 
+export type Classes = {
+  root: string,
+  viewport: string,
+  page: string,
+  fillParent: string,
+}
+
 export type Props = {
   activePage: number,
   numPages: number,
@@ -30,6 +37,7 @@ export type Props = {
   style?: Object,
   viewportClassName?: string,
   viewportStyle?: Object,
+  classes?: Classes,
 }
 
 
