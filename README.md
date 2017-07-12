@@ -67,7 +67,7 @@ const ViewSlider = injectSheet(viewSliderStyles)(BaseViewSlider)
 
 ## Props
 
-### `renderPage: (props: PageProps) => React.Element<any>` **(required)**
+##### `renderPage: (props: PageProps) => React.Element<any>` **(required)**
 
 This function renders each page.  `ViewSlider` will call it with the following `props`:
 * `index: number` - the index of the page (starting at 0)
@@ -80,53 +80,53 @@ This function renders each page.  `ViewSlider` will call it with the following `
 
 At minimum you should pass the `key`, `ref`, `style`, and `className` props to the returned element.
 
-### `numPages: number` **(required)**
+##### `numPages: number` **(required)**
 
 The number of pages present.  `ViewSlider` will only render all pages when transitioning; when idle, it will
 only render the active page.
 
-### `activePage: number` **(required)**
+##### `activePage: number` **(required)**
 
 The index of the page that should be showing.  Whenever you change this, `ViewSlider` will animate a horizontal slide
 transition to the page at the new index.
 
-### `animateHeight: boolean` (default: `true`)
+##### `animateHeight: boolean` (default: `true`)
 
 If truthy, `ViewSlider` will animate its height to match the height of the page at `activePage`.
 
-### `transitionDuration: number` (default: `500`)
+##### `transitionDuration: number` (default: `500`)
 
 The duration of the transition between pages.
 
-### `transitionTimingFunction: string` (default: `'ease'`)
+##### `transitionTimingFunction: string` (default: `'ease'`)
 
 The timing function for the transition between pages.
 
-### `prefixer: Prefixer`
+##### `prefixer: Prefixer`
 
 If given, overrides the `inline-style-prefixer` used to autoprefix inline styles.
 
-### `fillParent: boolean` (default: `false`)
+##### `fillParent: boolean` (default: `false`)
 
 If truthy, `ViewSlider` will use absolute positioning on itself and its pages to fill its parent element.
 
-### `className: string`
+##### `className: string`
 
 Any extra class names to add to the root element.
 
-### `style: Object`
+##### `style: Object`
 
 Extra inline styles to add to the root element.
 
-### `viewportClassName: string`
+##### `viewportClassName: string`
 
 Any extra class names to add to the inner "viewport" element.
 
-### `viewportStyle: Object`
+##### `viewportStyle: Object`
 
 Extra inline styles to add to the inner "viewport" element.
 
-### `classes: {root: string, viewport: string, fillParent: string, page: string}`
+##### `classes: {root: string, viewport: string, fillParent: string, page: string}`
 
 The `className`s for the various elements `ViewSlider` renders:
 - `root` is the root `div`
