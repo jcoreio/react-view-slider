@@ -1,18 +1,14 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import BaseViewSlider from '../src'
-import BaseViewSliderWithTransitionContext from '../src/withTransitionContext'
+import ViewSlider from '../src'
+import ViewSliderWithTransitionContext from '../src/withTransitionContext'
 import {TransitionListener} from 'react-transition-context'
 import Prefixer from 'inline-style-prefixer'
-import injectSheet from 'react-jss'
-import defaultStyles from '../src/styles'
-
-const ViewSlider = injectSheet(defaultStyles)(BaseViewSlider)
-const ViewSliderWithTransitionContext = injectSheet(defaultStyles)(BaseViewSliderWithTransitionContext)
+import getNodeDimensions from 'get-node-dimensions'
 
 /* eslint-env browser */
 
-const smokeTestPages = [
+const smokeTestViews = [
   {
     height: 200,
     backgroundColor: 'red',
@@ -59,20 +55,20 @@ const styles = {
 }
 
 class SmokeTest extends React.Component {
-  state = {activePage: 0}
+  state = {activeView: 0}
   inputRefs: Array<HTMLInputElement> = []
 
-  pageDidComeIn = index => {
+  viewDidComeIn = index => {
     if (this.inputRefs[index]) {
       this.inputRefs[index].focus()
       this.inputRefs[index].select()
     }
   }
 
-  renderPage = ({index, key, transitionState, className, style, ref}) => {
+  renderView = ({index, key, transitionState, className, style, ref}) => {
     const finalStyle = this.props.margins
-      ? {...smokeTestPages[index], marginTop: 20, marginBottom: 10, paddingTop: 15}
-      : smokeTestPages[index]
+      ? {...smokeTestViews[index], marginTop: 20, marginBottom: 10, paddingTop: 15}
+      : smokeTestViews[index]
 
     if (this.props.fillParent) {
       return (
@@ -84,7 +80,7 @@ class SmokeTest extends React.Component {
              style={style}
          >
           <div style={finalStyle}>
-            Child {index}
+            View {index}
           </div>
         </div>
       )
@@ -100,30 +96,32 @@ class SmokeTest extends React.Component {
         <h3>Child {index}</h3>
         <input type="text" ref={c => this.inputRefs[index] = c} />
         {this.props.ViewSlider === ViewSliderWithTransitionContext &&
-          <TransitionListener didComeIn={() => this.pageDidComeIn(index)} />
+          <TransitionListener didComeIn={() => this.viewDidComeIn(index)} />
         }
       </div>
     )
   }
 
   render(): React.Element<any> {
-    const {fillParent} = this.props
+    const {fillParent, animateHeight, keepViewsMounted} = this.props
     const SliderComp = this.props.ViewSlider || ViewSlider
 
     return (
       <div style={fillParent ? styles.fillParent.root : {}}>
         <div style={fillParent ? styles.fillParent.buttons : {}}>
-          {smokeTestPages.map((child, index) =>
-            <button key={index} onClick={() => this.setState({activePage: index})}>{index}</button>
+          Go to view: {smokeTestViews.map((child, index) =>
+            <button key={index} onClick={() => this.setState({activeView: index})}>{index}</button>
           )}
         </div>
         <div style={fillParent ? styles.fillParent.content : {}}>
           <SliderComp
               fillParent={fillParent}
-              animateHeight={Boolean(this.props.animateHeight)}
-              activePage={this.state.activePage}
-              numPages={smokeTestPages.length}
-              renderPage={this.renderPage}
+              animateHeight={Boolean(animateHeight)}
+              keepViewsMounted={Boolean(keepViewsMounted)}
+              activeView={this.state.activeView}
+              numViews={smokeTestViews.length}
+              renderView={this.renderView}
+              measureHeight={node => getNodeDimensions(node, {margin: true}).height}
           />
         </div>
       </div>
@@ -136,4 +134,6 @@ storiesOf('react-view-slider', module)
   .add('without animateHeight', () => <SmokeTest />)
   .add('with fillParent', () => <SmokeTest fillParent />)
   .add('with margins', () => <SmokeTest animateHeight margins />)
-  .add('withTransitionContext', () => <SmokeTest ViewSlider={ViewSliderWithTransitionContext} />)
+  .add('with keepViewsMounted', () => <SmokeTest animateHeight keepViewsMounted />)
+  .add('with keepViewsMounted and fillParent', () => <SmokeTest fillParent keepViewsMounted />)
+  .add('withTransitionContext', () => <SmokeTest animateHeight ViewSlider={ViewSliderWithTransitionContext} />)

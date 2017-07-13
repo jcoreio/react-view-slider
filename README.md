@@ -11,7 +11,6 @@ of a drilldown.
 # Table of Contents
 
 - [Usage](#usage)
-- [Using `react-jss` instead of `react-view-slider.css`](#using-react-jss-instead-of-react-view-slidercss)
 - [Props](#props)
 - [`withTransitionContext`](#withtransitioncontext)
 
@@ -26,81 +25,72 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import ViewSlider from 'react-view-slider'
 
-// make sure to include react-view-slider/lib/react-view-slider.css in the page.
-// for instance if you're using webpack:
-import 'react-view-slider/lib/react-view-slider.css'
-
-// This function renders the page at the given index.
+// This function renders the view at the given index.
 // At minimum you should pass the key, ref, style, and className props to the returned element.
-const renderPage = ({index, key, ref, style, className, active, transitionState}) => (
+const renderView = ({index, key, ref, style, className, active, transitionState}) => (
   <div key={key} ref={ref} style={style} className={className}>
-    <h3>Page {index}</h3>
+    <h3>View {index}</h3>
     <p>I am {active ? 'active' : 'inactive'}</p>
     <p>transitionState: {transitionState}</p>
   </div>
 )
 
-// activePage specifies which page should currently be showing.  Whenever you change it, ViewSlider will make the
-// page at the new activePage horizontally slide into view.
+// activeView specifies which view should currently be showing.  Whenever you change it, ViewSlider will make the
+// view at the new activeView horizontally slide into view.
 
 ReactDOM.render(
   <ViewSlider
-      renderPage={renderPage}
-      numPages={3}
-      activePage={0}
+      renderView={renderView}
+      numViews={3}
+      activeView={0}
       animateHeight
   />,
   document.getElementById('root')
 )
 ```
 
-## Using `react-jss` instead of `react-view-slider.css`
-
-```js
-import React from 'react'
-import BaseViewSlider from 'react-view-slider'
-import viewSliderStyles from 'react-view-slider/lib/styles'
-import injectSheet from 'react-jss'
-
-const ViewSlider = injectSheet(viewSliderStyles)(BaseViewSlider)
-```
-
 ## Props
 
-##### `renderPage: (props: PageProps) => React.Element<any>` **(required)**
+##### `renderView: (props: ViewProps) => React.Element<any>` **(required)**
 
-This function renders each page.  `ViewSlider` will call it with the following `props`:
-* `index: number` - the index of the page (starting at 0)
+This function renders each view.  `ViewSlider` will call it with the following `props`:
+* `index: number` - the index of the view (starting at 0)
 * `key: number` - the key you should pass to the returned element
 * `ref: (c: HTMLElement) => any` - the ref you should pass to the returned element
 * `style: Object` - the style you should pass to the returned element
-* `className: string` - the className you should pass to the returned element
-* `active: boolean` - whether the page should currently be showing
-* `transitionState: 'in' | 'out' | 'entering' | 'leaving'` - the page's transition state
+* `active: boolean` - whether the view should currently be showing
+* `transitionState: 'in' | 'out' | 'entering' | 'leaving'` - the view's transition state
 
 At minimum you should pass the `key`, `ref`, `style`, and `className` props to the returned element.
 
-##### `numPages: number` **(required)**
+##### `numViews: number` **(required)**
 
-The number of pages present.  `ViewSlider` will only render all pages when transitioning; when idle, it will
-only render the active page.
+The number of views present.  `ViewSlider` will only render all views when transitioning; when idle, it will
+only render the active view.
 
-##### `activePage: number` **(required)**
+##### `activeView: number` **(required)**
 
-The index of the page that should be showing.  Whenever you change this, `ViewSlider` will animate a horizontal slide
-transition to the page at the new index.
+The index of the view that should be showing.  Whenever you change this, `ViewSlider` will animate a horizontal slide
+transition to the view at the new index.
+
+##### `keepViewsMounted: boolean` (default: `false`)
+
+If `true`, `ViewSlider` will keep all views mounted after transitioning, not just the active view.
+You may want to use this if there is a noticeable lag while other views mount at the beginning of a transition.
+However, it disables height animation and will cause the height of `ViewSlider` to be the max of all views' heights,
+so you will get best results if you also use `fillParent={true}`.
 
 ##### `animateHeight: boolean` (default: `true`)
 
-If truthy, `ViewSlider` will animate its height to match the height of the page at `activePage`.
+If truthy, `ViewSlider` will animate its height to match the height of the view at `activeView`.
 
 ##### `transitionDuration: number` (default: `500`)
 
-The duration of the transition between pages.
+The duration of the transition between views.
 
 ##### `transitionTimingFunction: string` (default: `'ease'`)
 
-The timing function for the transition between pages.
+The timing function for the transition between views.
 
 ##### `prefixer: Prefixer`
 
@@ -108,7 +98,7 @@ If given, overrides the `inline-style-prefixer` used to autoprefix inline styles
 
 ##### `fillParent: boolean` (default: `false`)
 
-If truthy, `ViewSlider` will use absolute positioning on itself and its pages to fill its parent element.
+If truthy, `ViewSlider` will use absolute positioning on itself and its views to fill its parent element.
 
 ##### `className: string`
 
@@ -126,16 +116,13 @@ Any extra class names to add to the inner "viewport" element.
 
 Extra inline styles to add to the inner "viewport" element.
 
-##### `classes: {root: string, viewport: string, fillParent: string, page: string}`
+##### `rootRef: (node: ?HTMLDivElement) => any`
 
-The `className`s for the various elements `ViewSlider` renders:
-- `root` is the root `div`
-- `viewport` is the `div` inside `root` that animates horizontally
-- `fillParent` is the `className` applied to the root `div` if the `fillParent` property is `true`
-- `page` is the `className` passed to `renderPage`
+The `ref` to pass to the root `<div>` element rendered by `ViewSlider`.
 
-By default, they match those in `lib/react-view-slider.css`.
-Otherwise, you can [use `react-jss` to inject `classes`](#using-react-jss-instead-of-react-view-slidercss).
+##### `viewportRef: (node: ?HTMLDivElement) => any`
+
+The `ref` to pass to the viewport `<div>` element rendered inside the root `<div>` by `ViewSlider`.
 
 ## `withTransitionContext`
 
@@ -143,7 +130,7 @@ Otherwise, you can [use `react-jss` to inject `classes`](#using-react-jss-instea
 import ViewSlider from 'react-view-slider/lib/withTransitionContext'
 ```
 
-This works exactly like `ViewSlider` except that it renders its pages within a `TransitionContext` component from
+This works exactly like `ViewSlider` except that it renders its views within a `TransitionContext` component from
 `react-transition-context` with the given `transitionState`.  This is useful for doing things like focusing an `<input>`
-element after one of the pages has transitioned in.
+element after one of the views has transitioned in.
 
