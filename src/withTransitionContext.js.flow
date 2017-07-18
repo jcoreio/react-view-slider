@@ -13,20 +13,19 @@ export type ViewProps = {
   style: Object,
   ref: (element: HTMLElement) => any,
 }
-
 export type Props = {
   activeView: number,
   numViews: number,
   renderView: (props: ViewProps) => React.Element<any>,
-  animateHeight: boolean,
-  transitionDuration: number,
-  transitionTimingFunction: string,
-  prefixer: Prefixer,
+  animateHeight?: boolean,
+  transitionTimeout?: number,
+  transitionTimingFunction?: string,
+  prefixer?: Prefixer,
   fillParent?: boolean,
   className?: string,
-  style: Object,
+  style?: Object,
   viewportClassName?: string,
-  viewportStyle: Object,
+  viewportStyle?: Object,
 }
 
 declare export default class ViewSliderWithTransitionContext extends Component<void, Props, void> {
