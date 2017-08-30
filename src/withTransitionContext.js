@@ -21,7 +21,7 @@ export type Props = {
   numViews: number,
   renderView: (props: ViewProps) => React.Element<any>,
   animateHeight?: boolean,
-  transitionTimeout?: number,
+  transitionDuration?: number,
   transitionTimingFunction?: string,
   prefixer?: Prefixer,
   fillParent?: boolean,

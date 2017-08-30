@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import ViewSlider from '../src'
 import ViewSliderWithTransitionContext from '../src/withTransitionContext'
+import SimpleViewSliderWithTransitionContext from '../src/simpleWithTransitionContext'
 import {TransitionListener} from 'react-transition-context'
 import Prefixer from 'inline-style-prefixer'
 import getNodeDimensions from 'get-node-dimensions'
@@ -95,7 +96,7 @@ class SmokeTest extends React.Component {
       >
         <h3>Child {index}</h3>
         <input type="text" ref={c => this.inputRefs[index] = c} />
-        {this.props.ViewSlider === ViewSliderWithTransitionContext &&
+        {this.props.useTransitionListener &&
           <TransitionListener didComeIn={() => this.viewDidComeIn(index)} />
         }
       </div>
@@ -103,8 +104,41 @@ class SmokeTest extends React.Component {
   }
 
   render(): React.Element<any> {
-    const {fillParent, animateHeight, keepViewsMounted} = this.props
+    const {fillParent, animateHeight, keepViewsMounted, simple} = this.props
     const SliderComp = this.props.ViewSlider || ViewSlider
+
+    const slider = simple
+      ? (
+        <SliderComp
+            fillParent={fillParent}
+            animateHeight={Boolean(animateHeight)}
+            keepViewsMounted={Boolean(keepViewsMounted)}
+            activeView={this.state.activeView}
+            numViews={smokeTestViews.length}
+            renderView={this.renderView}
+            measureHeight={node => getNodeDimensions(node, {margin: true}).height}
+        >
+          {this.renderView({
+            index: this.state.activeView,
+            key: this.state.activeView,
+            transitionState: 'in',
+            className: '',
+            style: {},
+            ref: c => {},
+          })}
+        </SliderComp>
+      )
+      : (
+        <SliderComp
+            fillParent={fillParent}
+            animateHeight={Boolean(animateHeight)}
+            keepViewsMounted={Boolean(keepViewsMounted)}
+            activeView={this.state.activeView}
+            numViews={smokeTestViews.length}
+            renderView={this.renderView}
+            measureHeight={node => getNodeDimensions(node, {margin: true}).height}
+        />
+      )
 
     return (
       <div style={fillParent ? styles.fillParent.root : {}}>
@@ -114,15 +148,7 @@ class SmokeTest extends React.Component {
           )}
         </div>
         <div style={fillParent ? styles.fillParent.content : {}}>
-          <SliderComp
-              fillParent={fillParent}
-              animateHeight={Boolean(animateHeight)}
-              keepViewsMounted={Boolean(keepViewsMounted)}
-              activeView={this.state.activeView}
-              numViews={smokeTestViews.length}
-              renderView={this.renderView}
-              measureHeight={node => getNodeDimensions(node, {margin: true}).height}
-          />
+          {slider}
         </div>
       </div>
     )
@@ -136,4 +162,5 @@ storiesOf('react-view-slider', module)
   .add('with margins', () => <SmokeTest animateHeight margins />)
   .add('with keepViewsMounted', () => <SmokeTest animateHeight keepViewsMounted />)
   .add('with keepViewsMounted and fillParent', () => <SmokeTest fillParent keepViewsMounted />)
-  .add('withTransitionContext', () => <SmokeTest animateHeight ViewSlider={ViewSliderWithTransitionContext} />)
+  .add('withTransitionContext', () => <SmokeTest animateHeight useTransitionListener ViewSlider={ViewSliderWithTransitionContext} />)
+  .add('simpleWithTransitionContext', () => <SmokeTest animateHeight simple useTransitionListener ViewSlider={SimpleViewSliderWithTransitionContext} />)

@@ -1,21 +1,23 @@
 import React from 'react'
 import ViewSlider from '../src'
 import ViewSliderWithTransitionContext from '../src/withTransitionContext'
+import SimpleViewSlider from '../src/simple'
+import SimpleViewSliderWithTransitionContext from '../src/simpleWithTransitionContext'
 import {mount} from 'enzyme'
 import {expect} from 'chai'
 import sinon from 'sinon'
 
 import {TransitionListener} from 'react-transition-context'
 
-describe('ViewSlider', () => {
-  let clock
-  beforeEach(() => {
-    clock = sinon.useFakeTimers()
-  })
-  afterEach(() => {
-    clock.restore()
-  })
+let clock
+beforeEach(() => {
+  clock = sinon.useFakeTimers()
+})
+afterEach(() => {
+  clock.restore()
+})
 
+describe('ViewSlider', () => {
   it('single transition works', () => {
     const renderView = ({index, key, style, className, ref}) => (
       <div
@@ -84,6 +86,7 @@ describe('ViewSlider', () => {
       expect(element.style.right).to.equal('0px')
       expect(element.style.bottom).to.equal('0px')
     }
+
     expectHasFillStyle(root)
     expectHasFillStyle(viewport)
     expectHasFillStyle(views[0], '0%')
@@ -211,6 +214,78 @@ describe('ViewSlider', () => {
     expect(views[2].scrollTop).to.equal(800)
     comp.setProps({activeView: 2})
     expect(views[2].scrollTop).to.equal(0)
+
+    comp.unmount()
+  })
+})
+
+describe('SimpleViewSlider', () => {
+  it('single transition works', () => {
+    const comp = mount(
+      <SimpleViewSlider>
+        <div key={0}>
+          Child 0
+        </div>
+      </SimpleViewSlider>
+    )
+
+    expect(comp.text()).to.equal('Child 0')
+
+    comp.setProps({children: (
+      <div key={1}>
+        Child 1
+      </div>
+    )})
+
+    expect(comp.text()).to.equal('Child 0Child 1')
+    clock.tick(1000)
+    expect(comp.text()).to.equal('Child 1')
+
+    comp.unmount()
+  })
+  it('withTransitionContext works', () => {
+    const inputs = []
+
+    class View extends React.Component {
+      input = null
+
+      didComeIn = () => {
+        if (this.input) this.input.focus()
+      }
+
+      render() {
+        const {index} = this.props
+        return (
+          <div>
+            Child {index}
+            <input type="text" ref={c => {
+              this.input = c
+              inputs[index] = c
+            }}
+            />
+            <TransitionListener didComeIn={this.didComeIn} />
+          </div>
+        )
+      }
+    }
+
+    const comp = mount(
+      <SimpleViewSliderWithTransitionContext>
+        <View key={0} index={0} />
+      </SimpleViewSliderWithTransitionContext>
+    )
+
+    expect(comp.text()).to.equal('Child 0')
+    expect(document.activeElement).to.equal(inputs[0])
+
+    comp.setProps({children: <View key={1} index={1} />})
+    expect(comp.text()).to.equal('Child 0Child 1')
+    clock.tick(200)
+    comp.setProps({children: <View key={2} index={2} />})
+    expect(comp.text()).to.equal('Child 0Child 1Child 2')
+    clock.tick(1000)
+    expect(comp.text()).to.equal('Child 2')
+    expect(document.activeElement).to.equal(inputs[2])
 
     comp.unmount()
   })

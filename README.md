@@ -13,6 +13,7 @@ of a drilldown.
 - [Usage](#usage)
 - [Props](#props)
 - [`withTransitionContext`](#withtransitioncontext)
+- [`SimpleViewSlider`](#simpleviewslider)
 
 ## Usage
 
@@ -133,4 +134,37 @@ import ViewSlider from 'react-view-slider/lib/withTransitionContext'
 This works exactly like `ViewSlider` except that it renders its views within a `TransitionContext` component from
 `react-transition-context` with the given `transitionState`.  This is useful for doing things like focusing an `<input>`
 element after one of the views has transitioned in.
+
+## `SimpleViewSlider`
+
+This is a wrapper for `ViewSlider` that takes a single child element.  It renders the `ViewSlider` with the child's key
+(converted to a number) as the `activeView` and caches past child elements by key.
+
+### Example
+
+```js
+import SimpleViewSlider from 'react-view-slider/lib/simple'
+
+ReactDOM.render(
+  <SimpleViewSlider>
+    <div key={0}>
+      This is view 0
+    </div>
+  </SimpleViewSlider>,
+  document.getElementById('root')
+)
+
+// Rendering a child with a different key will trigger the transition.
+ReactDOM.render(
+  <SimpleViewSlider>
+    <div key={1}>
+      This is view 1
+    </div>
+  </SimpleViewSlider>,
+  document.getElementById('root')
+)
+```
+
+If you want to use `SimpleViewSlider` with `react-transition-context`,
+use `react-view-slider/lib/simpleWithTransitionContext`.
 
