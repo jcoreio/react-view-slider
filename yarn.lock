@@ -5755,9 +5755,9 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
-react-transition-context@^1.0.0-beta9:
-  version "1.0.0-beta9"
-  resolved "https://registry.npmjs.org/react-transition-context/-/react-transition-context-1.0.0-beta9.tgz#6385b8bcc2abbdae21665dd55ecb7bdd861167ab"
+react-transition-context@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/react-transition-context/-/react-transition-context-1.0.0.tgz#73fc74dfb3d8d3c21b0b986a3c924f120ba3454e"
   dependencies:
     prop-types "^15.5.10"
 
