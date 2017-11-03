@@ -10,9 +10,7 @@
     "flow": "flow",
     "flow:coverage": "for file in src/**.js test/**.js; do echo $file; flow coverage $file; done",
     "flow:watch": "flow-watch -e js,js.flow,flowconfig --ignore lib/ --ignore node_modules/ --watch .flowconfig --watch src/ --watch test/",
-    "gen-flow-files": "flow gen-flow-files src/ --out-dir lib",
-    "copy-flow-files": "cd src; copy *.js.flow **/*.js.flow ../lib",
-    "build": "rimraf lib && babel src --out-dir lib && npm run copy-flow-files",
+    "build": "rimraf lib && babel src --out-dir lib && flow-copy-source -v src/ lib",
     "test": "NODE_ENV=production BABEL_ENV=test nyc --reporter=lcov --reporter=text mocha $npm_package_config_mocha",
     "test:watch": "mocha --watch $npm_package_config_mocha",
     "commitmsg": "validate-commit-msg",
@@ -65,7 +63,7 @@
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
-    "babel-plugin-flow-react-proptypes": "^2.2.1",
+    "babel-plugin-flow-react-proptypes": "^8.0.0",
     "babel-plugin-istanbul": "^4.0.0",
     "babel-plugin-transform-react-constant-elements": "^6.9.1",
     "babel-plugin-transform-runtime": "^6.22.0",
@@ -84,7 +82,7 @@
     "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-react": "^7.0.0",
     "eslint-watch": "^3.0.0",
-    "flow-bin": "^0.46.0",
+    "flow-bin": "^0.56.0",
     "flow-watch": "^1.1.0",
     "get-node-dimensions": "^1.2.0",
     "husky": "^0.13.1",
@@ -107,11 +105,12 @@
     "react": "0.14.x || ^15.0.0"
   },
   "dependencies": {
+    "flow-copy-source": "^1.2.1",
     "inline-style-prefixer": "^3.0.6",
     "lodash.range": "^3.2.0",
     "prop-types": "^15.0.0"
   },
   "optionalDependencies": {
-    "react-transition-context": "^1.0.0"
+    "react-transition-context": "^2.0.0"
   }
 }

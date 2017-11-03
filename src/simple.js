@@ -1,7 +1,7 @@
 /* @flow */
 /* eslint-env browser */
 
-import React from 'react'
+import * as React from 'react'
 import Prefixer from 'inline-style-prefixer'
 import ViewSlider from './index'
 
@@ -20,16 +20,16 @@ export type Props = {
   viewportClassName?: string,
   viewportStyle?: Object,
   measureHeight?: (node: HTMLElement) => number,
-  rootRef?: (node: ?HTMLDivElement) => any,
-  viewportRef?: (node: ?HTMLDivElement) => any,
+  rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
+  viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
 }
 
 export type State = {
-  views: Array<React.Element<any>>,
+  views: Array<React.Node>,
   activeView: number,
 }
 
-function defaultRenderView({index, key, style, ref}: ViewProps): React.Element<any> {
+function defaultRenderView({index, key, style, ref}: ViewProps): React.Element<'div'> {
   return (
     <div key={key} style={style} ref={ref}>
       {this.state.views[index]}
@@ -38,10 +38,11 @@ function defaultRenderView({index, key, style, ref}: ViewProps): React.Element<a
 }
 
 export function createSimpleViewSlider(
-  ViewSlider: ReactClass<ViewSliderProps>,
-  renderView: (props: ViewProps) => React.Element<any> = defaultRenderView
-): Class<React.Component<void, Props, State>> {
-  return class SimpleViewSlider extends React.Component<void, Props, State> {
+  ViewSlider: React.ComponentType<ViewSliderProps>,
+  renderView: (props: ViewProps) => React.Node = defaultRenderView
+): Class<React.Component<Props, State>> {
+  return class SimpleViewSlider extends React.Component<Props, State> {
+    static defaultProps: Props;
     state: State
 
     constructor(props: Props) {
@@ -71,7 +72,7 @@ export function createSimpleViewSlider(
 
     renderView = renderView.bind(this)
 
-    render(): React.Element<any> {
+    render(): React.Node {
       const {
         children, // eslint-disable-line no-unused-vars
         ...props

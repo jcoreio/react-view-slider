@@ -1,7 +1,7 @@
 /* @flow */
 /* eslint-env browser */
 
-import React, {Component} from 'react'
+import * as React from 'react'
 import Prefixer from 'inline-style-prefixer'
 import range from 'lodash.range'
 
@@ -13,7 +13,7 @@ export type ViewProps = {
   active: boolean,
   transitionState: TransitionState,
   style: Object,
-  ref: (element: HTMLElement) => any,
+  ref: (element: React.ElementRef<string>) => mixed,
 }
 
 export type DefaultProps = {
@@ -30,7 +30,7 @@ export type DefaultProps = {
 export type Props = {
   activeView: number,
   numViews: number,
-  renderView: (props: ViewProps) => React.Element<any>,
+  renderView: (props: ViewProps) => React.Node,
   keepViewsMounted: boolean,
   animateHeight: boolean,
   transitionDuration: number,
@@ -42,8 +42,8 @@ export type Props = {
   viewportClassName?: string,
   viewportStyle: Object,
   measureHeight: (node: HTMLElement) => number,
-  rootRef?: (node: ?HTMLDivElement) => any,
-  viewportRef?: (node: ?HTMLDivElement) => any,
+  rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
+  viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
 }
 
 export type State = {
@@ -69,7 +69,7 @@ const viewStyle = {
   width: '100%',
 }
 
-export default class ViewSlider extends Component<DefaultProps, Props, State> {
+export default class ViewSlider extends React.Component<Props, State> {
   static defaultProps = {
     animateHeight: true,
     transitionDuration: 500,
@@ -161,7 +161,7 @@ export default class ViewSlider extends Component<DefaultProps, Props, State> {
     return 'out'
   }
 
-  renderView: (index: number) => React.Element<any> = (index: number): React.Element<any> => {
+  renderView = (index: number): React.Node => {
     const {fillParent, prefixer, keepViewsMounted} = this.props
     const {activeView, transitioning} = this.state
 
@@ -192,18 +192,18 @@ export default class ViewSlider extends Component<DefaultProps, Props, State> {
     return animateHeight && !fillParent && !keepViewsMounted
   }
 
-  rootRef = (node: ?HTMLDivElement) => {
+  rootRef = (node: ?React.ElementRef<'div'>) => {
     this.root = node
     const {rootRef} = this.props
     if (rootRef) rootRef(node)
   }
-  viewportRef = (node: ?HTMLDivElement) => {
+  viewportRef = (node: ?React.ElementRef<'div'>) => {
     this.viewport = node
     const {viewportRef} = this.props
     if (viewportRef) viewportRef(node)
   }
 
-  render(): React.Element<any> {
+  render(): React.Element<'div'> {
     const {
       style, className, viewportClassName, viewportStyle, numViews, prefixer, fillParent,
       transitionDuration, transitionTimingFunction, keepViewsMounted

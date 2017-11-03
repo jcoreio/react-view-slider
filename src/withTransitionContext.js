@@ -1,6 +1,6 @@
 // @flow
 
-import React, {Component} from 'react'
+import * as React from 'react'
 import ViewSlider from './index'
 import TransitionContext from 'react-transition-context'
 import type {Prefixer} from 'inline-style-prefixer'
@@ -13,13 +13,13 @@ export type ViewProps = {
   active: boolean,
   transitionState: TransitionState,
   style: Object,
-  ref: (element: HTMLElement) => any,
+  ref: (element: React.ElementRef<string>) => mixed,
 }
 
 export type Props = {
   activeView: number,
   numViews: number,
-  renderView: (props: ViewProps) => React.Element<any>,
+  renderView: (props: ViewProps) => React.Node,
   animateHeight?: boolean,
   transitionDuration?: number,
   transitionTimingFunction?: string,
@@ -31,8 +31,8 @@ export type Props = {
   viewportStyle?: Object,
 }
 
-export default class ViewSliderWithTransitionContext extends Component<void, Props, void> {
-  renderView: (props: ViewProps) => React.Element<any> = (props: ViewProps): React.Element<any> => {
+export default class ViewSliderWithTransitionContext extends React.Component<Props> {
+  renderView = (props: ViewProps): React.Element<typeof TransitionContext> => {
     return (
       <TransitionContext key={props.key} transitionState={props.transitionState}>
         {this.props.renderView(props)}
@@ -40,7 +40,7 @@ export default class ViewSliderWithTransitionContext extends Component<void, Pro
     )
   }
 
-  render(): React.Element<any> {
+  render(): React.Element<typeof ViewSlider> {
     return (
       <ViewSlider {...this.props} renderView={this.renderView} />
     )
