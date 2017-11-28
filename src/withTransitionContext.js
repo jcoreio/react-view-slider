@@ -32,7 +32,8 @@ export type Props = {
 }
 
 export default class ViewSliderWithTransitionContext extends React.Component<Props> {
-  renderView = (props: ViewProps): React.Element<typeof TransitionContext> => {
+  static defaultProps: Props;
+  renderView = (props: ViewProps): React.Element<React.ComponentType<typeof TransitionContext>> => {
     return (
       <TransitionContext key={props.key} transitionState={props.transitionState}>
         {this.props.renderView(props)}

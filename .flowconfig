@@ -1,5 +1,6 @@
 [ignore]
 <PROJECT_ROOT>/lib/.*
+<PROJECT_ROOT>/node_modules/immutable/.*
 .*/node_modules/.*/tests?/.*\.json
 .*/node_modules/fbjs/.*
 .*/node_modules/jss/.*

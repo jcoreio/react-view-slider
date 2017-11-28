@@ -767,9 +767,9 @@ babel-plugin-dynamic-import-node@1.0.2:
     babel-template "^6.24.1"
     babel-types "^6.24.1"
 
-babel-plugin-flow-react-proptypes@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.npmjs.org/babel-plugin-flow-react-proptypes/-/babel-plugin-flow-react-proptypes-8.0.0.tgz#bcc8b3ce3b7ffa7d35ff99252d1980a6a028e503"
+babel-plugin-flow-react-proptypes@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.npmjs.org/babel-plugin-flow-react-proptypes/-/babel-plugin-flow-react-proptypes-9.1.1.tgz#276a55a82937892dffed65b53732bd55beef4af5"
   dependencies:
     babel-core "^6.25.0"
     babel-template "^6.25.0"
