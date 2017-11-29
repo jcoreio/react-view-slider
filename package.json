@@ -77,7 +77,8 @@
     "copy": "^0.3.0",
     "coveralls": "^2.11.16",
     "delay": "^2.0.0",
-    "enzyme": "^2.7.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "eslint": "^3.13.1",
     "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-react": "^7.0.0",
@@ -91,9 +92,9 @@
     "jsdom-global": "^3.0.2",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
     "react-hot-loader": "^3.0.0-beta.2",
     "react-transition-context": "^1.0.0",
     "rimraf": "^2.5.4",
@@ -102,13 +103,13 @@
     "validate-commit-msg": "^2.8.2"
   },
   "peerDependencies": {
-    "react": "0.14.x || ^15.0.0"
+    "react": "0.14.x || ^15.0.0 || ^16"
   },
   "dependencies": {
     "flow-copy-source": "^1.2.1",
     "inline-style-prefixer": "^3.0.6",
     "lodash.range": "^3.2.0",
-    "prop-types": "^15.0.0"
+    "prop-types": "^15.6.0"
   },
   "optionalDependencies": {
     "react-transition-context": "^2.0.0"
