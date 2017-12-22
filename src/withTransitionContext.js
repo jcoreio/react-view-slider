@@ -2,8 +2,8 @@
 
 import * as React from 'react'
 import ViewSlider from './index'
+import type {Props, DefaultProps} from './index'
 import TransitionContext from 'react-transition-context'
-import type {Prefixer} from 'inline-style-prefixer'
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
@@ -16,23 +16,8 @@ export type ViewProps = {
   ref: (element: React.ElementRef<string>) => mixed,
 }
 
-export type Props = {
-  activeView: number,
-  numViews: number,
-  renderView: (props: ViewProps) => React.Node,
-  animateHeight?: boolean,
-  transitionDuration?: number,
-  transitionTimingFunction?: string,
-  prefixer?: Prefixer,
-  fillParent?: boolean,
-  className?: string,
-  style?: Object,
-  viewportClassName?: string,
-  viewportStyle?: Object,
-}
-
 export default class ViewSliderWithTransitionContext extends React.Component<Props> {
-  static defaultProps: Props;
+  static defaultProps: DefaultProps = ViewSlider.defaultProps;
   renderView = (props: ViewProps): React.Element<React.ComponentType<typeof TransitionContext>> => {
     return (
       <TransitionContext key={props.key} transitionState={props.transitionState}>
