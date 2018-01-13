@@ -13,7 +13,7 @@ export type ViewProps = {
   active: boolean,
   transitionState: TransitionState,
   style: Object,
-  ref: (element: React.ElementRef<string>) => mixed,
+  ref: (element: ?React.ElementRef<string>) => mixed,
 }
 
 export type DefaultProps = {
@@ -90,7 +90,7 @@ export default class ViewSlider extends React.Component<Props, State> {
   root: ?HTMLDivElement
   viewport: ?HTMLDivElement
   views: Array<?HTMLElement> = []
-  timeouts: {[name: string]: number} = {}
+  timeouts: {[name: string]: any} = {}
 
   measureHeight = (node: ?HTMLElement): ?number => {
     if (!node) return null
@@ -238,15 +238,15 @@ export default class ViewSlider extends React.Component<Props, State> {
 
     return (
       <div
-          style={prefixer.prefix(finalOuterStyle)}
-          className={className}
-          ref={this.rootRef}
+        style={prefixer.prefix(finalOuterStyle)}
+        className={className}
+        ref={this.rootRef}
       >
         <div
-            className={viewportClassName}
-            style={prefixer.prefix(finalViewportStyle)}
-            ref={this.viewportRef}
-            onTransitionEnd={this.onTransitionEnd}
+          className={viewportClassName}
+          style={prefixer.prefix(finalViewportStyle)}
+          ref={this.viewportRef}
+          onTransitionEnd={this.onTransitionEnd}
         >
           {views}
         </div>

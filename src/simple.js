@@ -80,10 +80,10 @@ export function createSimpleViewSlider(
       const {activeView, views} = this.state
       return (
         <ViewSlider
-            {...props}
-            renderView={this.renderView}
-            numViews={views.length}
-            activeView={activeView}
+          {...props}
+          renderView={this.renderView}
+          numViews={views.length}
+          activeView={activeView}
         />
       )
     }

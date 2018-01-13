@@ -73,13 +73,13 @@ class SmokeTest extends React.Component {
 
     if (this.props.fillParent) {
       return (
-         <div
-             key={key}
-             data-transition-state={transitionState}
-             className={className}
-             ref={ref}
-             style={style}
-         >
+        <div
+          key={key}
+          data-transition-state={transitionState}
+          className={className}
+          ref={ref}
+          style={style}
+        >
           <div style={finalStyle}>
             View {index}
           </div>
@@ -88,11 +88,11 @@ class SmokeTest extends React.Component {
     }
     return (
       <div
-          key={key}
-          data-transition-state={transitionState}
-          className={className}
-          ref={ref}
-          style={{...style, ...finalStyle}}
+        key={key}
+        data-transition-state={transitionState}
+        className={className}
+        ref={ref}
+        style={{...style, ...finalStyle}}
       >
         <h3>Child {index}</h3>
         <input type="text" ref={c => this.inputRefs[index] = c} />
@@ -110,13 +110,13 @@ class SmokeTest extends React.Component {
     const slider = simple
       ? (
         <SliderComp
-            fillParent={fillParent}
-            animateHeight={Boolean(animateHeight)}
-            keepViewsMounted={Boolean(keepViewsMounted)}
-            activeView={this.state.activeView}
-            numViews={smokeTestViews.length}
-            renderView={this.renderView}
-            measureHeight={node => getNodeDimensions(node, {margin: true}).height}
+          fillParent={fillParent}
+          animateHeight={Boolean(animateHeight)}
+          keepViewsMounted={Boolean(keepViewsMounted)}
+          activeView={this.state.activeView}
+          numViews={smokeTestViews.length}
+          renderView={this.renderView}
+          measureHeight={node => getNodeDimensions(node, {margin: true}).height}
         >
           {this.renderView({
             index: this.state.activeView,
@@ -130,13 +130,13 @@ class SmokeTest extends React.Component {
       )
       : (
         <SliderComp
-            fillParent={fillParent}
-            animateHeight={Boolean(animateHeight)}
-            keepViewsMounted={Boolean(keepViewsMounted)}
-            activeView={this.state.activeView}
-            numViews={smokeTestViews.length}
-            renderView={this.renderView}
-            measureHeight={node => getNodeDimensions(node, {margin: true}).height}
+          fillParent={fillParent}
+          animateHeight={Boolean(animateHeight)}
+          keepViewsMounted={Boolean(keepViewsMounted)}
+          activeView={this.state.activeView}
+          numViews={smokeTestViews.length}
+          renderView={this.renderView}
+          measureHeight={node => getNodeDimensions(node, {margin: true}).height}
         />
       )
 

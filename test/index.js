@@ -26,13 +26,13 @@ describe('ViewSlider', () => {
   it('single transition works', () => {
     const renderView = ({index, key, style, className, ref}) => (
       <div
-          key={key}
-          ref={ref}
-          className={className}
-          style={{
-            ...style,
-            height: (index + 1) * 100,
-          }}
+        key={key}
+        ref={ref}
+        className={className}
+        style={{
+          ...style,
+          height: (index + 1) * 100,
+        }}
       >
         Child {index}
       </div>
@@ -57,16 +57,16 @@ describe('ViewSlider', () => {
 
     const renderView = ({index, key, style, className, ref}) => (
       <div
-          key={key}
-          ref={c => {
-            ref(c)
-            views[index] = c
-          }}
-          className={className}
-          style={{
-            ...style,
-            height: (index + 1) * 100,
-          }}
+        key={key}
+        ref={c => {
+          ref(c)
+          views[index] = c
+        }}
+        className={className}
+        style={{
+          ...style,
+          height: (index + 1) * 100,
+        }}
       >
         Child {index}
       </div>
@@ -75,12 +75,12 @@ describe('ViewSlider', () => {
     let root, viewport
     const comp = mount(
       <ViewSlider
-          rootRef={c => root = c}
-          viewportRef={c => viewport = c}
-          fillParent
-          numViews={3}
-          renderView={renderView}
-          activeView={0}
+        rootRef={c => root = c}
+        viewportRef={c => viewport = c}
+        fillParent
+        numViews={3}
+        renderView={renderView}
+        activeView={0}
       />
     )
 
@@ -104,13 +104,13 @@ describe('ViewSlider', () => {
   it('multiple transitions work', () => {
     const renderView = ({index, key, style, className, ref}) => (
       <div
-          key={key}
-          ref={ref}
-          className={className}
-          style={{
-            ...style,
-            height: index * 100,
-          }}
+        key={key}
+        ref={ref}
+        className={className}
+        style={{
+          ...style,
+          height: index * 100,
+        }}
       >
         Child {index}
       </div>
@@ -146,11 +146,11 @@ describe('ViewSlider', () => {
         const {index, style, innerRef} = this.props
         return (
           <div
-              ref={innerRef}
-              style={{
-                ...style,
-                height: index * 100,
-              }}
+            ref={innerRef}
+            style={{
+              ...style,
+              height: index * 100,
+            }}
           >
             Child {index}
             <input type="text" ref={c => {
@@ -189,16 +189,16 @@ describe('ViewSlider', () => {
 
     const renderView = ({index, key, style, ref}) => (
       <div
-          key={key}
-          ref={c => {
-            ref(c)
-            views[index] = c
-          }}
-          className=".view"
-          style={{
-            ...style,
-            height: (index + 1) * 1000,
-          }}
+        key={key}
+        ref={c => {
+          ref(c)
+          views[index] = c
+        }}
+        className=".view"
+        style={{
+          ...style,
+          height: (index + 1) * 1000,
+        }}
       >
         Child {index}
       </div>
@@ -206,11 +206,11 @@ describe('ViewSlider', () => {
 
     const comp = mount(
       <ViewSlider
-          fillParent
-          keepViewsMounted
-          numViews={3}
-          renderView={renderView}
-          activeView={0}
+        fillParent
+        keepViewsMounted
+        numViews={3}
+        renderView={renderView}
+        activeView={0}
       />
     )
     expect(comp.text()).to.equal('Child 0Child 1Child 2')

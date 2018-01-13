@@ -13,7 +13,7 @@ export type ViewProps = {
   active: boolean,
   transitionState: TransitionState,
   style: Object,
-  ref: (element: React.ElementRef<string>) => mixed,
+  ref: (element: ?React.ElementRef<string>) => mixed,
 }
 
 export default class ViewSliderWithTransitionContext extends React.Component<Props> {
