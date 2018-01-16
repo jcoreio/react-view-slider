@@ -7298,7 +7298,7 @@ react-test-renderer@^16.0.0-0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-transition-context@^2.0.1:
+react-transition-context@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/react-transition-context/-/react-transition-context-2.0.1.tgz#6e42418a6b418ec81a95f000a31d28f0aa717cf9"
   dependencies:
