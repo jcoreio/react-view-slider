@@ -1,3 +1,5 @@
+/* eslint-env commonjs */
+
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import ViewSlider from '../src'

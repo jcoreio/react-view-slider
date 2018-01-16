@@ -1,18 +1,14 @@
-import React from 'react'
+import * as React from 'react'
+import {describe, it} from 'mocha'
+import {mount} from 'enzyme'
+import {expect} from 'chai'
+import sinon from 'sinon'
+import {TransitionListener} from 'react-transition-context'
+
 import ViewSlider from '../src'
 import ViewSliderWithTransitionContext from '../src/withTransitionContext'
 import SimpleViewSlider from '../src/simple'
 import SimpleViewSliderWithTransitionContext from '../src/simpleWithTransitionContext'
-import {mount} from 'enzyme'
-import {configure} from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-configure({ adapter: new Adapter() })
-
-
-import {expect} from 'chai'
-import sinon from 'sinon'
-
-import {TransitionListener} from 'react-transition-context'
 
 let clock
 beforeEach(() => {
