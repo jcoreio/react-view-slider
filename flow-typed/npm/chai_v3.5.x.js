@@ -1,5 +1,5 @@
-// flow-typed signature: 7068b99e72a71ca87a69bd3b2125d629
-// flow-typed version: 2830a5feed/chai_v3.5.x/flow_>=v0.15.0
+// flow-typed signature: f80f981d039947b3f29f0f437061852a
+// flow-typed version: da30fe6876/chai_v3.5.x/flow_>=v0.25.0
 
 declare module "chai" {
   declare type ExpectChain<T> = {
