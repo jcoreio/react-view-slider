@@ -165,7 +165,7 @@ export default class ViewSlider extends React.Component<Props, State> {
     const {fillParent, prefixer, keepViewsMounted} = this.props
     const {activeView, transitioning} = this.state
 
-    const style = {...viewStyle}
+    const style: Object = {...viewStyle}
     if (fillParent) {
       Object.assign(style, fillStyle)
       style.overflow = 'auto'

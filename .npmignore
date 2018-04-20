@@ -1,6 +1,5 @@
 .babelrc
 .eslintrc
-.flowconfig
 .nyc_output
 .storybook
 .travis.yml
@@ -10,3 +9,10 @@ test
 stories
 scripts
 storybook-static
+.eslintcache
+.idea
+solano.yml
+renovate.json
+commitlint.config.js
+flow-typed
+
