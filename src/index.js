@@ -3,7 +3,7 @@
 
 import * as React from 'react'
 import Prefixer from 'inline-style-prefixer'
-import range from 'lodash.range'
+import { range } from "lodash"
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
