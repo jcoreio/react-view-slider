@@ -57,9 +57,9 @@ export function createSimpleViewSlider(
       }
     }
 
-    componentWillReceiveProps(nextProps: Props) {
-      if (nextProps.children !== this.props.children) {
-        const child = React.Children.only(nextProps.children)
+    componentDidUpdate(prevProps: Props) {
+      if (prevProps.children !== this.props.children) {
+        const child = React.Children.only(this.props.children)
         const activeView = parseInt(child.key)
         const views = [...this.state.views]
         views[activeView] = child
@@ -91,4 +91,3 @@ export function createSimpleViewSlider(
 }
 
 export default createSimpleViewSlider(ViewSlider)
-
