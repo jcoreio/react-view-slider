@@ -6,14 +6,13 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![npm version](https://badge.fury.io/js/react-view-slider.svg)](https://badge.fury.io/js/react-view-slider)
 
-Not another carousel; a simpler component that animates horizontal slide transitions between steps of a wizard or levels
-of a drilldown.
+Not another carousel; animates horizontal slide transitions between steps of
+a form or levels of a drilldown.
 
 # Table of Contents
 
 - [Usage](#usage)
 - [Props](#props)
-- [`withTransitionContext`](#withtransitioncontext)
 - [`SimpleViewSlider`](#simpleviewslider)
 
 ## Usage
@@ -28,17 +27,8 @@ import ReactDOM from 'react-dom'
 import ViewSlider from 'react-view-slider'
 
 // This function renders the view at the given index.
-// At minimum you should pass the key, ref, style, and className props to the returned element.
-const renderView = ({
-  index,
-  key,
-  ref,
-  style,
-  className,
-  active,
-  transitionState,
-}) => (
-  <div key={key} ref={ref} style={style} className={className}>
+const renderView = ({ index, active, transitionState }) => (
+  <div>
     <h3>View {index}</h3>
     <p>I am {active ? 'active' : 'inactive'}</p>
     <p>transitionState: {transitionState}</p>
@@ -61,18 +51,13 @@ ReactDOM.render(
 
 ## Props
 
-##### `renderView: (props: ViewProps) => React.Element<any>` **(required)**
+##### `renderView: (props: ViewProps) => React.Node` **(required)**
 
 This function renders each view. `ViewSlider` will call it with the following `props`:
 
 - `index: number` - the index of the view (starting at 0)
-- `key: number` - the key you should pass to the returned element
-- `ref: (c: HTMLElement) => any` - the ref you should pass to the returned element
-- `style: Object` - the style you should pass to the returned element
 - `active: boolean` - whether the view should currently be showing
 - `transitionState: 'in' | 'out' | 'entering' | 'leaving'` - the view's transition state
-
-At minimum you should pass the `key`, `ref`, `style`, and `className` props to the returned element.
 
 ##### `numViews: number` **(required)**
 
@@ -135,16 +120,6 @@ The `ref` to pass to the root `<div>` element rendered by `ViewSlider`.
 
 The `ref` to pass to the viewport `<div>` element rendered inside the root `<div>` by `ViewSlider`.
 
-## `withTransitionContext`
-
-```js
-import ViewSlider from 'react-view-slider/lib/withTransitionContext'
-```
-
-This works exactly like `ViewSlider` except that it renders its views within a `TransitionContext` component from
-`react-transition-context` with the given `transitionState`. This is useful for doing things like focusing an `<input>`
-element after one of the views has transitioned in.
-
 ## `SimpleViewSlider`
 
 This is a wrapper for `ViewSlider` that takes a single child element. It renders the `ViewSlider` with the child's key
@@ -170,6 +145,3 @@ ReactDOM.render(
   document.getElementById('root')
 )
 ```
-
-If you want to use `SimpleViewSlider` with `react-transition-context`,
-use `react-view-slider/lib/simpleWithTransitionContext`.

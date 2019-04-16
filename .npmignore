@@ -5,7 +5,8 @@
 !yarn.lock
 /lib
 /src
-/stories
+/demo
+/webpack.config.js
 /test
 /coverage
 /flow-typed

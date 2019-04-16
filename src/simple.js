@@ -19,7 +19,6 @@ export type Props = {
   style?: Object,
   viewportClassName?: string,
   viewportStyle?: Object,
-  measureHeight?: (node: HTMLElement) => number,
   rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
   viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
 }
@@ -29,17 +28,8 @@ export type State = {
   activeView: number,
 }
 
-function defaultRenderView({
-  index,
-  key,
-  style,
-  ref,
-}: ViewProps): React.Element<'div'> {
-  return (
-    <div key={key} style={style} ref={ref}>
-      {this.state.views[index]}
-    </div>
-  )
+function defaultRenderView({ index }: ViewProps): React.Element<'div'> {
+  return this.state.views[index]
 }
 
 export function createSimpleViewSlider(
