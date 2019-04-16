@@ -1,6 +1,9 @@
+.eslintcache
 .nyc_output
 coverage
+es
 node_modules
-lib
-storybook-static
 .eslintcache
+/*.js
+/*.js.flow
+!/.babelrc.js

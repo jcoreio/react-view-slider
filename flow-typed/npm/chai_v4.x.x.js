@@ -1,5 +1,5 @@
-// flow-typed signature: f80f981d039947b3f29f0f437061852a
-// flow-typed version: da30fe6876/chai_v3.5.x/flow_>=v0.25.0
+// flow-typed signature: 3d012055643ffc7325a13636ed48af8a
+// flow-typed version: f04d291d8b/chai_v4.x.x/flow_>=v0.25.0
 
 declare module "chai" {
   declare type ExpectChain<T> = {
@@ -21,36 +21,46 @@ declare module "chai" {
     deep: ExpectChain<T>,
     any: ExpectChain<T>,
     all: ExpectChain<T>,
+    own: ExpectChain<T>,
 
-    a: ExpectChain<T> & ((type: string) => ExpectChain<T>),
-    an: ExpectChain<T> & ((type: string) => ExpectChain<T>),
+    a: ExpectChain<T> & ((type: string, message?: string) => ExpectChain<T>),
+    an: ExpectChain<T> & ((type: string, message?: string) => ExpectChain<T>),
 
-    include: ExpectChain<T> & ((value: mixed) => ExpectChain<T>),
-    includes: ExpectChain<T> & ((value: mixed) => ExpectChain<T>),
-    contain: ExpectChain<T> & ((value: mixed) => ExpectChain<T>),
-    contains: ExpectChain<T> & ((value: mixed) => ExpectChain<T>),
+    include: ExpectChain<T> & ((value: mixed, message?: string) => ExpectChain<T>),
+    includes: ExpectChain<T> & ((value: mixed, message?: string) => ExpectChain<T>),
+    contain: ExpectChain<T> & ((value: mixed, message?: string) => ExpectChain<T>),
+    contains: ExpectChain<T> & ((value: mixed, message?: string) => ExpectChain<T>),
 
-    eql: (value: T) => ExpectChain<T>,
-    equal: (value: T) => ExpectChain<T>,
-    equals: (value: T) => ExpectChain<T>,
+    eq: (value: T, message?: string) => ExpectChain<T>,
+    eql: (value: T, message?: string) => ExpectChain<T>,
+    equal: (value: T, message?: string) => ExpectChain<T>,
+    equals: (value: T, message?: string) => ExpectChain<T>,
 
-    above: (value: T & number) => ExpectChain<T>,
-    least: (value: T & number) => ExpectChain<T>,
-    below: (value: T & number) => ExpectChain<T>,
-    most: (value: T & number) => ExpectChain<T>,
-    within: (start: T & number, finish: T & number) => ExpectChain<T>,
+    above: (value: T & number, message?: string) => ExpectChain<T>,
+    gt: (value: T & number, message?: string) => ExpectChain<T>,
+    greaterThan: (value: T & number, message?: string) => ExpectChain<T>,
+    least: (value: T & number, message?: string) => ExpectChain<T>,
+    below: (value: T & number, message?: string) => ExpectChain<T>,
+    lessThan: (value: T & number, message?: string) => ExpectChain<T>,
+    lt: (value: T & number, message?: string) => ExpectChain<T>,
+    most: (value: T & number, message?: string) => ExpectChain<T>,
+    within: (start: T & number, finish: T & number, message?: string) => ExpectChain<T>,
 
-    instanceof: (constructor: mixed) => ExpectChain<T>,
+    instanceof: (constructor: mixed, message?: string) => ExpectChain<T>,
+    nested: ExpectChain<T>,
     property: <P>(
       name: string,
-      value?: P
+      value?: P,
+      message?: string
     ) => ExpectChain<P> & ((name: string) => ExpectChain<mixed>),
 
-    length: (value: number) => ExpectChain<T> | ExpectChain<number>,
-    lengthOf: (value: number) => ExpectChain<T>,
+    length: (value: number, message?: string) => ExpectChain<T> | ExpectChain<number>,
+    lengthOf: (value: number, message?: string) => ExpectChain<T>,
 
-    match: (regex: RegExp) => ExpectChain<T>,
-    string: (string: string) => ExpectChain<T>,
+    match: (regex: RegExp, message?: string) => ExpectChain<T>,
+    matches: (regex: RegExp, message?: string) => ExpectChain<T>,
+
+    string: (string: string, message?: string) => ExpectChain<T>,
 
     key: (key: string) => ExpectChain<T>,
     keys: (
@@ -64,19 +74,22 @@ declare module "chai" {
       msg?: string
     ) => ExpectChain<T>,
 
-    respondTo: (method: string) => ExpectChain<T>,
+    respondTo: (method: string, message?: string) => ExpectChain<T>,
     itself: ExpectChain<T>,
 
-    satisfy: (method: (value: T) => boolean) => ExpectChain<T>,
+    satisfy: (method: (value: T) => boolean, message?: string) => ExpectChain<T>,
 
-    closeTo: (expected: T & number, delta: number) => ExpectChain<T>,
+    closeTo: (expected: T & number, delta: number, message?: string) => ExpectChain<T>,
 
-    members: (set: mixed) => ExpectChain<T>,
-    oneOf: (list: Array<T>) => ExpectChain<T>,
+    members: (set: mixed, message?: string) => ExpectChain<T>,
+    oneOf: (list: Array<T>, message?: string) => ExpectChain<T>,
 
-    change: (obj: mixed, key: string) => ExpectChain<T>,
-    increase: (obj: mixed, key: string) => ExpectChain<T>,
-    decrease: (obj: mixed, key: string) => ExpectChain<T>,
+    change: (obj: mixed, key: string, message?: string) => ExpectChain<T>,
+    increase: (obj: mixed, key: string, message?: string) => ExpectChain<T>,
+    decrease: (obj: mixed, key: string, message?: string) => ExpectChain<T>,
+
+    by: (delta: number, message?: string) => ExpectChain<T>,
+    ordered: ExpectChain<T>,
 
     // dirty-chai
     ok: () => ExpectChain<T>,
@@ -90,6 +103,7 @@ declare module "chai" {
     extensible: () => ExpectChain<T>,
     sealed: () => ExpectChain<T>,
     frozen: () => ExpectChain<T>,
+    NaN: () => ExpectChain<T>,
 
     // chai-immutable
     size: (n: number) => ExpectChain<T>,
@@ -102,29 +116,52 @@ declare module "chai" {
     calledThrice: () => ExpectChain<T>,
     calledBefore: (spy: mixed) => ExpectChain<T>,
     calledAfter: (spy: mixed) => ExpectChain<T>,
+    calledImmediatelyBefore: (spy: mixed) => ExpectChain<T>,
+    calledImmediatelyAfter: (spy: mixed) => ExpectChain<T>,
     calledWith: (...args: Array<mixed>) => ExpectChain<T>,
+    calledOnceWith: (...args: Array<mixed>) => ExpectChain<T>,
     calledWithMatch: (...args: Array<mixed>) => ExpectChain<T>,
     calledWithExactly: (...args: Array<mixed>) => ExpectChain<T>,
+    calledOnceWithExactly: (...args: Array<mixed>) => ExpectChain<T>,
+    returned: (returnVal: mixed) => ExpectChain<T>,
+    alwaysReturned: (returnVal: mixed) => ExpectChain<T>,
 
     // chai-as-promised
     eventually: ExpectChain<T>,
     resolvedWith: (value: mixed) => Promise<mixed> & ExpectChain<T>,
     resolved: () => Promise<mixed> & ExpectChain<T>,
-    rejectedWith: (value: mixed) => Promise<mixed> & ExpectChain<T>,
+    rejectedWith: (
+      value: mixed,
+      errMsgMatcher?: RegExp | string,
+      msg?: string
+    ) => Promise<mixed> & ExpectChain<T>,
     rejected: () => Promise<mixed> & ExpectChain<T>,
     notify: (callback: () => mixed) => ExpectChain<T>,
+    fulfilled: () => Promise<mixed> & ExpectChain<T>,
 
     // chai-subset
-    containSubset: (obj: Object | Object[]) => ExpectChain<T>,
+    containSubset: (obj: {} | Array< {} >) => ExpectChain<T>,
 
     // chai-redux-mock-store
     dispatchedActions: (
-      actions: Array<Object | ((action: Object) => any)>
+      actions: Array<{} | ((action: {}) => any)>
     ) => ExpectChain<T>,
-    dispatchedTypes: (actions: Array<string>) => ExpectChain<T>
+    dispatchedTypes: (actions: Array<string>) => ExpectChain<T>,
+
+    // chai-enzyme
+    attr: (key: string, val?: any) => ExpectChain<T>,
+    data: (key: string, val?: any) => ExpectChain<T>,
+    prop: (key: string, val?: any) => ExpectChain<T>,
+    state: (key: string, val?: any) => ExpectChain<T>,
+    value: (val: string) => ExpectChain<T>,
+    className: (val: string) => ExpectChain<T>,
+    text: (val: string) => ExpectChain<T>,
+
+    // chai-karma-snapshot
+    matchSnapshot: (lang?: any, update?: boolean, msg?: any) => ExpectChain<T>
   };
 
-  declare function expect<T>(actual: T): ExpectChain<T>;
+  declare function expect<T>(actual: T, message?: string): ExpectChain<T>;
 
   declare function use(plugin: (chai: Object, utils: Object) => void): void;
 
@@ -139,6 +176,11 @@ declare module "chai" {
 
     static isOk(object: mixed, message?: string): void;
     static isNotOk(object: mixed, message?: string): void;
+
+    static empty(object: mixed, message?: string): void;
+    static isEmpty(object: mixed, message?: string): void;
+    static notEmpty(object: mixed, message?: string): void;
+    static isNotEmpty(object: mixed, message?: string): void;
 
     static equal(actual: mixed, expected: mixed, message?: string): void;
     static notEqual(actual: mixed, expected: mixed, message?: string): void;
@@ -191,8 +233,8 @@ declare module "chai" {
     static typeOf(val: mixed, type: string, msg?: string): void;
     static notTypeOf(val: mixed, type: string, msg?: string): void;
 
-    static instanceOf(val: mixed, constructor: Function, msg?: string): void;
-    static notInstanceOf(val: mixed, constructor: Function, msg?: string): void;
+    static instanceOf(val: mixed, constructor: Class< * >, msg?: string): void;
+    static notInstanceOf(val: mixed, constructor: Class< * >, msg?: string): void;
 
     static include(exp: string, inc: mixed, msg?: string): void;
     static include<T>(exp: Array<T>, inc: T, msg?: string): void;
@@ -248,6 +290,22 @@ declare module "chai" {
       errorMsgMatcher?: string | RegExp,
       msg?: string
     ): void;
+
+    static closeTo(
+      actual: number,
+      expected: number,
+      delta: number,
+      msg?: string
+    ): void;
+    static approximately(
+      actual: number,
+      expected: number,
+      delta: number,
+      msg?: string
+    ): void;
+
+    // chai-immutable
+    static sizeOf(val: mixed, length: number): void;
   }
 
   declare var config: {

@@ -1,9 +1,9 @@
 import * as React from 'react'
-import {describe, it} from 'mocha'
-import {mount} from 'enzyme'
-import {expect} from 'chai'
+import { describe, it } from 'mocha'
+import { mount } from 'enzyme'
+import { expect } from 'chai'
 import sinon from 'sinon'
-import {TransitionListener} from 'react-transition-context'
+import { TransitionListener } from 'react-transition-context'
 
 import ViewSlider from '../src'
 import ViewSliderWithTransitionContext from '../src/withTransitionContext'
@@ -20,7 +20,7 @@ afterEach(() => {
 
 describe('ViewSlider', () => {
   it('single transition works', () => {
-    const renderView = ({index, key, style, className, ref}) => (
+    const renderView = ({ index, key, style, className, ref }) => (
       <div
         key={key}
         ref={ref}
@@ -40,7 +40,7 @@ describe('ViewSlider', () => {
 
     expect(comp.text()).to.equal('Child 0')
 
-    comp.setProps({activeView: 1})
+    comp.setProps({ activeView: 1 })
 
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(1000)
@@ -51,7 +51,7 @@ describe('ViewSlider', () => {
   it('fillParent works', () => {
     const views = []
 
-    const renderView = ({index, key, style, className, ref}) => (
+    const renderView = ({ index, key, style, className, ref }) => (
       <div
         key={key}
         ref={c => {
@@ -71,8 +71,8 @@ describe('ViewSlider', () => {
     let root, viewport
     const comp = mount(
       <ViewSlider
-        rootRef={c => root = c}
-        viewportRef={c => viewport = c}
+        rootRef={c => (root = c)}
+        viewportRef={c => (viewport = c)}
         fillParent
         numViews={3}
         renderView={renderView}
@@ -92,13 +92,13 @@ describe('ViewSlider', () => {
     expectHasFillStyle(viewport)
     expectHasFillStyle(views[0], '0%')
 
-    comp.setProps({activeView: 1})
+    comp.setProps({ activeView: 1 })
     expectHasFillStyle(views[1], '100%')
 
     comp.unmount()
   })
   it('multiple transitions work', () => {
-    const renderView = ({index, key, style, className, ref}) => (
+    const renderView = ({ index, key, style, className, ref }) => (
       <div
         key={key}
         ref={ref}
@@ -118,10 +118,10 @@ describe('ViewSlider', () => {
 
     expect(comp.text()).to.equal('Child 0')
 
-    comp.setProps({activeView: 1})
+    comp.setProps({ activeView: 1 })
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(200)
-    comp.setProps({activeView: 2})
+    comp.setProps({ activeView: 2 })
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(1000)
     expect(comp.text()).to.equal('Child 2')
@@ -139,7 +139,7 @@ describe('ViewSlider', () => {
       }
 
       render() {
-        const {index, style, innerRef} = this.props
+        const { index, style, innerRef } = this.props
         return (
           <div
             ref={innerRef}
@@ -149,10 +149,12 @@ describe('ViewSlider', () => {
             }}
           >
             Child {index}
-            <input type="text" ref={c => {
-              this.input = c
-              inputs[index] = c
-            }}
+            <input
+              type="text"
+              ref={c => {
+                this.input = c
+                inputs[index] = c
+              }}
             />
             <TransitionListener didComeIn={this.didComeIn} />
           </div>
@@ -160,19 +162,23 @@ describe('ViewSlider', () => {
       }
     }
 
-    const renderView = ({ref, ...props}) => <View {...props} innerRef={ref} />
+    const renderView = ({ ref, ...props }) => <View {...props} innerRef={ref} />
 
     const comp = mount(
-      <ViewSliderWithTransitionContext numViews={3} renderView={renderView} activeView={0} />
+      <ViewSliderWithTransitionContext
+        numViews={3}
+        renderView={renderView}
+        activeView={0}
+      />
     )
 
     expect(comp.text()).to.equal('Child 0')
     expect(document.activeElement).to.equal(inputs[0])
 
-    comp.setProps({activeView: 1})
+    comp.setProps({ activeView: 1 })
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(200)
-    comp.setProps({activeView: 2})
+    comp.setProps({ activeView: 2 })
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(1000)
     expect(comp.text()).to.equal('Child 2')
@@ -183,7 +189,7 @@ describe('ViewSlider', () => {
   it('keepViewsMounted works', () => {
     const views = []
 
-    const renderView = ({index, key, style, ref}) => (
+    const renderView = ({ index, key, style, ref }) => (
       <div
         key={key}
         ref={c => {
@@ -213,7 +219,7 @@ describe('ViewSlider', () => {
 
     views[2].scrollTop = 800
     expect(views[2].scrollTop).to.equal(800)
-    comp.setProps({activeView: 2})
+    comp.setProps({ activeView: 2 })
     expect(views[2].scrollTop).to.equal(0)
 
     comp.unmount()
@@ -224,19 +230,13 @@ describe('SimpleViewSlider', () => {
   it('single transition works', () => {
     const comp = mount(
       <SimpleViewSlider>
-        <div key={0}>
-          Child 0
-        </div>
+        <div key={0}>Child 0</div>
       </SimpleViewSlider>
     )
 
     expect(comp.text()).to.equal('Child 0')
 
-    comp.setProps({children: (
-      <div key={1}>
-        Child 1
-      </div>
-    )})
+    comp.setProps({ children: <div key={1}>Child 1</div> })
 
     expect(comp.text()).to.equal('Child 0Child 1')
     clock.tick(1000)
@@ -255,14 +255,16 @@ describe('SimpleViewSlider', () => {
       }
 
       render() {
-        const {index} = this.props
+        const { index } = this.props
         return (
           <div>
             Child {index}
-            <input type="text" ref={c => {
-              this.input = c
-              inputs[index] = c
-            }}
+            <input
+              type="text"
+              ref={c => {
+                this.input = c
+                inputs[index] = c
+              }}
             />
             <TransitionListener didComeIn={this.didComeIn} />
           </div>
@@ -279,10 +281,10 @@ describe('SimpleViewSlider', () => {
     expect(comp.text()).to.equal('Child 0')
     expect(document.activeElement).to.equal(inputs[0])
 
-    comp.setProps({children: <View key={1} index={1} />})
+    comp.setProps({ children: <View key={1} index={1} /> })
     expect(comp.text()).to.equal('Child 0Child 1')
     clock.tick(200)
-    comp.setProps({children: <View key={2} index={2} />})
+    comp.setProps({ children: <View key={2} index={2} /> })
     expect(comp.text()).to.equal('Child 0Child 1Child 2')
     clock.tick(1000)
     expect(comp.text()).to.equal('Child 2')
@@ -291,4 +293,3 @@ describe('SimpleViewSlider', () => {
     comp.unmount()
   })
 })
-

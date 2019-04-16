@@ -1,13 +1,13 @@
 # react-view-slider
 
-[![Build Status](https://travis-ci.org/jcoreio/react-view-slider.svg?branch=master)](https://travis-ci.org/jcoreio/react-view-slider)
-[![Coverage Status](https://codecov.io/gh/jcoreio/react-view-slider/branch/master/graph/badge.svg)](https://codecov.io/gh/jcoreio/react-view-slider)
+[![CircleCI](https://circleci.com/gh/jcoreio/react-view-slider.svg?style=svg)](https://circleci.com/gh/jcoreio/react-view-slider)
+[![Coverage Status](https://codecov.io/gh/jcoreio/react-view-slider)](https://codecov.io/gh/jcoreio/react-view-slider)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm version](https://badge.fury.io/js/react-view-slider.svg)](https://badge.fury.io/js/react-view-slider)
 
 Not another carousel; a simpler component that animates horizontal slide transitions between steps of a wizard or levels
 of a drilldown.
-
 
 # Table of Contents
 
@@ -29,7 +29,15 @@ import ViewSlider from 'react-view-slider'
 
 // This function renders the view at the given index.
 // At minimum you should pass the key, ref, style, and className props to the returned element.
-const renderView = ({index, key, ref, style, className, active, transitionState}) => (
+const renderView = ({
+  index,
+  key,
+  ref,
+  style,
+  className,
+  active,
+  transitionState,
+}) => (
   <div key={key} ref={ref} style={style} className={className}>
     <h3>View {index}</h3>
     <p>I am {active ? 'active' : 'inactive'}</p>
@@ -42,10 +50,10 @@ const renderView = ({index, key, ref, style, className, active, transitionState}
 
 ReactDOM.render(
   <ViewSlider
-      renderView={renderView}
-      numViews={3}
-      activeView={0}
-      animateHeight
+    renderView={renderView}
+    numViews={3}
+    activeView={0}
+    animateHeight
   />,
   document.getElementById('root')
 )
@@ -55,24 +63,25 @@ ReactDOM.render(
 
 ##### `renderView: (props: ViewProps) => React.Element<any>` **(required)**
 
-This function renders each view.  `ViewSlider` will call it with the following `props`:
-* `index: number` - the index of the view (starting at 0)
-* `key: number` - the key you should pass to the returned element
-* `ref: (c: HTMLElement) => any` - the ref you should pass to the returned element
-* `style: Object` - the style you should pass to the returned element
-* `active: boolean` - whether the view should currently be showing
-* `transitionState: 'in' | 'out' | 'entering' | 'leaving'` - the view's transition state
+This function renders each view. `ViewSlider` will call it with the following `props`:
+
+- `index: number` - the index of the view (starting at 0)
+- `key: number` - the key you should pass to the returned element
+- `ref: (c: HTMLElement) => any` - the ref you should pass to the returned element
+- `style: Object` - the style you should pass to the returned element
+- `active: boolean` - whether the view should currently be showing
+- `transitionState: 'in' | 'out' | 'entering' | 'leaving'` - the view's transition state
 
 At minimum you should pass the `key`, `ref`, `style`, and `className` props to the returned element.
 
 ##### `numViews: number` **(required)**
 
-The number of views present.  `ViewSlider` will only render all views when transitioning; when idle, it will
+The number of views present. `ViewSlider` will only render all views when transitioning; when idle, it will
 only render the active view.
 
 ##### `activeView: number` **(required)**
 
-The index of the view that should be showing.  Whenever you change this, `ViewSlider` will animate a horizontal slide
+The index of the view that should be showing. Whenever you change this, `ViewSlider` will animate a horizontal slide
 transition to the view at the new index.
 
 ##### `keepViewsMounted: boolean` (default: `false`)
@@ -133,12 +142,12 @@ import ViewSlider from 'react-view-slider/lib/withTransitionContext'
 ```
 
 This works exactly like `ViewSlider` except that it renders its views within a `TransitionContext` component from
-`react-transition-context` with the given `transitionState`.  This is useful for doing things like focusing an `<input>`
+`react-transition-context` with the given `transitionState`. This is useful for doing things like focusing an `<input>`
 element after one of the views has transitioned in.
 
 ## `SimpleViewSlider`
 
-This is a wrapper for `ViewSlider` that takes a single child element.  It renders the `ViewSlider` with the child's key
+This is a wrapper for `ViewSlider` that takes a single child element. It renders the `ViewSlider` with the child's key
 (converted to a number) as the `activeView` and caches past child elements by key.
 
 ### Example
@@ -148,9 +157,7 @@ import SimpleViewSlider from 'react-view-slider/lib/simple'
 
 ReactDOM.render(
   <SimpleViewSlider>
-    <div key={0}>
-      This is view 0
-    </div>
+    <div key={0}>This is view 0</div>
   </SimpleViewSlider>,
   document.getElementById('root')
 )
@@ -158,9 +165,7 @@ ReactDOM.render(
 // Rendering a child with a different key will trigger the transition.
 ReactDOM.render(
   <SimpleViewSlider>
-    <div key={1}>
-      This is view 1
-    </div>
+    <div key={1}>This is view 1</div>
   </SimpleViewSlider>,
   document.getElementById('root')
 )
@@ -168,4 +173,3 @@ ReactDOM.render(
 
 If you want to use `SimpleViewSlider` with `react-transition-context`,
 use `react-view-slider/lib/simpleWithTransitionContext`.
-

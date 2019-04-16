@@ -3,7 +3,7 @@
 
 import * as React from 'react'
 import Prefixer from 'inline-style-prefixer'
-import { range } from "lodash"
+import { range } from 'lodash'
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
@@ -90,7 +90,7 @@ export default class ViewSlider extends React.Component<Props, State> {
   root: ?HTMLDivElement
   viewport: ?HTMLDivElement
   views: Array<?HTMLElement> = []
-  timeouts: {[name: string]: any} = {}
+  timeouts: { [name: string]: any } = {}
 
   measureHeight = (node: ?HTMLElement): ?number => {
     if (!node) return null
@@ -103,10 +103,13 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   componentDidUpdate() {
-    const {activeView, transitionDuration, keepViewsMounted} = this.props
+    const { activeView, transitionDuration, keepViewsMounted } = this.props
     let newState: ?$Shape<State>
 
-    if (activeView !== this.state.activeView && this.state.height === undefined) {
+    if (
+      activeView !== this.state.activeView &&
+      this.state.height === undefined
+    ) {
       if (keepViewsMounted) {
         // scroll all views except the current back to the top
         for (let i = 0; i < this.views.length; i++) {
@@ -115,10 +118,12 @@ export default class ViewSlider extends React.Component<Props, State> {
         }
       }
       // phase 1: set current height
-      newState = {height: this.measureHeight(this.views[this.state.activeView])}
+      newState = {
+        height: this.measureHeight(this.views[this.state.activeView]),
+      }
     } else if (this.state.height !== undefined && !this.state.transitioning) {
       // phase 2: enable transitions
-      newState = {transitioning: true}
+      newState = { transitioning: true }
     } else if (activeView !== this.state.activeView) {
       // phase 3: change height/activeView
       newState = {
@@ -133,7 +138,11 @@ export default class ViewSlider extends React.Component<Props, State> {
 
     this.setState(finalNewState, () => {
       if (finalNewState.activeView != null) {
-        this.setTimeout('onTransitionEnd', this.onTransitionEnd, transitionDuration)
+        this.setTimeout(
+          'onTransitionEnd',
+          this.onTransitionEnd,
+          transitionDuration
+        )
       }
     })
   }
@@ -153,8 +162,10 @@ export default class ViewSlider extends React.Component<Props, State> {
     for (let name in this.timeouts) clearTimeout(this.timeouts[name])
   }
 
-  getTransitionState: (childIndex: number) => TransitionState = (childIndex: number): TransitionState => {
-    const {activeView, prevActiveView} = this.state
+  getTransitionState: (childIndex: number) => TransitionState = (
+    childIndex: number
+  ): TransitionState => {
+    const { activeView, prevActiveView } = this.state
     if (prevActiveView == null) return childIndex === activeView ? 'in' : 'out'
     if (childIndex === activeView) return 'entering'
     if (childIndex === prevActiveView) return 'leaving'
@@ -162,10 +173,10 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   renderView = (index: number): React.Node => {
-    const {fillParent, prefixer, keepViewsMounted} = this.props
-    const {activeView, transitioning} = this.state
+    const { fillParent, prefixer, keepViewsMounted } = this.props
+    const { activeView, transitioning } = this.state
 
-    const style: Object = {...viewStyle}
+    const style: Object = { ...viewStyle }
     if (fillParent) {
       Object.assign(style, fillStyle)
       style.overflow = 'auto'
@@ -175,7 +186,7 @@ export default class ViewSlider extends React.Component<Props, State> {
     // when not transitioning, render empty placeholder divs before the active view to push it into the right
     // horizontal position
     if (!transitioning && activeView !== index && !keepViewsMounted) {
-      return <div key={index} style={prefixer.prefix(style)}></div>
+      return <div key={index} style={prefixer.prefix(style)} />
     }
     return this.props.renderView({
       index,
@@ -183,33 +194,41 @@ export default class ViewSlider extends React.Component<Props, State> {
       active: index === activeView,
       transitionState: this.getTransitionState(index),
       style: prefixer.prefix(style),
-      ref: c => this.views[index] = c,
+      ref: c => (this.views[index] = c),
     })
   }
 
   animateHeight = (): boolean => {
-    const {animateHeight, fillParent, keepViewsMounted} = this.props
+    const { animateHeight, fillParent, keepViewsMounted } = this.props
     return animateHeight && !fillParent && !keepViewsMounted
   }
 
   rootRef = (node: ?React.ElementRef<'div'>) => {
     this.root = node
-    const {rootRef} = this.props
+    const { rootRef } = this.props
     if (rootRef) rootRef(node)
   }
   viewportRef = (node: ?React.ElementRef<'div'>) => {
     this.viewport = node
-    const {viewportRef} = this.props
+    const { viewportRef } = this.props
     if (viewportRef) viewportRef(node)
   }
 
   render(): React.Element<'div'> {
     const {
-      style, className, viewportClassName, viewportStyle, numViews, prefixer, fillParent,
-      transitionDuration, transitionTimingFunction, keepViewsMounted
+      style,
+      className,
+      viewportClassName,
+      viewportStyle,
+      numViews,
+      prefixer,
+      fillParent,
+      transitionDuration,
+      transitionTimingFunction,
+      keepViewsMounted,
     } = this.props
     const animateHeight = this.animateHeight()
-    const {activeView, height, transitioning} = this.state
+    const { activeView, height, transitioning } = this.state
 
     const finalOuterStyle = {
       transitionProperty: 'height',
@@ -224,7 +243,9 @@ export default class ViewSlider extends React.Component<Props, State> {
       transform: `translateX(-${activeView * 100}%)`,
       whiteSpace: 'nowrap',
       minHeight: '100%',
-      transition: transitioning ? `transform ${transitionTimingFunction} ${transitionDuration}ms` : undefined,
+      transition: transitioning
+        ? `transform ${transitionTimingFunction} ${transitionDuration}ms`
+        : undefined,
       ...viewportStyle,
     }
     if (fillParent) {
@@ -234,7 +255,9 @@ export default class ViewSlider extends React.Component<Props, State> {
 
     // when not transitioning, render empty placeholder divs before the active view to push it into the right
     // horizontal position
-    const views = range(transitioning || keepViewsMounted ? numViews : activeView + 1).map(this.renderView)
+    const views = range(
+      transitioning || keepViewsMounted ? numViews : activeView + 1
+    ).map(this.renderView)
 
     return (
       <div
@@ -254,5 +277,3 @@ export default class ViewSlider extends React.Component<Props, State> {
     )
   }
 }
-
-

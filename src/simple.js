@@ -5,7 +5,7 @@ import * as React from 'react'
 import Prefixer from 'inline-style-prefixer'
 import ViewSlider from './index'
 
-import type {Props as ViewSliderProps, ViewProps} from './index'
+import type { Props as ViewSliderProps, ViewProps } from './index'
 
 export type Props = {
   children?: any,
@@ -29,7 +29,12 @@ export type State = {
   activeView: number,
 }
 
-function defaultRenderView({index, key, style, ref}: ViewProps): React.Element<'div'> {
+function defaultRenderView({
+  index,
+  key,
+  style,
+  ref,
+}: ViewProps): React.Element<'div'> {
   return (
     <div key={key} style={style} ref={ref}>
       {this.state.views[index]}
@@ -42,7 +47,7 @@ export function createSimpleViewSlider(
   renderView: (props: ViewProps) => React.Node = defaultRenderView
 ): Class<React.Component<Props, State>> {
   return class SimpleViewSlider extends React.Component<Props, State> {
-    static defaultProps: Props;
+    static defaultProps: Props
     state: State
 
     constructor(props: Props) {
@@ -77,7 +82,7 @@ export function createSimpleViewSlider(
         children, // eslint-disable-line no-unused-vars
         ...props
       } = this.props
-      const {activeView, views} = this.state
+      const { activeView, views } = this.state
       return (
         <ViewSlider
           {...props}
