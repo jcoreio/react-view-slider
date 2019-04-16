@@ -4,16 +4,14 @@
 import * as React from 'react'
 import Prefixer from 'inline-style-prefixer'
 import { range } from "lodash"
+import {TransitionContext} from 'react-transition-context'
 
 type TransitionState = 'in' | 'out' | 'entering' | 'leaving'
 
 export type ViewProps = {
   index: number,
-  key: number,
   active: boolean,
   transitionState: TransitionState,
-  style: Object,
-  ref: (element: ?React.ElementRef<string>) => mixed,
 }
 
 export type DefaultProps = {
@@ -24,7 +22,6 @@ export type DefaultProps = {
   prefixer: Prefixer,
   style: Object,
   viewportStyle: Object,
-  measureHeight: (node: HTMLElement) => number,
 }
 
 export type Props = {
@@ -41,7 +38,6 @@ export type Props = {
   style: Object,
   viewportClassName?: string,
   viewportStyle: Object,
-  measureHeight: (node: HTMLElement) => number,
   rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
   viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
 }
@@ -78,7 +74,6 @@ export default class ViewSlider extends React.Component<Props, State> {
     prefixer: new Prefixer(),
     style: {},
     viewportStyle: {},
-    measureHeight: (node: HTMLElement): number => node.offsetHeight,
   }
   state: State = {
     height: undefined,
@@ -94,7 +89,7 @@ export default class ViewSlider extends React.Component<Props, State> {
 
   measureHeight = (node: ?HTMLElement): ?number => {
     if (!node) return null
-    return this.props.measureHeight(node)
+    return node.clientHeight
   }
 
   setTimeout(name: string, callback: () => any, delay: number) {
@@ -165,7 +160,7 @@ export default class ViewSlider extends React.Component<Props, State> {
     const {fillParent, prefixer, keepViewsMounted} = this.props
     const {activeView, transitioning} = this.state
 
-    const style: Object = {...viewStyle}
+    const style: Object = {display: 'flex', ...viewStyle}
     if (fillParent) {
       Object.assign(style, fillStyle)
       style.overflow = 'auto'
@@ -177,14 +172,19 @@ export default class ViewSlider extends React.Component<Props, State> {
     if (!transitioning && activeView !== index && !keepViewsMounted) {
       return <div key={index} style={prefixer.prefix(style)}></div>
     }
-    return this.props.renderView({
-      index,
-      key: index,
-      active: index === activeView,
-      transitionState: this.getTransitionState(index),
-      style: prefixer.prefix(style),
-      ref: c => this.views[index] = c,
-    })
+    return (
+      <div key={index} style={prefixer.prefix(style)} ref={c => this.views[index] = c}>
+        <div style={{width: '100%'}}>
+          <TransitionContext state={this.getTransitionState(index)}>
+            {this.props.renderView({
+              index,
+              active: index === activeView,
+              transitionState: this.getTransitionState(index),
+            })}
+          </TransitionContext>
+        </div>
+      </div>
+    )
   }
 
   animateHeight = (): boolean => {
@@ -254,5 +254,3 @@ export default class ViewSlider extends React.Component<Props, State> {
     )
   }
 }
-
-
