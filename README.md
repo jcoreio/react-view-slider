@@ -84,7 +84,7 @@ A negative number will reverse the view order;
 spacing. You can also use the `rtl` property for this, especially if you want
 the views to inherit `direction: rtl` for their own content layout.
 
-##### `rtl: boolean` (default: false)
+##### `rtl: boolean` (default: `false`)
 
 Whether to use right-to-left layout. This will reverse the view order and apply
 `direction: rtl` to the viewport style, and each view will inherit that layout
@@ -153,7 +153,7 @@ This is a wrapper for `ViewSlider` that takes a single child element. It renders
 ### Example
 
 ```js
-import SimpleViewSlider from 'react-view-slider/lib/simple'
+import SimpleViewSlider from 'react-view-slider/simple'
 
 ReactDOM.render(
   <SimpleViewSlider>
