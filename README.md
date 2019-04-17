@@ -69,6 +69,31 @@ only render the active view.
 The index of the view that should be showing. Whenever you change this, `ViewSlider` will animate a horizontal slide
 transition to the view at the new index.
 
+##### `spacing: number` (default: `1`)
+
+How much horizontal space to put between the views. `spacing={1.5}` will space
+the views apart by 50% of the width, `spacing={2}` will space the views apart
+by 100% of the width, etc.
+
+Views without much horizontal padding or margin of their own will look jammed
+together during transitions with a default `spacing` of 1, so in that case
+you'll want to increase the `spacing`.
+
+A negative number will reverse the view order;
+`spacing={-1.5}` will arrange views from right to left with 50% width view
+spacing. You can also use the `rtl` property for this, especially if you want
+the views to inherit `direction: rtl` for their own content layout.
+
+##### `rtl: boolean` (default: false)
+
+Whether to use right-to-left layout. This will reverse the view order and apply
+`direction: rtl` to the viewport style, and each view will inherit that layout
+direction for its own content as well.
+
+To reverse the view order without
+changing layout direction of each view's content, you can use a negative number
+for `spacing`.
+
 ##### `keepViewsMounted: boolean` (default: `false`)
 
 If `true`, `ViewSlider` will keep all views mounted after transitioning, not just the active view.

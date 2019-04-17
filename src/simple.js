@@ -4,7 +4,6 @@
 import * as React from 'react'
 import Prefixer from 'inline-style-prefixer'
 import ViewSlider from './index'
-
 import type { Props as ViewSliderProps, ViewProps } from './index'
 
 export type Props = {
@@ -21,6 +20,8 @@ export type Props = {
   viewportStyle?: Object,
   rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
   viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
+  rtl?: ?boolean,
+  spacing?: ?number,
 }
 
 export type State = {
@@ -37,7 +38,6 @@ export function createSimpleViewSlider(
   renderView: (props: ViewProps) => React.Node = defaultRenderView
 ): Class<React.Component<Props, State>> {
   return class SimpleViewSlider extends React.Component<Props, State> {
-    static defaultProps: Props
     state: State
 
     constructor(props: Props) {
@@ -70,12 +70,17 @@ export function createSimpleViewSlider(
     render(): React.Node {
       const {
         children, // eslint-disable-line no-unused-vars
+        // Flow's React.ComponentType + defaultProps is foobar...
+        spacing,
+        rtl,
         ...props
       } = this.props
       const { activeView, views } = this.state
       return (
         <ViewSlider
           {...props}
+          spacing={(spacing: any)}
+          rtl={(rtl: any)}
           renderView={this.renderView}
           numViews={views.length}
           activeView={activeView}

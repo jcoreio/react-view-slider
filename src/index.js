@@ -21,6 +21,8 @@ export type DefaultProps = {
   prefixer: Prefixer,
   style: Object,
   viewportStyle: Object,
+  rtl: boolean,
+  spacing: number,
 }
 
 export type Props = {
@@ -39,6 +41,8 @@ export type Props = {
   viewportStyle: Object,
   rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
   viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
+  rtl: boolean,
+  spacing: number,
 }
 
 export type State = {
@@ -57,7 +61,6 @@ const fillStyle = {
 }
 
 const viewStyle = {
-  position: 'relative',
   display: 'inline-block',
   verticalAlign: 'top',
   whiteSpace: 'normal',
@@ -73,6 +76,8 @@ export default class ViewSlider extends React.Component<Props, State> {
     prefixer: new Prefixer(),
     style: {},
     viewportStyle: {},
+    rtl: false,
+    spacing: 1,
   }
   state: State = {
     height: undefined,
@@ -167,14 +172,18 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   renderView = (index: number): React.Node => {
-    const { fillParent, prefixer, keepViewsMounted } = this.props
+    const { fillParent, prefixer, keepViewsMounted, spacing, rtl } = this.props
     const { activeView, transitioning } = this.state
 
     const style: Object = { display: 'flex', ...viewStyle }
     if (fillParent) {
       Object.assign(style, fillStyle)
       style.overflow = 'auto'
-      style.left = `${index * 100}%`
+      if (rtl) style.right = `${index * spacing * 100}%`
+      else style.left = `${index * spacing * 100}%`
+    } else if (index > 0) {
+      if (rtl) style.marginRight = `${(spacing - 1) * 100}%`
+      else style.marginLeft = `${(spacing - 1) * 100}%`
     }
 
     // when not transitioning, render empty placeholder divs before the active view to push it into the right
@@ -229,6 +238,8 @@ export default class ViewSlider extends React.Component<Props, State> {
       transitionDuration,
       transitionTimingFunction,
       keepViewsMounted,
+      rtl,
+      spacing,
     } = this.props
     const animateHeight = this.animateHeight()
     const { activeView, height, transitioning } = this.state
@@ -243,9 +254,11 @@ export default class ViewSlider extends React.Component<Props, State> {
     }
 
     const finalViewportStyle = {
-      transform: `translateX(-${activeView * 100}%)`,
+      position: 'relative',
+      transform: `translateX(${activeView * spacing * (rtl ? 100 : -100)}%)`,
       whiteSpace: 'nowrap',
       minHeight: '100%',
+      direction: rtl ? 'rtl' : 'ltr',
       transition: transitioning
         ? `transform ${transitionTimingFunction} ${transitionDuration}ms`
         : undefined,
