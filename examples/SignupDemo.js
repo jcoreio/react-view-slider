@@ -4,6 +4,7 @@
  */
 
 import * as React from 'react'
+import Link from '@material-ui/core/Link'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Typography from '@material-ui/core/Typography'
@@ -81,7 +82,9 @@ const SignupDemo = ({ classes }: Props): React.Node => {
       </Button>
       <div className={classes.contentHolder}>
         <Paper className={classes.paper}>
-          <ViewSlider animateHeight>{content}</ViewSlider>
+          <ViewSlider animateHeight spacing={1.2}>
+            {content}
+          </ViewSlider>
         </Paper>
       </div>
     </div>
@@ -194,7 +197,39 @@ const PasswordForm = ({ classes, onSubmit }: FormProps): React.Node => {
 const DoneForm = ({ classes, onSubmit }: FormProps): React.Node => (
   <div className={classes.form}>
     <Typography variant="h5" className={classes.h5}>
-      <em>End of Demo</em>
+      <em>Thank you</em> for viewing the demo!
+    </Typography>
+    <Typography variant="h6">Additional libraries to check out:</Typography>
+    <Typography variant="h5">
+      <Link href="https://github.com/jcoreio/react-router-drilldown">
+        <code>react-router-drilldown</code>
+      </Link>
+    </Typography>
+    <Typography variant="body1" component="p">
+      uses <code>react-view-slider</code> to animate transitions between routes
+      in <code>react-router</code>.
+    </Typography>
+    <Typography variant="h5">
+      <Link href="https://github.com/jcoreio/react-fader">
+        <code>react-fader</code>
+      </Link>
+    </Typography>
+    <Typography variant="body1" component="p">
+      component that fades out its old child, then fades in its new child when
+      its children change. It can also optionally animate its height and/or
+      width from one child{"'"}s size to the other. Also works well with{' '}
+      <code>react-router</code>!
+    </Typography>
+    <Typography variant="h5">
+      <Link href="https://github.com/jcoreio/react-transition-context">
+        <code>react-transition-context</code>
+      </Link>
+    </Typography>
+    <Typography variant="body1" component="p">
+      Allows you to perform effects when transitions in an ancestor component
+      start or end (used to automatically focus the inputs in this demo). Also
+      works with <code>react-router-drilldown</code> and{' '}
+      <code>react-fader</code>!
     </Typography>
   </div>
 )
