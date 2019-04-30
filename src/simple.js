@@ -18,6 +18,7 @@ export type Props = {
   style?: Object,
   viewportClassName?: string,
   viewportStyle?: Object,
+  viewStyle?: ?Object,
   rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
   viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
   rtl?: ?boolean,

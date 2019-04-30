@@ -39,6 +39,7 @@ export type Props = {
   style: Object,
   viewportClassName?: string,
   viewportStyle: Object,
+  viewStyle?: ?Object,
   rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
   viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
   rtl: boolean,
@@ -60,7 +61,7 @@ const fillStyle = {
   bottom: 0,
 }
 
-const viewStyle = {
+const baseViewStyle = {
   display: 'inline-block',
   verticalAlign: 'top',
   whiteSpace: 'normal',
@@ -172,10 +173,17 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   renderView = (index: number): React.Node => {
-    const { fillParent, prefixer, keepViewsMounted, spacing, rtl } = this.props
+    const {
+      fillParent,
+      prefixer,
+      keepViewsMounted,
+      spacing,
+      rtl,
+      viewStyle,
+    } = this.props
     const { activeView, transitioning } = this.state
 
-    const style: Object = { display: 'flex', ...viewStyle }
+    const style: Object = { ...baseViewStyle, ...viewStyle }
     if (fillParent) {
       Object.assign(style, fillStyle)
       style.overflow = 'auto'
