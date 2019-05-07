@@ -40,6 +40,7 @@ export type Props = {
   viewportClassName?: string,
   viewportStyle: Object,
   viewStyle?: ?Object,
+  innerViewWrapperStyle?: ?Object,
   rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
   viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
   rtl: boolean,
@@ -180,6 +181,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       spacing,
       rtl,
       viewStyle,
+      innerViewWrapperStyle,
     } = this.props
     const { activeView, transitioning } = this.state
 
@@ -205,7 +207,9 @@ export default class ViewSlider extends React.Component<Props, State> {
         style={prefixer.prefix(style)}
         ref={c => (this.views[index] = c)}
       >
-        <div style={{ width: '100%' }}>
+        <div
+          style={prefixer.prefix({ width: '100%', ...innerViewWrapperStyle })}
+        >
           <TransitionContext state={this.getTransitionState(index)}>
             {this.props.renderView({
               index,
