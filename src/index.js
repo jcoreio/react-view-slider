@@ -29,6 +29,28 @@ export type Props = {
   activeView: number,
   numViews: number,
   renderView: (props: ViewProps) => React.Node,
+  keepViewsMounted?: ?boolean,
+  animateHeight?: ?boolean,
+  transitionDuration?: ?number,
+  transitionTimingFunction?: ?string,
+  prefixer?: ?Prefixer,
+  fillParent?: ?boolean,
+  className?: ?string,
+  style?: ?Object,
+  viewportClassName?: ?string,
+  viewportStyle?: ?Object,
+  viewStyle?: ?Object,
+  innerViewWrapperStyle?: ?Object,
+  rootRef?: ?(node: ?React.ElementRef<'div'>) => mixed,
+  viewportRef?: ?(node: ?React.ElementRef<'div'>) => mixed,
+  rtl?: ?boolean,
+  spacing?: ?number,
+}
+
+type DefaultedProps = {
+  activeView: number,
+  numViews: number,
+  renderView: (props: ViewProps) => React.Node,
   keepViewsMounted: boolean,
   animateHeight: boolean,
   transitionDuration: number,
@@ -37,12 +59,12 @@ export type Props = {
   fillParent?: boolean,
   className?: string,
   style: Object,
-  viewportClassName?: string,
+  viewportClassName?: ?string,
   viewportStyle: Object,
   viewStyle?: ?Object,
   innerViewWrapperStyle?: ?Object,
-  rootRef?: (node: ?React.ElementRef<'div'>) => mixed,
-  viewportRef?: (node: ?React.ElementRef<'div'>) => mixed,
+  rootRef?: ?(node: ?React.ElementRef<'div'>) => mixed,
+  viewportRef?: ?(node: ?React.ElementRef<'div'>) => mixed,
   rtl: boolean,
   spacing: number,
 }
@@ -69,18 +91,29 @@ const baseViewStyle = {
   width: '100%',
 }
 
-export default class ViewSlider extends React.Component<Props, State> {
-  static defaultProps = {
-    animateHeight: true,
-    transitionDuration: 500,
-    transitionTimingFunction: 'ease',
-    keepViewsMounted: false,
-    prefixer: new Prefixer(),
-    style: {},
-    viewportStyle: {},
-    rtl: false,
-    spacing: 1,
+export const defaultProps: DefaultProps = {
+  animateHeight: true,
+  transitionDuration: 500,
+  transitionTimingFunction: 'ease',
+  keepViewsMounted: false,
+  prefixer: new Prefixer(),
+  style: {},
+  viewportStyle: {},
+  rtl: false,
+  spacing: 1,
+}
+
+function applyDefaults(props: Props): DefaultedProps {
+  const result: any = { ...props }
+  for (const key in defaultProps) {
+    if (defaultProps.hasOwnProperty(key) && props[key] == null) {
+      result[key] = defaultProps[key]
+    }
   }
+  return result
+}
+
+export default class ViewSlider extends React.Component<Props, State> {
   state: State = {
     height: undefined,
     transitioning: false,
@@ -92,6 +125,16 @@ export default class ViewSlider extends React.Component<Props, State> {
   viewport: ?HTMLDivElement
   views: Array<?HTMLElement> = []
   timeouts: { [name: string]: any } = {}
+  lastProps: Props = this.props
+  lastDefaultedProps: ?DefaultedProps
+
+  getDefaultedProps = (): DefaultedProps => {
+    if (this.lastProps !== this.props || !this.lastDefaultedProps) {
+      this.lastProps = this.props
+      this.lastDefaultedProps = applyDefaults(this.props)
+    }
+    return this.lastDefaultedProps
+  }
 
   measureHeight = (node: ?HTMLElement): ?number => {
     if (!node) return null
@@ -104,7 +147,11 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   componentDidUpdate() {
-    const { activeView, transitionDuration, keepViewsMounted } = this.props
+    const {
+      activeView,
+      transitionDuration,
+      keepViewsMounted,
+    } = this.getDefaultedProps()
     let newState: ?$Shape<State>
 
     if (
@@ -182,7 +229,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       rtl,
       viewStyle,
       innerViewWrapperStyle,
-    } = this.props
+    } = this.getDefaultedProps()
     const { activeView, transitioning } = this.state
 
     const style: Object = { ...baseViewStyle, ...viewStyle }
@@ -223,18 +270,22 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   animateHeight = (): boolean => {
-    const { animateHeight, fillParent, keepViewsMounted } = this.props
+    const {
+      animateHeight,
+      fillParent,
+      keepViewsMounted,
+    } = this.getDefaultedProps()
     return animateHeight && !fillParent && !keepViewsMounted
   }
 
   rootRef = (node: ?React.ElementRef<'div'>) => {
     this.root = node
-    const { rootRef } = this.props
+    const { rootRef } = this.getDefaultedProps()
     if (rootRef) rootRef(node)
   }
   viewportRef = (node: ?React.ElementRef<'div'>) => {
     this.viewport = node
-    const { viewportRef } = this.props
+    const { viewportRef } = this.getDefaultedProps()
     if (viewportRef) viewportRef(node)
   }
 
@@ -252,7 +303,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       keepViewsMounted,
       rtl,
       spacing,
-    } = this.props
+    } = this.getDefaultedProps()
     const animateHeight = this.animateHeight()
     const { activeView, height, transitioning } = this.state
 

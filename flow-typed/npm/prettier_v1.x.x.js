@@ -1,33 +1,67 @@
-// flow-typed signature: 066c92e9ccb5f0711df8d73cbca837d6
-// flow-typed version: 9e32affdbd/prettier_v1.x.x/flow_>=v0.56.x
+// flow-typed signature: ec743a1b5c1197353e0849812930f32a
+// flow-typed version: c6154227d1/prettier_v1.x.x/flow_>=v0.104.x
 
-declare module "prettier" {
-  declare export type AST = Object;
-  declare export type Doc = Object;
-  declare export type FastPath = Object;
+declare module 'prettier' {
+  declare export type AST = { [key: string]: any, ... }
+  declare export type Doc = {
+    [key: string]: any,
+    ...,
+  }
+  declare export type FastPath<T = any> = {
+    stack: any[],
+    getName(): null | string | number | Symbol,
+    getValue(): T,
+    getNode(count?: number): null | T,
+    getParentNode(count?: number): null | T,
+    call<U>(
+      callback: (path: FastPath<T>) => U,
+      ...names: Array<string | number | Symbol>
+    ): U,
+    each(
+      callback: (path: FastPath<T>) => void,
+      ...names: Array<string | number | Symbol>
+    ): void,
+    map<U>(
+      callback: (path: FastPath<T>, index: number) => U,
+      ...names: Array<string | number | Symbol>
+    ): U[],
+    ...
+  }
 
   declare export type PrettierParserName =
-    | "babylon"
-    | "flow"
-    | "typescript"
-    | "postcss"
-    | "css"
-    | "less"
-    | "scss"
-    | "json"
-    | "graphql"
-    | "markdown"
-    | "vue";
+    | 'babylon' // deprecated
+    | 'babel'
+    | 'babel-flow'
+    | 'flow'
+    | 'typescript'
+    | 'postcss' // deprecated
+    | 'css'
+    | 'less'
+    | 'scss'
+    | 'json'
+    | 'json5'
+    | 'json-stringify'
+    | 'graphql'
+    | 'markdown'
+    | 'vue'
+    | 'html'
+    | 'angular'
+    | 'mdx'
+    | 'yaml'
 
   declare export type PrettierParser = {
-    [name: PrettierParserName]: (text: string, options?: Object) => AST
-  };
+    [name: PrettierParserName]: (
+      text: string,
+      options?: { [key: string]: any, ... }
+    ) => AST,
+    ...,
+  }
 
   declare export type CustomParser = (
     text: string,
     parsers: PrettierParser,
     options: Options
-  ) => AST;
+  ) => AST
 
   declare export type Options = {|
     printWidth?: number,
@@ -35,78 +69,121 @@ declare module "prettier" {
     useTabs?: boolean,
     semi?: boolean,
     singleQuote?: boolean,
-    trailingComma?: "none" | "es5" | "all",
+    trailingComma?: 'none' | 'es5' | 'all',
     bracketSpacing?: boolean,
     jsxBracketSameLine?: boolean,
-    arrowParens?: "avoid" | "always",
+    arrowParens?: 'avoid' | 'always',
     rangeStart?: number,
     rangeEnd?: number,
     parser?: PrettierParserName | CustomParser,
     filepath?: string,
     requirePragma?: boolean,
     insertPragma?: boolean,
-    proseWrap?: "always" | "never" | "preserve",
-    plugins?: Array<string | Plugin>
-  |};
+    proseWrap?: 'always' | 'never' | 'preserve',
+    plugins?: Array<string | Plugin>,
+  |}
 
   declare export type Plugin = {
     languages: SupportLanguage,
-    parsers: { [parserName: string]: Parser },
-    printers: { [astFormat: string]: Printer }
-  };
+    parsers: { [parserName: string]: Parser, ... },
+    printers: { [astFormat: string]: Printer, ... },
+    options?: SupportOption[],
+    ...
+  }
 
   declare export type Parser = {
     parse: (
       text: string,
-      parsers: { [parserName: string]: Parser },
-      options: Object
+      parsers: { [parserName: string]: Parser, ... },
+      options: { [key: string]: any, ... }
     ) => AST,
-    astFormat: string
-  };
+    astFormat: string,
+    hasPragma?: (text: string) => boolean,
+    locStart: (node: any) => number,
+    locEnd: (node: any) => number,
+    preprocess?: (text: string, options: { [key: string]: any, ... }) => string,
+    ...
+  }
 
   declare export type Printer = {
     print: (
-      path: FastPath,
-      options: Object,
-      print: (path: FastPath) => Doc
+      path: FastPath<>,
+      options: { [key: string]: any, ... },
+      print: (path: FastPath<>) => Doc
     ) => Doc,
     embed: (
-      path: FastPath,
-      print: (path: FastPath) => Doc,
-      textToDoc: (text: string, options: Object) => Doc,
-      options: Object
-    ) => ?Doc
-  };
+      path: FastPath<>,
+      print: (path: FastPath<>) => Doc,
+      textToDoc: (text: string, options: { [key: string]: any, ... }) => Doc,
+      options: { [key: string]: any, ... }
+    ) => ?Doc,
+    insertPragma?: (text: string) => string,
+    massageAstNode?: (node: any, newNode: any, parent: any) => any,
+    hasPrettierIgnore?: (path: FastPath<>) => boolean,
+    canAttachComment?: (node: any) => boolean,
+    willPrintOwnComments?: (path: FastPath<>) => boolean,
+    printComments?: (
+      path: FastPath<>,
+      print: (path: FastPath<>) => Doc,
+      options: { [key: string]: any, ... },
+      needsSemi: boolean
+    ) => Doc,
+    handleComments?: {
+      ownLine?: (
+        commentNode: any,
+        text: string,
+        options: { [key: string]: any, ... },
+        ast: any,
+        isLastComment: boolean
+      ) => boolean,
+      endOfLine?: (
+        commentNode: any,
+        text: string,
+        options: { [key: string]: any, ... },
+        ast: any,
+        isLastComment: boolean
+      ) => boolean,
+      remaining?: (
+        commentNode: any,
+        text: string,
+        options: { [key: string]: any, ... },
+        ast: any,
+        isLastComment: boolean
+      ) => boolean,
+      ...
+    },
+    ...
+  }
 
   declare export type CursorOptions = {|
     cursorOffset: number,
-    printWidth?: $PropertyType<Options, "printWidth">,
-    tabWidth?: $PropertyType<Options, "tabWidth">,
-    useTabs?: $PropertyType<Options, "useTabs">,
-    semi?: $PropertyType<Options, "semi">,
-    singleQuote?: $PropertyType<Options, "singleQuote">,
-    trailingComma?: $PropertyType<Options, "trailingComma">,
-    bracketSpacing?: $PropertyType<Options, "bracketSpacing">,
-    jsxBracketSameLine?: $PropertyType<Options, "jsxBracketSameLine">,
-    arrowParens?: $PropertyType<Options, "arrowParens">,
-    parser?: $PropertyType<Options, "parser">,
-    filepath?: $PropertyType<Options, "filepath">,
-    requirePragma?: $PropertyType<Options, "requirePragma">,
-    insertPragma?: $PropertyType<Options, "insertPragma">,
-    proseWrap?: $PropertyType<Options, "proseWrap">,
-    plugins?: $PropertyType<Options, "plugins">
-  |};
+    printWidth?: $PropertyType<Options, 'printWidth'>,
+    tabWidth?: $PropertyType<Options, 'tabWidth'>,
+    useTabs?: $PropertyType<Options, 'useTabs'>,
+    semi?: $PropertyType<Options, 'semi'>,
+    singleQuote?: $PropertyType<Options, 'singleQuote'>,
+    trailingComma?: $PropertyType<Options, 'trailingComma'>,
+    bracketSpacing?: $PropertyType<Options, 'bracketSpacing'>,
+    jsxBracketSameLine?: $PropertyType<Options, 'jsxBracketSameLine'>,
+    arrowParens?: $PropertyType<Options, 'arrowParens'>,
+    parser?: $PropertyType<Options, 'parser'>,
+    filepath?: $PropertyType<Options, 'filepath'>,
+    requirePragma?: $PropertyType<Options, 'requirePragma'>,
+    insertPragma?: $PropertyType<Options, 'insertPragma'>,
+    proseWrap?: $PropertyType<Options, 'proseWrap'>,
+    plugins?: $PropertyType<Options, 'plugins'>,
+  |}
 
   declare export type CursorResult = {|
     formatted: string,
-    cursorOffset: number
-  |};
+    cursorOffset: number,
+  |}
 
   declare export type ResolveConfigOptions = {|
     useCache?: boolean,
     config?: string,
-    editorconfig?: boolean
-  |};
+    editorconfig?: boolean,
+  |}
 
   declare export type SupportLanguage = {
     name: string,
@@ -121,46 +198,47 @@ declare module "prettier" {
     extensions: Array<string>,
     filenames?: Array<string>,
     linguistLanguageId: number,
-    vscodeLanguageIds: Array<string>
-  };
+    vscodeLanguageIds: Array<string>,
+    ...
+  }
 
   declare export type SupportOption = {|
     since: string,
-    type: "int" | "boolean" | "choice" | "path",
+    type: 'int' | 'boolean' | 'choice' | 'path',
     deprecated?: string,
     redirect?: SupportOptionRedirect,
     description: string,
     oppositeDescription?: string,
     default: SupportOptionValue,
     range?: SupportOptionRange,
-    choices?: SupportOptionChoice
-  |};
+    choices?: SupportOptionChoice,
+  |}
 
   declare export type SupportOptionRedirect = {|
     options: string,
-    value: SupportOptionValue
-  |};
+    value: SupportOptionValue,
+  |}
 
   declare export type SupportOptionRange = {|
     start: number,
     end: number,
-    step: number
-  |};
+    step: number,
+  |}
 
   declare export type SupportOptionChoice = {|
     value: boolean | string,
     description?: string,
     since?: string,
     deprecated?: string,
-    redirect?: SupportOptionValue
-  |};
+    redirect?: SupportOptionValue,
+  |}
 
-  declare export type SupportOptionValue = number | boolean | string;
+  declare export type SupportOptionValue = number | boolean | string
 
   declare export type SupportInfo = {|
     languages: Array<SupportLanguage>,
-    options: Array<SupportOption>
-  |};
+    options: Array<SupportOption>,
+  |}
 
   declare export type Prettier = {|
     format: (source: string, options?: Options) => string,
@@ -168,11 +246,12 @@ declare module "prettier" {
     formatWithCursor: (source: string, options: CursorOptions) => CursorResult,
     resolveConfig: {
       (filePath: string, options?: ResolveConfigOptions): Promise<?Options>,
-      sync(filePath: string, options?: ResolveConfigOptions): ?Options
+      sync(filePath: string, options?: ResolveConfigOptions): ?Options,
+      ...
     },
     clearConfigCache: () => void,
-    getSupportInfo: (version?: string) => SupportInfo
-  |};
+    getSupportInfo: (version?: string) => SupportInfo,
+  |}
 
-  declare export default Prettier;
+  declare export default Prettier
 }
