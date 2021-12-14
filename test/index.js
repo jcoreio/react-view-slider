@@ -159,4 +159,102 @@ describe('SimpleViewSlider', () => {
 
     comp.unmount()
   })
+  it('keepViewsMounted works', () => {
+    const comp = mount(
+      <SimpleViewSlider keepViewsMounted>
+        <div key={0}>Child 0</div>
+      </SimpleViewSlider>
+    )
+
+    expect(comp.text()).to.equal('Child 0')
+
+    comp.setProps({
+      children: <div key={1}>Child 1</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child 1')
+
+    comp.setProps({
+      children: <div key={2}>Child 2</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child 1Child 2')
+
+    comp.setProps({
+      children: <div key={1}>Child a</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child aChild 2')
+
+    comp.unmount()
+  })
+  it('keepPrecedingViewsMounted works', () => {
+    const comp = mount(
+      <SimpleViewSlider keepPrecedingViewsMounted>
+        <div key={0}>Child 0</div>
+      </SimpleViewSlider>
+    )
+
+    expect(comp.text()).to.equal('Child 0')
+
+    comp.setProps({
+      children: <div key={1}>Child 1</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child 1')
+
+    comp.setProps({
+      children: <div key={2}>Child 2</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child 1Child 2')
+
+    comp.setProps({
+      children: <div key={1}>Child a</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child a')
+
+    comp.unmount()
+  })
+  it('changing keepPrecedingViewsMounted works', () => {
+    const comp = mount(
+      <SimpleViewSlider keepViewsMounted>
+        <div key={0}>Child 0</div>
+      </SimpleViewSlider>
+    )
+
+    expect(comp.text()).to.equal('Child 0')
+
+    comp.setProps({
+      children: <div key={1}>Child 1</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child 1')
+
+    comp.setProps({
+      children: <div key={2}>Child 2</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child 1Child 2')
+
+    comp.setProps({
+      keepViewsMounted: false,
+      keepPrecedingViewsMounted: true,
+      children: <div key={1}>Child a</div>,
+    })
+
+    clock.tick(1000)
+    expect(comp.update().text()).to.equal('Child 0Child a')
+
+    comp.unmount()
+  })
 })

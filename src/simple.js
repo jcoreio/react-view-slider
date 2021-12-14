@@ -9,6 +9,7 @@ import type { Props as ViewSliderProps, ViewProps } from './index'
 export type Props = {
   children?: any,
   keepViewsMounted?: ?boolean,
+  keepPrecedingViewsMounted?: ?boolean,
   animateHeight?: ?boolean,
   transitionDuration?: ?number,
   transitionTimingFunction?: ?string,
@@ -48,10 +49,7 @@ export function createSimpleViewSlider(
       const activeView = parseInt(child.key)
       const views = []
       views[activeView] = child
-      this.state = {
-        views,
-        activeView,
-      }
+      this.state = { views, activeView }
     }
 
     componentDidUpdate(prevProps: Props) {
@@ -60,10 +58,14 @@ export function createSimpleViewSlider(
         const activeView = parseInt(child.key)
         const views = [...this.state.views]
         views[activeView] = child
-        this.setState({
-          views,
-          activeView,
-        })
+        if (!this.props.keepViewsMounted) {
+          views.length = Math.min(views.length, activeView + 1)
+        }
+        this.setState({ views, activeView })
+      } else if (prevProps.keepViewsMounted && !this.props.keepViewsMounted) {
+        const views = [...this.state.views]
+        views.length = Math.min(views.length, this.state.activeView + 1)
+        this.setState({ views })
       }
     }
 
@@ -75,12 +77,15 @@ export function createSimpleViewSlider(
         // Flow's React.ComponentType + defaultProps is foobar...
         spacing,
         rtl,
+        keepViewsMounted,
+        keepPrecedingViewsMounted,
         ...props
       } = this.props
       const { activeView, views } = this.state
       return (
         <ViewSlider
           {...props}
+          keepViewsMounted={keepViewsMounted || keepPrecedingViewsMounted}
           spacing={(spacing: any)}
           rtl={(rtl: any)}
           renderView={this.renderView}

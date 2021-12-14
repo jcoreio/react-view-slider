@@ -180,3 +180,10 @@ ReactDOM.render(
   document.getElementById('root')
 )
 ```
+
+### Additional props
+
+##### `keepPrecedingViewsMounted: boolean` (default: `false`)
+
+If `true`, `SimpleViewSlider` will keep views preceding the active view mounted, but not views following the active view.
+(As mentioned above, the order is determined by the `children`'s `key`s.)

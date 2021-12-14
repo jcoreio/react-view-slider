@@ -318,7 +318,9 @@ export default class ViewSlider extends React.Component<Props, State> {
 
     const finalViewportStyle = {
       position: 'relative',
-      transform: `translateX(${activeView * spacing * (rtl ? 100 : -100)}%)`,
+      transform: `translateX(calc(${activeView *
+        spacing *
+        (rtl ? 100 : -100)}% + 0px))`,
       whiteSpace: 'nowrap',
       minHeight: '100%',
       direction: rtl ? 'rtl' : 'ltr',
