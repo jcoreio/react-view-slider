@@ -217,6 +217,7 @@ describe('SimpleViewSlider', () => {
     comp.setProps({
       children: <div key={1}>Child a</div>,
     })
+    expect(comp.update().text()).to.equal('Child 0Child aChild 2')
 
     clock.tick(1000)
     expect(comp.update().text()).to.equal('Child 0Child a')

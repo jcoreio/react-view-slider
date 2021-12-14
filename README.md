@@ -113,6 +113,10 @@ The duration of the transition between views.
 
 The timing function for the transition between views.
 
+##### `onSlideTransitionEnd: () => any`
+
+If given, will be called when the slide transition ends.
+
 ##### `prefixer: Prefixer`
 
 If given, overrides the `inline-style-prefixer` used to autoprefix inline styles.

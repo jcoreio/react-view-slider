@@ -33,6 +33,7 @@ export type Props = {
   animateHeight?: ?boolean,
   transitionDuration?: ?number,
   transitionTimingFunction?: ?string,
+  onSlideTransitionEnd?: ?() => mixed,
   prefixer?: ?Prefixer,
   fillParent?: ?boolean,
   className?: ?string,
@@ -73,6 +74,7 @@ export type State = {
   height: ?number,
   transitioning: boolean,
   activeView: number,
+  numViews: number,
   prevActiveView: ?number,
 }
 
@@ -118,6 +120,7 @@ export default class ViewSlider extends React.Component<Props, State> {
     height: undefined,
     transitioning: false,
     activeView: this.props.activeView,
+    numViews: this.props.numViews,
     // this is used to determine the correct transitionState for the previous active view.
     prevActiveView: null,
   }
@@ -176,6 +179,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       // phase 3: change height/activeView
       newState = {
         activeView,
+        numViews: Math.max(this.state.numViews, activeView + 1),
         prevActiveView: this.state.activeView,
         height: this.measureHeight(this.views[activeView]),
       }
@@ -199,11 +203,18 @@ export default class ViewSlider extends React.Component<Props, State> {
     // ignore transitionend events from deeper components
     if (event && event.target !== this.viewport) return
     // phase 0: unset height and disable transitions
-    this.setState({
-      height: undefined,
-      prevActiveView: null,
-      transitioning: false,
-    })
+    this.setState(
+      {
+        height: undefined,
+        numViews: this.props.numViews,
+        prevActiveView: null,
+        transitioning: false,
+      },
+      () => {
+        const { onSlideTransitionEnd } = this.props
+        if (onSlideTransitionEnd) onSlideTransitionEnd()
+      }
+    )
   }
 
   componentWillUnmount() {
@@ -295,7 +306,6 @@ export default class ViewSlider extends React.Component<Props, State> {
       className,
       viewportClassName,
       viewportStyle,
-      numViews,
       prefixer,
       fillParent,
       transitionDuration,
@@ -305,7 +315,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       spacing,
     } = this.getDefaultedProps()
     const animateHeight = this.animateHeight()
-    const { activeView, height, transitioning } = this.state
+    const { activeView, numViews, height, transitioning } = this.state
 
     const finalOuterStyle = {
       transitionProperty: 'height',

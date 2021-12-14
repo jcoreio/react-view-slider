@@ -13,6 +13,7 @@ export type Props = {
   animateHeight?: ?boolean,
   transitionDuration?: ?number,
   transitionTimingFunction?: ?string,
+  onSlideTransitionEnd?: ?() => mixed,
   prefixer?: ?Prefixer,
   fillParent?: ?boolean,
   className?: ?string,
@@ -58,18 +59,28 @@ export function createSimpleViewSlider(
         const activeView = parseInt(child.key)
         const views = [...this.state.views]
         views[activeView] = child
-        if (!this.props.keepViewsMounted) {
-          views.length = Math.min(views.length, activeView + 1)
-        }
         this.setState({ views, activeView })
-      } else if (prevProps.keepViewsMounted && !this.props.keepViewsMounted) {
-        const views = [...this.state.views]
-        views.length = Math.min(views.length, this.state.activeView + 1)
-        this.setState({ views })
       }
     }
 
     renderView = renderView.bind(this)
+
+    handleSlideTransitionEnd = () => {
+      if (!this.props.keepViewsMounted) {
+        const { views, activeView } = this.state
+        if (activeView < views.length - 1) {
+          this.setState(
+            {
+              views: views.slice(0, activeView + 1),
+            },
+            () => {
+              const { onSlideTransitionEnd } = this.props
+              if (onSlideTransitionEnd) onSlideTransitionEnd()
+            }
+          )
+        }
+      }
+    }
 
     render(): React.Node {
       const {
@@ -91,6 +102,7 @@ export function createSimpleViewSlider(
           renderView={this.renderView}
           numViews={views.length}
           activeView={activeView}
+          onSlideTransitionEnd={this.handleSlideTransitionEnd}
         />
       )
     }
