@@ -28,12 +28,8 @@ declare module '@babel/plugin-proposal-export-namespace-from/lib' {
 
 // Filename aliases
 declare module '@babel/plugin-proposal-export-namespace-from/lib/index' {
-  declare module.exports: $Exports<
-    '@babel/plugin-proposal-export-namespace-from/lib'
-  >
+  declare module.exports: $Exports<'@babel/plugin-proposal-export-namespace-from/lib'>
 }
 declare module '@babel/plugin-proposal-export-namespace-from/lib/index.js' {
-  declare module.exports: $Exports<
-    '@babel/plugin-proposal-export-namespace-from/lib'
-  >
+  declare module.exports: $Exports<'@babel/plugin-proposal-export-namespace-from/lib'>
 }

@@ -55,7 +55,7 @@ declare module 'webpack' {
 
   declare type EntryObject = {
     [k: string]: string | NonEmptyArrayOfUniqueStringValues,
-    ...,
+    ...
   }
 
   declare type EntryItem = string | NonEmptyArrayOfUniqueStringValues
@@ -76,7 +76,7 @@ declare module 'webpack' {
           | { [k: string]: any, ... }
           | ArrayOfStringValues
           | boolean,
-        ...,
+        ...
       }
     | RegExp
 
@@ -229,7 +229,7 @@ declare module 'webpack' {
             test?: Function | string | RegExp,
             ...
           },
-      ...,
+      ...
     },
     chunks?: ('initial' | 'async' | 'all') | Function,
     fallbackCacheGroup?: {

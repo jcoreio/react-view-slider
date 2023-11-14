@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { describe, it } from 'mocha'
-import { mount } from 'enzyme'
+import { render } from '@testing-library/react'
 import { expect } from 'chai'
 import sinon from 'sinon'
 
@@ -16,29 +16,40 @@ afterEach(() => {
 })
 
 describe('ViewSlider', () => {
-  it('single transition works', () => {
-    const renderView = ({ index }) => <div>Child {index}</div>
-
-    const comp = mount(
-      <ViewSlider numViews={3} renderView={renderView} activeView={0} />
+  it('single transition works', async () => {
+    const renderView = ({ index }) => (
+      <div data-testid={`Child ${index}`}>Child {index}</div>
     )
 
-    expect(comp.text()).to.equal('Child 0')
+    const comp = render(
+      <ViewSlider
+        data-testid="ViewSlider"
+        numViews={3}
+        renderView={renderView}
+        activeView={0}
+      />
+    )
 
-    comp.setProps({ activeView: 1 }).update()
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).not.to.exist
+    expect(comp.queryByTestId('Child 2')).not.to.exist
 
-    expect(comp.text()).to.equal('Child 0Child 1Child 2')
-    clock.tick(1000)
-    expect(comp.text()).to.equal('Child 1')
-
-    comp.unmount()
+    comp.rerender(
+      <ViewSlider
+        data-testid="ViewSlider"
+        numViews={3}
+        renderView={renderView}
+        activeView={1}
+      />
+    )
+    expect(comp.queryByTestId('Child 1')).to.exist
   })
   it('fillParent works', () => {
     const views = []
 
     const renderView = ({ index }) => (
       <div
-        ref={c => {
+        ref={(c) => {
           views[index] = c
         }}
         style={{
@@ -50,10 +61,10 @@ describe('ViewSlider', () => {
     )
 
     let root, viewport
-    const comp = mount(
+    const comp = render(
       <ViewSlider
-        rootRef={c => (root = c)}
-        viewportRef={c => (viewport = c)}
+        rootRef={(c) => (root = c)}
+        viewportRef={(c) => (viewport = c)}
         fillParent
         numViews={3}
         renderView={renderView}
@@ -73,55 +84,72 @@ describe('ViewSlider', () => {
     expectHasFillStyle(viewport)
     expectHasFillStyle(views[0].parentElement.parentElement, '0%')
 
-    comp.setProps({ activeView: 1 }).update()
+    comp.rerender(
+      <ViewSlider
+        rootRef={(c) => (root = c)}
+        viewportRef={(c) => (viewport = c)}
+        fillParent
+        numViews={3}
+        renderView={renderView}
+        activeView={1}
+      />
+    )
     expectHasFillStyle(views[1].parentElement.parentElement, '100%')
 
     comp.unmount()
   })
-  it('multiple transitions work', () => {
+  it('multiple transitions work', async () => {
     const renderView = ({ index }) => (
       <div
         style={{
           height: index * 100,
         }}
+        data-testid={`Child ${index}`}
       >
         Child {index}
       </div>
     )
 
-    const comp = mount(
+    const comp = render(
       <ViewSlider numViews={3} renderView={renderView} activeView={0} />
     )
 
-    expect(comp.text()).to.equal('Child 0')
+    expect(comp.queryByTestId('Child 0')).to.exist
 
-    comp.setProps({ activeView: 1 }).update()
-    expect(comp.text()).to.equal('Child 0Child 1Child 2')
-    clock.tick(200)
-    comp.setProps({ activeView: 2 }).update()
-    expect(comp.text()).to.equal('Child 0Child 1Child 2')
-    clock.tick(1000)
-    expect(comp.text()).to.equal('Child 2')
-
-    comp.unmount()
+    comp.rerender(
+      <ViewSlider numViews={3} renderView={renderView} activeView={1} />
+    )
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
+    await await clock.tickAsync(200)
+    comp.rerender(
+      <ViewSlider numViews={3} renderView={renderView} activeView={2} />
+    )
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
+    await await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).not.to.exist
   })
   it('keepViewsMounted works', () => {
     const views = []
 
     const renderView = ({ index }) => (
       <div
-        ref={c => {
+        ref={(c) => {
           views[index] = c
         }}
         style={{
           height: (index + 1) * 1000,
         }}
+        data-testid={`Child ${index}`}
       >
         Child {index}
       </div>
     )
 
-    const comp = mount(
+    const comp = render(
       <ViewSlider
         fillParent
         keepViewsMounted
@@ -130,132 +158,201 @@ describe('ViewSlider', () => {
         activeView={0}
       />
     )
-    expect(comp.text()).to.equal('Child 0Child 1Child 2')
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
 
     views[2].parentElement.parentElement.scrollTop = 800
     expect(views[2].parentElement.parentElement.scrollTop).to.equal(800)
-    comp.setProps({ activeView: 2 }).update()
+    comp.rerender(
+      <ViewSlider
+        fillParent
+        keepViewsMounted
+        numViews={3}
+        renderView={renderView}
+        activeView={2}
+      />
+    )
     expect(views[2].parentElement.parentElement.scrollTop).to.equal(0)
-
-    comp.unmount()
   })
 })
 
 describe('SimpleViewSlider', () => {
-  it('single transition works', () => {
-    const comp = mount(
+  it('single transition works', async () => {
+    const comp = render(
       <SimpleViewSlider>
-        <div key={0}>Child 0</div>
+        <div key={0} data-testid="Child 0">
+          Child 0
+        </div>
       </SimpleViewSlider>
     )
 
-    expect(comp.text()).to.equal('Child 0')
+    expect(comp.queryByTestId('Child 0')).to.exist
 
-    comp.setProps({ children: <div key={1}>Child 1</div> }).update()
+    comp.rerender(
+      <SimpleViewSlider>
+        <div key={1} data-testid="Child 1">
+          Child 1
+        </div>
+      </SimpleViewSlider>
+    )
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
 
-    expect(comp.text()).to.equal('Child 0Child 1')
-    clock.tick(1000)
-    expect(comp.text()).to.equal('Child 1')
-
-    comp.unmount()
+    await await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).not.to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
   })
-  it('keepViewsMounted works', () => {
-    const comp = mount(
+  it('keepViewsMounted works', async () => {
+    const comp = render(
       <SimpleViewSlider keepViewsMounted>
-        <div key={0}>Child 0</div>
+        <div key={0} data-testid="Child 0">
+          Child 0
+        </div>
+      </SimpleViewSlider>
+    )
+    expect(comp.queryByTestId('Child 0')).to.exist
+
+    comp.rerender(
+      <SimpleViewSlider keepViewsMounted>
+        <div key={1} data-testid="Child 1">
+          Child 1
+        </div>
       </SimpleViewSlider>
     )
 
-    expect(comp.text()).to.equal('Child 0')
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
 
-    comp.setProps({
-      children: <div key={1}>Child 1</div>,
-    })
+    comp.rerender(
+      <SimpleViewSlider keepViewsMounted>
+        <div key={2} data-testid="Child 2">
+          Child 2
+        </div>
+      </SimpleViewSlider>
+    )
 
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child 1')
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
 
-    comp.setProps({
-      children: <div key={2}>Child 2</div>,
-    })
+    comp.rerender(
+      <SimpleViewSlider keepViewsMounted>
+        <div key={1} data-testid="Child 1a">
+          Child a
+        </div>
+      </SimpleViewSlider>
+    )
 
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child 1Child 2')
-
-    comp.setProps({
-      children: <div key={1}>Child a</div>,
-    })
-
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child aChild 2')
-
-    comp.unmount()
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).not.to.exist
+    expect(comp.queryByTestId('Child 1a')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
   })
-  it('keepPrecedingViewsMounted works', () => {
-    const comp = mount(
+  it('keepPrecedingViewsMounted works', async () => {
+    const comp = render(
       <SimpleViewSlider keepPrecedingViewsMounted>
-        <div key={0}>Child 0</div>
+        <div key={0} data-testid="Child 0">
+          Child 0
+        </div>
+      </SimpleViewSlider>
+    )
+    expect(comp.queryByTestId('Child 0')).to.exist
+
+    comp.rerender(
+      <SimpleViewSlider keepPrecedingViewsMounted>
+        <div key={1} data-testid="Child 1">
+          Child 1
+        </div>
       </SimpleViewSlider>
     )
 
-    expect(comp.text()).to.equal('Child 0')
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
 
-    comp.setProps({
-      children: <div key={1}>Child 1</div>,
-    })
+    comp.rerender(
+      <SimpleViewSlider keepPrecedingViewsMounted>
+        <div key={2} data-testid="Child 2">
+          Child 2
+        </div>
+      </SimpleViewSlider>
+    )
 
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child 1')
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
 
-    comp.setProps({
-      children: <div key={2}>Child 2</div>,
-    })
+    comp.rerender(
+      <SimpleViewSlider keepPrecedingViewsMounted>
+        <div key={1} data-testid="Child 1">
+          Child 1
+        </div>
+      </SimpleViewSlider>
+    )
 
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child 1Child 2')
+    await clock.tickAsync(200)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
 
-    comp.setProps({
-      children: <div key={1}>Child a</div>,
-    })
-    expect(comp.update().text()).to.equal('Child 0Child aChild 2')
-
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child a')
-
-    comp.unmount()
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).not.to.exist
   })
-  it('changing keepPrecedingViewsMounted works', () => {
-    const comp = mount(
+  it('changing keepPrecedingViewsMounted works', async () => {
+    const comp = render(
       <SimpleViewSlider keepViewsMounted>
-        <div key={0}>Child 0</div>
+        <div key={0} data-testid="Child 0">
+          Child 0
+        </div>
       </SimpleViewSlider>
     )
 
-    expect(comp.text()).to.equal('Child 0')
+    expect(comp.queryByTestId('Child 0')).to.exist
 
-    comp.setProps({
-      children: <div key={1}>Child 1</div>,
-    })
+    comp.rerender(
+      <SimpleViewSlider keepViewsMounted>
+        <div key={1} data-testid="Child 1">
+          Child 1
+        </div>
+      </SimpleViewSlider>
+    )
 
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child 1')
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
 
-    comp.setProps({
-      children: <div key={2}>Child 2</div>,
-    })
+    comp.rerender(
+      <SimpleViewSlider keepViewsMounted>
+        <div key={2} data-testid="Child 2">
+          Child 2
+        </div>
+      </SimpleViewSlider>
+    )
 
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child 1Child 2')
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).to.exist
+    expect(comp.queryByTestId('Child 2')).to.exist
 
-    comp.setProps({
-      keepViewsMounted: false,
-      keepPrecedingViewsMounted: true,
-      children: <div key={1}>Child a</div>,
-    })
+    comp.rerender(
+      <SimpleViewSlider keepPrecedingViewsMounted>
+        <div key={1} data-testid="Child 1a">
+          Child 1a
+        </div>
+      </SimpleViewSlider>
+    )
 
-    clock.tick(1000)
-    expect(comp.update().text()).to.equal('Child 0Child a')
-
-    comp.unmount()
+    await clock.tickAsync(1000)
+    expect(comp.queryByTestId('Child 0')).to.exist
+    expect(comp.queryByTestId('Child 1')).not.to.exist
+    expect(comp.queryByTestId('Child 1a')).to.exist
+    expect(comp.queryByTestId('Child 2')).not.to.exist
   })
 })

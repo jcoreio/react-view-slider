@@ -155,9 +155,7 @@ declare module 'webpack-dev-server/lib/utils/colors.js' {
   declare module.exports: $Exports<'webpack-dev-server/lib/utils/colors'>
 }
 declare module 'webpack-dev-server/lib/utils/createCertificate.js' {
-  declare module.exports: $Exports<
-    'webpack-dev-server/lib/utils/createCertificate'
-  >
+  declare module.exports: $Exports<'webpack-dev-server/lib/utils/createCertificate'>
 }
 declare module 'webpack-dev-server/lib/utils/createConfig.js' {
   declare module.exports: $Exports<'webpack-dev-server/lib/utils/createConfig'>
@@ -187,7 +185,5 @@ declare module 'webpack-dev-server/lib/utils/tryParseInt.js' {
   declare module.exports: $Exports<'webpack-dev-server/lib/utils/tryParseInt'>
 }
 declare module 'webpack-dev-server/lib/utils/updateCompiler.js' {
-  declare module.exports: $Exports<
-    'webpack-dev-server/lib/utils/updateCompiler'
-  >
+  declare module.exports: $Exports<'webpack-dev-server/lib/utils/updateCompiler'>
 }

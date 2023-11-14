@@ -14,7 +14,7 @@
  */
 
 declare module 'react-transition-context' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 /**
@@ -23,234 +23,234 @@ declare module 'react-transition-context' {
  * needed.
  */
 declare module 'react-transition-context/flow-typed/npm/babel-cli_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-core_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-eslint_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-loader_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-plugin-transform-flow-strip-types_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-plugin-transform-react-constant-elements_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-plugin-transform-react-inline-elements_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-polyfill_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-preset-es2015_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-preset-react_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/babel-preset-stage-1_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/enzyme_v2.3.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/eslint_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/eslint-loader_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/eslint-plugin-react_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/flow-bin_v0.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/jasmine_v2.4.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/karma_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/karma-chrome-launcher_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/karma-firefox-launcher_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/karma-jasmine_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/karma-safari-launcher_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/karma-sourcemap-loader_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/karma-webpack_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/progress-bar-webpack-plugin_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/prop-types_v15.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/react-addons-test-utils_v15.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/react-test-renderer_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/webpack_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/webpack-dev-server_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/flow-typed/npm/webpack-merge_vx.x.x' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/lib/index' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'react-transition-context/src/index' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 // Filename aliases
 declare module 'react-transition-context/flow-typed/npm/babel-cli_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-cli_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-cli_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-core_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-core_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-core_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-eslint_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-eslint_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-eslint_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-loader_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-loader_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-loader_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-plugin-transform-flow-strip-types_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-plugin-transform-flow-strip-types_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-plugin-transform-flow-strip-types_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-plugin-transform-react-constant-elements_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-plugin-transform-react-constant-elements_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-plugin-transform-react-constant-elements_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-plugin-transform-react-inline-elements_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-plugin-transform-react-inline-elements_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-plugin-transform-react-inline-elements_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-polyfill_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-polyfill_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-polyfill_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-preset-es2015_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-preset-es2015_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-preset-es2015_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-preset-react_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-preset-react_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-preset-react_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/babel-preset-stage-1_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-preset-stage-1_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/babel-preset-stage-1_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/enzyme_v2.3.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/enzyme_v2.3.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/enzyme_v2.3.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/eslint_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/eslint_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/eslint_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/eslint-loader_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/eslint-loader_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/eslint-loader_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/eslint-plugin-react_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/eslint-plugin-react_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/eslint-plugin-react_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/flow-bin_v0.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/flow-bin_v0.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/flow-bin_v0.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/jasmine_v2.4.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/jasmine_v2.4.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/jasmine_v2.4.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/karma_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/karma-chrome-launcher_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-chrome-launcher_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-chrome-launcher_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/karma-firefox-launcher_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-firefox-launcher_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-firefox-launcher_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/karma-jasmine_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-jasmine_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-jasmine_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/karma-safari-launcher_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-safari-launcher_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-safari-launcher_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/karma-sourcemap-loader_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-sourcemap-loader_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-sourcemap-loader_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/karma-webpack_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-webpack_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/karma-webpack_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/progress-bar-webpack-plugin_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/progress-bar-webpack-plugin_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/progress-bar-webpack-plugin_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/prop-types_v15.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/prop-types_v15.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/prop-types_v15.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/react-addons-test-utils_v15.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/react-addons-test-utils_v15.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/react-addons-test-utils_v15.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/react-test-renderer_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/react-test-renderer_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/react-test-renderer_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/webpack_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/webpack_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/webpack_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/webpack-dev-server_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/webpack-dev-server_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/webpack-dev-server_vx.x.x'>
 }
 declare module 'react-transition-context/flow-typed/npm/webpack-merge_vx.x.x.js' {
-  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/webpack-merge_vx.x.x'>;
+  declare module.exports: $Exports<'react-transition-context/flow-typed/npm/webpack-merge_vx.x.x'>
 }
 declare module 'react-transition-context/lib/index.js' {
-  declare module.exports: $Exports<'react-transition-context/lib/index'>;
+  declare module.exports: $Exports<'react-transition-context/lib/index'>
 }
 declare module 'react-transition-context/src/index.js' {
-  declare module.exports: $Exports<'react-transition-context/src/index'>;
+  declare module.exports: $Exports<'react-transition-context/src/index'>
 }

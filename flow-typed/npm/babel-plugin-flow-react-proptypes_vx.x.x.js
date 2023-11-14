@@ -40,9 +40,7 @@ declare module 'babel-plugin-flow-react-proptypes/lib/util' {
 
 // Filename aliases
 declare module 'babel-plugin-flow-react-proptypes/lib/convertToPropTypes.js' {
-  declare module.exports: $Exports<
-    'babel-plugin-flow-react-proptypes/lib/convertToPropTypes'
-  >
+  declare module.exports: $Exports<'babel-plugin-flow-react-proptypes/lib/convertToPropTypes'>
 }
 declare module 'babel-plugin-flow-react-proptypes/lib/index' {
   declare module.exports: $Exports<'babel-plugin-flow-react-proptypes/lib'>
@@ -51,9 +49,7 @@ declare module 'babel-plugin-flow-react-proptypes/lib/index.js' {
   declare module.exports: $Exports<'babel-plugin-flow-react-proptypes/lib'>
 }
 declare module 'babel-plugin-flow-react-proptypes/lib/makePropTypesAst.js' {
-  declare module.exports: $Exports<
-    'babel-plugin-flow-react-proptypes/lib/makePropTypesAst'
-  >
+  declare module.exports: $Exports<'babel-plugin-flow-react-proptypes/lib/makePropTypesAst'>
 }
 declare module 'babel-plugin-flow-react-proptypes/lib/util.js' {
   declare module.exports: $Exports<'babel-plugin-flow-react-proptypes/lib/util'>

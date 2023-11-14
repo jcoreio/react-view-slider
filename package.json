@@ -2,70 +2,16 @@
   "name": "react-view-slider",
   "version": "0.0.0-development",
   "description": "animates horizontal slide transitions between steps of a wizard or levels of a drilldown",
-  "main": "index.js",
-  "module": "es/index.js",
   "sideEffects": false,
   "scripts": {
-    "lint": "eslint src test --cache",
-    "lint:fix": "eslint --fix src test --cache",
-    "lint:watch": "esw --watch src test --cache",
-    "prettier": "prettier --write *.json *.md *.js src/**/*.js test/**/*.js",
-    "prettier:check": "prettier --list-different *.json *.md *.js src/**/*.js test/**/*.js",
-    "flow": "flow",
-    "flow:coverage": "for file in src/**.js test/**.js; do echo $file; flow coverage $file; done",
-    "flow:watch": "flow-watch -e js,js.flow,flowconfig --ignore es/ --ignore node_modules/ --watch .flowconfig --watch src/ --watch test/",
-    "clean": "rimraf es lib $(cd src; ls) *.js.flow",
-    "build": "npm run clean && cross-env BABEL_ENV=production babel src --out-dir es && flow-copy-source -v src/ es && cross-env BABEL_ENV=es5 babel src --out-dir . && flow-copy-source -v src/ .",
-    "test": "cross-env NODE_ENV=production BABEL_ENV=es5 mocha $npm_package_config_mocha && cross-env NODE_ENV=production BABEL_ENV=coverage nyc --reporter=lcov --reporter=text mocha $npm_package_config_mocha",
-    "test:watch": "cross-env NODE_ENV=production BABEL_ENV=test mocha --watch $npm_package_config_mocha",
-    "test:debug": "cross-env NODE_ENV=production BABEL_ENV=test mocha --inspect-brk $npm_package_config_mocha",
-    "codecov": "nyc report --reporter=text-lcov > coverage.lcov; codecov",
-    "prepublishOnly": "npm run clean && npm run prettier:check && npm run lint && flow && npm test && npm run build",
-    "open:coverage": "open coverage/lcov-report/index.html",
-    "semantic-release": "semantic-release",
     "demo:dev": "webpack-dev-server",
     "build:demo": "cross-env NODE_ENV=production BABEL_ENV=es5 webpack",
     "predeploy": "yarn build:demo",
-    "deploy": "gh-pages -d demo"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm run lint && flow",
-      "commit-msg": "commitlint -e $GIT_PARAMS",
-      "pre-push": "npm test"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@jedwards1211/commitlint-config"
-    ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "config": {
-    "mocha": "-r @babel/register -r jsdom-global/register test/configure.js test/**.js",
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "nyc": {
-    "include": [
-      "src/**/*.js"
-    ],
-    "require": [
-      "@babel/register"
-    ],
-    "sourceMap": false,
-    "instrument": false
+    "deploy": "gh-pages -d demo",
+    "tc": "toolchain",
+    "toolchain": "toolchain",
+    "test": "toolchain test",
+    "prepublishOnly": "echo This package is meant to be published by semantic-release from the dist build directory. && exit 1"
   },
   "repository": {
     "type": "git",
@@ -83,93 +29,78 @@
   },
   "homepage": "https://github.com/jcoreio/react-view-slider#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-export-default-from": "^7.0.0",
-    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "@commitlint/cli": "^6.0.2",
-    "@commitlint/config-conventional": "^6.0.2",
-    "@jedwards1211/commitlint-config": "^1.0.0",
-    "@jedwards1211/eslint-config": "^2.0.0",
-    "@jedwards1211/eslint-config-flow": "^1.0.2",
-    "@jedwards1211/eslint-config-react": "^4.0.0",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@jcoreio/toolchain": "^3.2.0",
+    "@jcoreio/toolchain-circle": "^3.2.0",
+    "@jcoreio/toolchain-esnext": "^3.2.0",
+    "@jcoreio/toolchain-flow": "^3.2.0",
+    "@jcoreio/toolchain-mocha": "^3.2.0",
+    "@jcoreio/toolchain-react": "^3.2.0",
+    "@jcoreio/toolchain-semantic-release": "^3.2.0",
+    "@jcoreio/toolchain-typescript": "^3.2.0",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "@storybook/storybook-deployer": "^2.2.0",
-    "babel-eslint": "^10.0.1",
+    "@testing-library/react": "^14.1.0",
+    "@types/inline-style-prefixer": "^5.0.3",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
     "babel-loader": "^8.0.5",
-    "babel-plugin-flow-react-proptypes": "^24.1.2",
-    "babel-plugin-istanbul": "^5.1.0",
     "babel-plugin-lodash": "^3.3.4",
-    "chai": "^4.2.0",
+    "chai": "^4.3.7",
     "copy": "^0.3.2",
-    "coveralls": "^3.0.0",
     "cross-env": "^5.2.0",
     "delay": "^2.0.0",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "eslint": "^5.9.0",
+    "eslint": "^8.43.0",
     "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-flowtype": "^3.2.0",
-    "eslint-plugin-react": "^7.11.1",
-    "eslint-watch": "^4.0.2",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-react": "^7.32.2",
     "flow-bin": "^0.113.0",
-    "flow-copy-source": "^2.0.2",
-    "flow-watch": "^1.1.4",
     "get-node-dimensions": "^1.2.0",
     "gh-pages": "^2.0.1",
-    "husky": "^1.1.4",
-    "istanbul": "^0.4.5",
-    "jsdom": "^11.5.1",
-    "jsdom-global": "^3.0.2",
-    "lint-staged": "^8.0.4",
-    "mocha": "^6.0.0",
-    "nyc": "^13.1.0",
-    "prettier": "^1.15.2",
-    "prettier-eslint": "^8.8.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "global-jsdom": "^9.0.1",
+    "jsdom": "^22.1.0",
+    "mocha": "^10.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hot-loader": "^3.1.3",
     "rimraf": "^2.6.0",
-    "semantic-release": "^15.13.3",
-    "sinon": "^4.1.4",
+    "sinon": "^17.0.1",
+    "typescript": "^5.2.2",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "@babel/runtime": "^7.1.5",
+    "@babel/runtime": "^7.18.6",
     "inline-style-prefixer": "^4.0.0",
     "prop-types": "^15.6.0",
     "react-transition-context": "^5.0.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "*"
   },
-  "renovate": {
-    "extends": [
-      ":separateMajorReleases",
-      ":combinePatchMinorReleases",
-      ":ignoreUnstable",
-      ":prImmediately",
-      ":renovatePrefix",
-      ":updateNotScheduled",
-      ":preserveSemverRanges",
-      ":semanticPrefixFixDepsChoreOthers",
-      ":automergeDisabled",
-      "group:monorepos"
-    ],
-    "automerge": true,
-    "major": {
-      "automerge": false
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./dist/package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    },
+    "./simple": {
+      "types": "./dist/simple.d.ts",
+      "import": "./dist/simple.mjs",
+      "default": "./dist/simple.js"
     }
-  }
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "packageManager": "pnpm@8.3.1"
 }

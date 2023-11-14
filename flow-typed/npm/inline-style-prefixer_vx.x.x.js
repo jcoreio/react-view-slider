@@ -208,9 +208,7 @@ declare module 'inline-style-prefixer/utils/prefixValue' {
 
 // Filename aliases
 declare module 'inline-style-prefixer/dynamic/createPrefixer.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/createPrefixer'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/createPrefixer'>
 }
 declare module 'inline-style-prefixer/dynamic/dynamicData.js' {
   declare module.exports: $Exports<'inline-style-prefixer/dynamic/dynamicData'>
@@ -225,42 +223,28 @@ declare module 'inline-style-prefixer/dynamic/plugins/calc.js' {
   declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/calc'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/crossFade.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/crossFade'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/crossFade'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/cursor.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/cursor'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/cursor'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/filter.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/filter'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/filter'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/flex.js' {
   declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/flex'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/flexboxIE.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/flexboxIE'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/flexboxIE'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/flexboxOld.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/flexboxOld'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/flexboxOld'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/gradient.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/gradient'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/gradient'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/imageSet.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/imageSet'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/imageSet'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/index' {
   declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins'>
@@ -269,34 +253,22 @@ declare module 'inline-style-prefixer/dynamic/plugins/index.js' {
   declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/position.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/position'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/position'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/sizing.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/sizing'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/sizing'>
 }
 declare module 'inline-style-prefixer/dynamic/plugins/transition.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/dynamic/plugins/transition'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/dynamic/plugins/transition'>
 }
 declare module 'inline-style-prefixer/generator/generateDynamicPrefixMap.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/generator/generateDynamicPrefixMap'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/generator/generateDynamicPrefixMap'>
 }
 declare module 'inline-style-prefixer/generator/generatePluginList.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/generator/generatePluginList'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/generator/generatePluginList'>
 }
 declare module 'inline-style-prefixer/generator/generateStaticPrefixMap.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/generator/generateStaticPrefixMap'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/generator/generateStaticPrefixMap'>
 }
 declare module 'inline-style-prefixer/generator/index' {
   declare module.exports: $Exports<'inline-style-prefixer/generator'>
@@ -305,19 +277,13 @@ declare module 'inline-style-prefixer/generator/index.js' {
   declare module.exports: $Exports<'inline-style-prefixer/generator'>
 }
 declare module 'inline-style-prefixer/generator/maps/pluginMap.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/generator/maps/pluginMap'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/generator/maps/pluginMap'>
 }
 declare module 'inline-style-prefixer/generator/maps/propertyMap.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/generator/maps/propertyMap'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/generator/maps/propertyMap'>
 }
 declare module 'inline-style-prefixer/static/createPrefixer.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/createPrefixer'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/createPrefixer'>
 }
 declare module 'inline-style-prefixer/static/index' {
   declare module.exports: $Exports<'inline-style-prefixer/static'>
@@ -329,42 +295,28 @@ declare module 'inline-style-prefixer/static/plugins/calc.js' {
   declare module.exports: $Exports<'inline-style-prefixer/static/plugins/calc'>
 }
 declare module 'inline-style-prefixer/static/plugins/crossFade.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/crossFade'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/crossFade'>
 }
 declare module 'inline-style-prefixer/static/plugins/cursor.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/cursor'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/cursor'>
 }
 declare module 'inline-style-prefixer/static/plugins/filter.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/filter'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/filter'>
 }
 declare module 'inline-style-prefixer/static/plugins/flex.js' {
   declare module.exports: $Exports<'inline-style-prefixer/static/plugins/flex'>
 }
 declare module 'inline-style-prefixer/static/plugins/flexboxIE.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/flexboxIE'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/flexboxIE'>
 }
 declare module 'inline-style-prefixer/static/plugins/flexboxOld.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/flexboxOld'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/flexboxOld'>
 }
 declare module 'inline-style-prefixer/static/plugins/gradient.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/gradient'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/gradient'>
 }
 declare module 'inline-style-prefixer/static/plugins/imageSet.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/imageSet'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/imageSet'>
 }
 declare module 'inline-style-prefixer/static/plugins/index' {
   declare module.exports: $Exports<'inline-style-prefixer/static/plugins'>
@@ -373,47 +325,31 @@ declare module 'inline-style-prefixer/static/plugins/index.js' {
   declare module.exports: $Exports<'inline-style-prefixer/static/plugins'>
 }
 declare module 'inline-style-prefixer/static/plugins/position.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/position'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/position'>
 }
 declare module 'inline-style-prefixer/static/plugins/sizing.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/sizing'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/sizing'>
 }
 declare module 'inline-style-prefixer/static/plugins/transition.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/static/plugins/transition'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/static/plugins/transition'>
 }
 declare module 'inline-style-prefixer/static/staticData.js' {
   declare module.exports: $Exports<'inline-style-prefixer/static/staticData'>
 }
 declare module 'inline-style-prefixer/utils/addNewValuesOnly.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/utils/addNewValuesOnly'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/utils/addNewValuesOnly'>
 }
 declare module 'inline-style-prefixer/utils/capitalizeString.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/utils/capitalizeString'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/utils/capitalizeString'>
 }
 declare module 'inline-style-prefixer/utils/getBrowserInformation.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/utils/getBrowserInformation'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/utils/getBrowserInformation'>
 }
 declare module 'inline-style-prefixer/utils/getPrefixedKeyframes.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/utils/getPrefixedKeyframes'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/utils/getPrefixedKeyframes'>
 }
 declare module 'inline-style-prefixer/utils/getPrefixedValue.js' {
-  declare module.exports: $Exports<
-    'inline-style-prefixer/utils/getPrefixedValue'
-  >
+  declare module.exports: $Exports<'inline-style-prefixer/utils/getPrefixedValue'>
 }
 declare module 'inline-style-prefixer/utils/isObject.js' {
   declare module.exports: $Exports<'inline-style-prefixer/utils/isObject'>

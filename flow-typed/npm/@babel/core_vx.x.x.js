@@ -243,9 +243,7 @@ declare module '@babel/core/lib/config/util.js' {
   declare module.exports: $Exports<'@babel/core/lib/config/util'>
 }
 declare module '@babel/core/lib/config/validation/option-assertions.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/config/validation/option-assertions'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/config/validation/option-assertions'>
 }
 declare module '@babel/core/lib/config/validation/options.js' {
   declare module.exports: $Exports<'@babel/core/lib/config/validation/options'>
@@ -266,9 +264,7 @@ declare module '@babel/core/lib/parse.js' {
   declare module.exports: $Exports<'@babel/core/lib/parse'>
 }
 declare module '@babel/core/lib/tools/build-external-helpers.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/tools/build-external-helpers'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/tools/build-external-helpers'>
 }
 declare module '@babel/core/lib/transform-ast.js' {
   declare module.exports: $Exports<'@babel/core/lib/transform-ast'>
@@ -283,22 +279,16 @@ declare module '@babel/core/lib/transform.js' {
   declare module.exports: $Exports<'@babel/core/lib/transform'>
 }
 declare module '@babel/core/lib/transformation/block-hoist-plugin.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/transformation/block-hoist-plugin'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/transformation/block-hoist-plugin'>
 }
 declare module '@babel/core/lib/transformation/file/file.js' {
   declare module.exports: $Exports<'@babel/core/lib/transformation/file/file'>
 }
 declare module '@babel/core/lib/transformation/file/generate.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/transformation/file/generate'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/transformation/file/generate'>
 }
 declare module '@babel/core/lib/transformation/file/merge-map.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/transformation/file/merge-map'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/transformation/file/merge-map'>
 }
 declare module '@babel/core/lib/transformation/index' {
   declare module.exports: $Exports<'@babel/core/lib/transformation'>
@@ -307,20 +297,14 @@ declare module '@babel/core/lib/transformation/index.js' {
   declare module.exports: $Exports<'@babel/core/lib/transformation'>
 }
 declare module '@babel/core/lib/transformation/normalize-file.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/transformation/normalize-file'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/transformation/normalize-file'>
 }
 declare module '@babel/core/lib/transformation/normalize-opts.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/transformation/normalize-opts'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/transformation/normalize-opts'>
 }
 declare module '@babel/core/lib/transformation/plugin-pass.js' {
   declare module.exports: $Exports<'@babel/core/lib/transformation/plugin-pass'>
 }
 declare module '@babel/core/lib/transformation/util/missing-plugin-helper.js' {
-  declare module.exports: $Exports<
-    '@babel/core/lib/transformation/util/missing-plugin-helper'
-  >
+  declare module.exports: $Exports<'@babel/core/lib/transformation/util/missing-plugin-helper'>
 }

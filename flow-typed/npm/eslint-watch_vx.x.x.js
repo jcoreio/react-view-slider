@@ -100,34 +100,22 @@ declare module 'eslint-watch/build/executor.js' {
   declare module.exports: $Exports<'eslint-watch/build/executor'>
 }
 declare module 'eslint-watch/build/formatters/helpers/characters.js' {
-  declare module.exports: $Exports<
-    'eslint-watch/build/formatters/helpers/characters'
-  >
+  declare module.exports: $Exports<'eslint-watch/build/formatters/helpers/characters'>
 }
 declare module 'eslint-watch/build/formatters/helpers/clear-terminal.js' {
-  declare module.exports: $Exports<
-    'eslint-watch/build/formatters/helpers/clear-terminal'
-  >
+  declare module.exports: $Exports<'eslint-watch/build/formatters/helpers/clear-terminal'>
 }
 declare module 'eslint-watch/build/formatters/helpers/error-warning.js' {
-  declare module.exports: $Exports<
-    'eslint-watch/build/formatters/helpers/error-warning'
-  >
+  declare module.exports: $Exports<'eslint-watch/build/formatters/helpers/error-warning'>
 }
 declare module 'eslint-watch/build/formatters/helpers/success.js' {
-  declare module.exports: $Exports<
-    'eslint-watch/build/formatters/helpers/success'
-  >
+  declare module.exports: $Exports<'eslint-watch/build/formatters/helpers/success'>
 }
 declare module 'eslint-watch/build/formatters/simple-detail.js' {
-  declare module.exports: $Exports<
-    'eslint-watch/build/formatters/simple-detail'
-  >
+  declare module.exports: $Exports<'eslint-watch/build/formatters/simple-detail'>
 }
 declare module 'eslint-watch/build/formatters/simple-success.js' {
-  declare module.exports: $Exports<
-    'eslint-watch/build/formatters/simple-success'
-  >
+  declare module.exports: $Exports<'eslint-watch/build/formatters/simple-success'>
 }
 declare module 'eslint-watch/build/formatters/simple.js' {
   declare module.exports: $Exports<'eslint-watch/build/formatters/simple'>

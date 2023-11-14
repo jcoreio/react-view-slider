@@ -108,7 +108,10 @@ export const defaultProps: DefaultProps = {
 function applyDefaults(props: Props): DefaultedProps {
   const result: any = { ...props }
   for (const key in defaultProps) {
-    if (defaultProps.hasOwnProperty(key) && props[key] == null) {
+    if (
+      Object.prototype.hasOwnProperty.call(defaultProps, key) &&
+      props[key] == null
+    ) {
       result[key] = defaultProps[key]
     }
   }
@@ -150,11 +153,8 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   componentDidUpdate() {
-    const {
-      activeView,
-      transitionDuration,
-      keepViewsMounted,
-    } = this.getDefaultedProps()
+    const { activeView, transitionDuration, keepViewsMounted } =
+      this.getDefaultedProps()
     let newState: ?$Shape<State>
 
     if (
@@ -263,7 +263,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       <div
         key={index}
         style={prefixer.prefix(style)}
-        ref={c => (this.views[index] = c)}
+        ref={(c) => (this.views[index] = c)}
       >
         <div
           style={prefixer.prefix({ width: '100%', ...innerViewWrapperStyle })}
@@ -281,11 +281,8 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   animateHeight = (): boolean => {
-    const {
-      animateHeight,
-      fillParent,
-      keepViewsMounted,
-    } = this.getDefaultedProps()
+    const { animateHeight, fillParent, keepViewsMounted } =
+      this.getDefaultedProps()
     return animateHeight && !fillParent && !keepViewsMounted
   }
 
@@ -328,9 +325,9 @@ export default class ViewSlider extends React.Component<Props, State> {
 
     const finalViewportStyle = {
       position: 'relative',
-      transform: `translateX(calc(${activeView *
-        spacing *
-        (rtl ? 100 : -100)}% + 0px))`,
+      transform: `translateX(calc(${
+        activeView * spacing * (rtl ? 100 : -100)
+      }% + 0px))`,
       whiteSpace: 'nowrap',
       minHeight: '100%',
       direction: rtl ? 'rtl' : 'ltr',

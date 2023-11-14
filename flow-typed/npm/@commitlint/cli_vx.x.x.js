@@ -96,64 +96,40 @@ declare module '@commitlint/cli/src/help' {
 
 // Filename aliases
 declare module '@commitlint/cli/fixtures/empty/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/empty/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/empty/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/extends-root/extended.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/extends-root/extended'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/extends-root/extended'>
 }
 declare module '@commitlint/cli/fixtures/inner-scope/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/inner-scope/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/inner-scope/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/inner-scope/inner-scope/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/inner-scope/inner-scope/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/inner-scope/inner-scope/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/issue-prefixes/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/issue-prefixes/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/issue-prefixes/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/outer-scope/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/outer-scope/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/outer-scope/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/parser-preset/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/parser-preset/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/parser-preset/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/parser-preset/parser-preset.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/parser-preset/parser-preset'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/parser-preset/parser-preset'>
 }
 declare module '@commitlint/cli/fixtures/signoff/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/signoff/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/signoff/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/simple/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/simple/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/simple/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/specify-config-file/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/specify-config-file/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/specify-config-file/commitlint.config'>
 }
 declare module '@commitlint/cli/fixtures/specify-config-file/config/commitlint.config.js' {
-  declare module.exports: $Exports<
-    '@commitlint/cli/fixtures/specify-config-file/config/commitlint.config'
-  >
+  declare module.exports: $Exports<'@commitlint/cli/fixtures/specify-config-file/config/commitlint.config'>
 }
 declare module '@commitlint/cli/index' {
   declare module.exports: $Exports<'@commitlint/cli'>

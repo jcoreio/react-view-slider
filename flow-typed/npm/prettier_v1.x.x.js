@@ -5,7 +5,7 @@ declare module 'prettier' {
   declare export type AST = { [key: string]: any, ... }
   declare export type Doc = {
     [key: string]: any,
-    ...,
+    ...
   }
   declare export type FastPath<T = any> = {
     stack: any[],
@@ -54,7 +54,7 @@ declare module 'prettier' {
       text: string,
       options?: { [key: string]: any, ... }
     ) => AST,
-    ...,
+    ...
   }
 
   declare export type CustomParser = (

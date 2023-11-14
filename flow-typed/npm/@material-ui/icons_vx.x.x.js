@@ -20944,9 +20944,7 @@ declare module '@material-ui/icons/AccessibilityNew.js' {
   declare module.exports: $Exports<'@material-ui/icons/AccessibilityNew'>
 }
 declare module '@material-ui/icons/AccessibilityNewOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccessibilityNewOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccessibilityNewOutlined'>
 }
 declare module '@material-ui/icons/AccessibilityNewRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/AccessibilityNewRounded'>
@@ -20976,22 +20974,16 @@ declare module '@material-ui/icons/AccessibleForward.js' {
   declare module.exports: $Exports<'@material-ui/icons/AccessibleForward'>
 }
 declare module '@material-ui/icons/AccessibleForwardOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccessibleForwardOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccessibleForwardOutlined'>
 }
 declare module '@material-ui/icons/AccessibleForwardRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccessibleForwardRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccessibleForwardRounded'>
 }
 declare module '@material-ui/icons/AccessibleForwardSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/AccessibleForwardSharp'>
 }
 declare module '@material-ui/icons/AccessibleForwardTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccessibleForwardTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccessibleForwardTwoTone'>
 }
 declare module '@material-ui/icons/AccessibleOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/AccessibleOutlined'>
@@ -21039,24 +21031,16 @@ declare module '@material-ui/icons/AccountBalanceWallet.js' {
   declare module.exports: $Exports<'@material-ui/icons/AccountBalanceWallet'>
 }
 declare module '@material-ui/icons/AccountBalanceWalletOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccountBalanceWalletOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccountBalanceWalletOutlined'>
 }
 declare module '@material-ui/icons/AccountBalanceWalletRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccountBalanceWalletRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccountBalanceWalletRounded'>
 }
 declare module '@material-ui/icons/AccountBalanceWalletSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccountBalanceWalletSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccountBalanceWalletSharp'>
 }
 declare module '@material-ui/icons/AccountBalanceWalletTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AccountBalanceWalletTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AccountBalanceWalletTwoTone'>
 }
 declare module '@material-ui/icons/AccountBox.js' {
   declare module.exports: $Exports<'@material-ui/icons/AccountBox'>
@@ -21191,9 +21175,7 @@ declare module '@material-ui/icons/AddCircleOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/AddCircleOutlined'>
 }
 declare module '@material-ui/icons/AddCircleOutlineOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AddCircleOutlineOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AddCircleOutlineOutlined'>
 }
 declare module '@material-ui/icons/AddCircleOutlineRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/AddCircleOutlineRounded'>
@@ -21250,22 +21232,16 @@ declare module '@material-ui/icons/AddPhotoAlternate.js' {
   declare module.exports: $Exports<'@material-ui/icons/AddPhotoAlternate'>
 }
 declare module '@material-ui/icons/AddPhotoAlternateOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AddPhotoAlternateOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AddPhotoAlternateOutlined'>
 }
 declare module '@material-ui/icons/AddPhotoAlternateRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AddPhotoAlternateRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AddPhotoAlternateRounded'>
 }
 declare module '@material-ui/icons/AddPhotoAlternateSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/AddPhotoAlternateSharp'>
 }
 declare module '@material-ui/icons/AddPhotoAlternateTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AddPhotoAlternateTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AddPhotoAlternateTwoTone'>
 }
 declare module '@material-ui/icons/AddRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/AddRounded'>
@@ -21358,24 +21334,16 @@ declare module '@material-ui/icons/AirlineSeatFlatAngled.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirlineSeatFlatAngled'>
 }
 declare module '@material-ui/icons/AirlineSeatFlatAngledOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatFlatAngledOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatFlatAngledOutlined'>
 }
 declare module '@material-ui/icons/AirlineSeatFlatAngledRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatFlatAngledRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatFlatAngledRounded'>
 }
 declare module '@material-ui/icons/AirlineSeatFlatAngledSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatFlatAngledSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatFlatAngledSharp'>
 }
 declare module '@material-ui/icons/AirlineSeatFlatAngledTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatFlatAngledTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatFlatAngledTwoTone'>
 }
 declare module '@material-ui/icons/AirlineSeatFlatOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirlineSeatFlatOutlined'>
@@ -21390,194 +21358,124 @@ declare module '@material-ui/icons/AirlineSeatFlatTwoTone.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirlineSeatFlatTwoTone'>
 }
 declare module '@material-ui/icons/AirlineSeatIndividualSuite.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatIndividualSuite'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatIndividualSuite'>
 }
 declare module '@material-ui/icons/AirlineSeatIndividualSuiteOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatIndividualSuiteOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatIndividualSuiteOutlined'>
 }
 declare module '@material-ui/icons/AirlineSeatIndividualSuiteRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatIndividualSuiteRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatIndividualSuiteRounded'>
 }
 declare module '@material-ui/icons/AirlineSeatIndividualSuiteSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatIndividualSuiteSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatIndividualSuiteSharp'>
 }
 declare module '@material-ui/icons/AirlineSeatIndividualSuiteTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatIndividualSuiteTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatIndividualSuiteTwoTone'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomExtra.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomExtra'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomExtraOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomExtraOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomExtraOutlined'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomExtraRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomExtraRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomExtraRounded'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomExtraSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomExtraSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomExtraSharp'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomExtraTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomExtraTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomExtraTwoTone'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomNormal.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomNormal'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomNormal'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomNormalOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomNormalOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomNormalOutlined'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomNormalRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomNormalRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomNormalRounded'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomNormalSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomNormalSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomNormalSharp'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomNormalTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomNormalTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomNormalTwoTone'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomReduced.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomReduced'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomReduced'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomReducedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomReducedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomReducedOutlined'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomReducedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomReducedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomReducedRounded'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomReducedSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomReducedSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomReducedSharp'>
 }
 declare module '@material-ui/icons/AirlineSeatLegroomReducedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatLegroomReducedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatLegroomReducedTwoTone'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineExtra.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineExtra'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineExtraOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineExtraOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineExtraOutlined'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineExtraRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineExtraRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineExtraRounded'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineExtraSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineExtraSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineExtraSharp'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineExtraTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineExtraTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineExtraTwoTone'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineNormal.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineNormal'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineNormal'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineNormalOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineNormalOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineNormalOutlined'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineNormalRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineNormalRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineNormalRounded'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineNormalSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineNormalSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineNormalSharp'>
 }
 declare module '@material-ui/icons/AirlineSeatReclineNormalTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirlineSeatReclineNormalTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirlineSeatReclineNormalTwoTone'>
 }
 declare module '@material-ui/icons/AirplanemodeActive.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirplanemodeActive'>
 }
 declare module '@material-ui/icons/AirplanemodeActiveOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirplanemodeActiveOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirplanemodeActiveOutlined'>
 }
 declare module '@material-ui/icons/AirplanemodeActiveRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirplanemodeActiveRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirplanemodeActiveRounded'>
 }
 declare module '@material-ui/icons/AirplanemodeActiveSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirplanemodeActiveSharp'>
 }
 declare module '@material-ui/icons/AirplanemodeActiveTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirplanemodeActiveTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirplanemodeActiveTwoTone'>
 }
 declare module '@material-ui/icons/AirplanemodeInactive.js' {
   declare module.exports: $Exports<'@material-ui/icons/AirplanemodeInactive'>
 }
 declare module '@material-ui/icons/AirplanemodeInactiveOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirplanemodeInactiveOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirplanemodeInactiveOutlined'>
 }
 declare module '@material-ui/icons/AirplanemodeInactiveRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirplanemodeInactiveRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirplanemodeInactiveRounded'>
 }
 declare module '@material-ui/icons/AirplanemodeInactiveSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirplanemodeInactiveSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirplanemodeInactiveSharp'>
 }
 declare module '@material-ui/icons/AirplanemodeInactiveTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AirplanemodeInactiveTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AirplanemodeInactiveTwoTone'>
 }
 declare module '@material-ui/icons/Airplay.js' {
   declare module.exports: $Exports<'@material-ui/icons/Airplay'>
@@ -21856,24 +21754,16 @@ declare module '@material-ui/icons/ArrowDropDownCircle.js' {
   declare module.exports: $Exports<'@material-ui/icons/ArrowDropDownCircle'>
 }
 declare module '@material-ui/icons/ArrowDropDownCircleOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ArrowDropDownCircleOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ArrowDropDownCircleOutlined'>
 }
 declare module '@material-ui/icons/ArrowDropDownCircleRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ArrowDropDownCircleRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ArrowDropDownCircleRounded'>
 }
 declare module '@material-ui/icons/ArrowDropDownCircleSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ArrowDropDownCircleSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ArrowDropDownCircleSharp'>
 }
 declare module '@material-ui/icons/ArrowDropDownCircleTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ArrowDropDownCircleTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ArrowDropDownCircleTwoTone'>
 }
 declare module '@material-ui/icons/ArrowDropDownOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/ArrowDropDownOutlined'>
@@ -22080,27 +21970,19 @@ declare module '@material-ui/icons/AssignmentReturned.js' {
   declare module.exports: $Exports<'@material-ui/icons/AssignmentReturned'>
 }
 declare module '@material-ui/icons/AssignmentReturnedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AssignmentReturnedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AssignmentReturnedOutlined'>
 }
 declare module '@material-ui/icons/AssignmentReturnedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AssignmentReturnedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AssignmentReturnedRounded'>
 }
 declare module '@material-ui/icons/AssignmentReturnedSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/AssignmentReturnedSharp'>
 }
 declare module '@material-ui/icons/AssignmentReturnedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AssignmentReturnedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AssignmentReturnedTwoTone'>
 }
 declare module '@material-ui/icons/AssignmentReturnOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AssignmentReturnOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AssignmentReturnOutlined'>
 }
 declare module '@material-ui/icons/AssignmentReturnRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/AssignmentReturnRounded'>
@@ -22121,22 +22003,16 @@ declare module '@material-ui/icons/AssignmentTurnedIn.js' {
   declare module.exports: $Exports<'@material-ui/icons/AssignmentTurnedIn'>
 }
 declare module '@material-ui/icons/AssignmentTurnedInOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AssignmentTurnedInOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AssignmentTurnedInOutlined'>
 }
 declare module '@material-ui/icons/AssignmentTurnedInRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AssignmentTurnedInRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AssignmentTurnedInRounded'>
 }
 declare module '@material-ui/icons/AssignmentTurnedInSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/AssignmentTurnedInSharp'>
 }
 declare module '@material-ui/icons/AssignmentTurnedInTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/AssignmentTurnedInTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/AssignmentTurnedInTwoTone'>
 }
 declare module '@material-ui/icons/AssignmentTwoTone.js' {
   declare module.exports: $Exports<'@material-ui/icons/AssignmentTwoTone'>
@@ -22445,150 +22321,106 @@ declare module '@material-ui/icons/BatteryCharging20.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging20'>
 }
 declare module '@material-ui/icons/BatteryCharging20Outlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging20Outlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging20Outlined'>
 }
 declare module '@material-ui/icons/BatteryCharging20Rounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging20Rounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging20Rounded'>
 }
 declare module '@material-ui/icons/BatteryCharging20Sharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging20Sharp'>
 }
 declare module '@material-ui/icons/BatteryCharging20TwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging20TwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging20TwoTone'>
 }
 declare module '@material-ui/icons/BatteryCharging30.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging30'>
 }
 declare module '@material-ui/icons/BatteryCharging30Outlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging30Outlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging30Outlined'>
 }
 declare module '@material-ui/icons/BatteryCharging30Rounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging30Rounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging30Rounded'>
 }
 declare module '@material-ui/icons/BatteryCharging30Sharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging30Sharp'>
 }
 declare module '@material-ui/icons/BatteryCharging30TwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging30TwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging30TwoTone'>
 }
 declare module '@material-ui/icons/BatteryCharging50.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging50'>
 }
 declare module '@material-ui/icons/BatteryCharging50Outlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging50Outlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging50Outlined'>
 }
 declare module '@material-ui/icons/BatteryCharging50Rounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging50Rounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging50Rounded'>
 }
 declare module '@material-ui/icons/BatteryCharging50Sharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging50Sharp'>
 }
 declare module '@material-ui/icons/BatteryCharging50TwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging50TwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging50TwoTone'>
 }
 declare module '@material-ui/icons/BatteryCharging60.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging60'>
 }
 declare module '@material-ui/icons/BatteryCharging60Outlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging60Outlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging60Outlined'>
 }
 declare module '@material-ui/icons/BatteryCharging60Rounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging60Rounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging60Rounded'>
 }
 declare module '@material-ui/icons/BatteryCharging60Sharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging60Sharp'>
 }
 declare module '@material-ui/icons/BatteryCharging60TwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging60TwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging60TwoTone'>
 }
 declare module '@material-ui/icons/BatteryCharging80.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging80'>
 }
 declare module '@material-ui/icons/BatteryCharging80Outlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging80Outlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging80Outlined'>
 }
 declare module '@material-ui/icons/BatteryCharging80Rounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging80Rounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging80Rounded'>
 }
 declare module '@material-ui/icons/BatteryCharging80Sharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging80Sharp'>
 }
 declare module '@material-ui/icons/BatteryCharging80TwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging80TwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging80TwoTone'>
 }
 declare module '@material-ui/icons/BatteryCharging90.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging90'>
 }
 declare module '@material-ui/icons/BatteryCharging90Outlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging90Outlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging90Outlined'>
 }
 declare module '@material-ui/icons/BatteryCharging90Rounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging90Rounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging90Rounded'>
 }
 declare module '@material-ui/icons/BatteryCharging90Sharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryCharging90Sharp'>
 }
 declare module '@material-ui/icons/BatteryCharging90TwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryCharging90TwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryCharging90TwoTone'>
 }
 declare module '@material-ui/icons/BatteryChargingFull.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryChargingFull'>
 }
 declare module '@material-ui/icons/BatteryChargingFullOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryChargingFullOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryChargingFullOutlined'>
 }
 declare module '@material-ui/icons/BatteryChargingFullRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryChargingFullRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryChargingFullRounded'>
 }
 declare module '@material-ui/icons/BatteryChargingFullSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryChargingFullSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryChargingFullSharp'>
 }
 declare module '@material-ui/icons/BatteryChargingFullTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BatteryChargingFullTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BatteryChargingFullTwoTone'>
 }
 declare module '@material-ui/icons/BatteryFull.js' {
   declare module.exports: $Exports<'@material-ui/icons/BatteryFull'>
@@ -22702,43 +22534,31 @@ declare module '@material-ui/icons/BluetoothConnected.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothConnected'>
 }
 declare module '@material-ui/icons/BluetoothConnectedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothConnectedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothConnectedOutlined'>
 }
 declare module '@material-ui/icons/BluetoothConnectedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothConnectedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothConnectedRounded'>
 }
 declare module '@material-ui/icons/BluetoothConnectedSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothConnectedSharp'>
 }
 declare module '@material-ui/icons/BluetoothConnectedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothConnectedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothConnectedTwoTone'>
 }
 declare module '@material-ui/icons/BluetoothDisabled.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothDisabled'>
 }
 declare module '@material-ui/icons/BluetoothDisabledOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothDisabledOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothDisabledOutlined'>
 }
 declare module '@material-ui/icons/BluetoothDisabledRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothDisabledRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothDisabledRounded'>
 }
 declare module '@material-ui/icons/BluetoothDisabledSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothDisabledSharp'>
 }
 declare module '@material-ui/icons/BluetoothDisabledTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothDisabledTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothDisabledTwoTone'>
 }
 declare module '@material-ui/icons/BluetoothOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothOutlined'>
@@ -22750,22 +22570,16 @@ declare module '@material-ui/icons/BluetoothSearching.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothSearching'>
 }
 declare module '@material-ui/icons/BluetoothSearchingOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothSearchingOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothSearchingOutlined'>
 }
 declare module '@material-ui/icons/BluetoothSearchingRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothSearchingRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothSearchingRounded'>
 }
 declare module '@material-ui/icons/BluetoothSearchingSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothSearchingSharp'>
 }
 declare module '@material-ui/icons/BluetoothSearchingTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BluetoothSearchingTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BluetoothSearchingTwoTone'>
 }
 declare module '@material-ui/icons/BluetoothSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BluetoothSharp'>
@@ -22957,9 +22771,7 @@ declare module '@material-ui/icons/BorderHorizontal.js' {
   declare module.exports: $Exports<'@material-ui/icons/BorderHorizontal'>
 }
 declare module '@material-ui/icons/BorderHorizontalOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BorderHorizontalOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BorderHorizontalOutlined'>
 }
 declare module '@material-ui/icons/BorderHorizontalRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/BorderHorizontalRounded'>
@@ -23079,22 +22891,16 @@ declare module '@material-ui/icons/BrandingWatermark.js' {
   declare module.exports: $Exports<'@material-ui/icons/BrandingWatermark'>
 }
 declare module '@material-ui/icons/BrandingWatermarkOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BrandingWatermarkOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BrandingWatermarkOutlined'>
 }
 declare module '@material-ui/icons/BrandingWatermarkRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BrandingWatermarkRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BrandingWatermarkRounded'>
 }
 declare module '@material-ui/icons/BrandingWatermarkSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/BrandingWatermarkSharp'>
 }
 declare module '@material-ui/icons/BrandingWatermarkTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BrandingWatermarkTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BrandingWatermarkTwoTone'>
 }
 declare module '@material-ui/icons/Brightness1.js' {
   declare module.exports: $Exports<'@material-ui/icons/Brightness1'>
@@ -23250,9 +23056,7 @@ declare module '@material-ui/icons/BrightnessMedium.js' {
   declare module.exports: $Exports<'@material-ui/icons/BrightnessMedium'>
 }
 declare module '@material-ui/icons/BrightnessMediumOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/BrightnessMediumOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/BrightnessMediumOutlined'>
 }
 declare module '@material-ui/icons/BrightnessMediumRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/BrightnessMediumRounded'>
@@ -23498,22 +23302,16 @@ declare module '@material-ui/icons/CallMissedOutgoing.js' {
   declare module.exports: $Exports<'@material-ui/icons/CallMissedOutgoing'>
 }
 declare module '@material-ui/icons/CallMissedOutgoingOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CallMissedOutgoingOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CallMissedOutgoingOutlined'>
 }
 declare module '@material-ui/icons/CallMissedOutgoingRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CallMissedOutgoingRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CallMissedOutgoingRounded'>
 }
 declare module '@material-ui/icons/CallMissedOutgoingSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/CallMissedOutgoingSharp'>
 }
 declare module '@material-ui/icons/CallMissedOutgoingTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CallMissedOutgoingTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CallMissedOutgoingTwoTone'>
 }
 declare module '@material-ui/icons/CallMissedOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/CallMissedOutlined'>
@@ -23684,22 +23482,16 @@ declare module '@material-ui/icons/CancelPresentation.js' {
   declare module.exports: $Exports<'@material-ui/icons/CancelPresentation'>
 }
 declare module '@material-ui/icons/CancelPresentationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CancelPresentationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CancelPresentationOutlined'>
 }
 declare module '@material-ui/icons/CancelPresentationRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CancelPresentationRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CancelPresentationRounded'>
 }
 declare module '@material-ui/icons/CancelPresentationSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/CancelPresentationSharp'>
 }
 declare module '@material-ui/icons/CancelPresentationTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CancelPresentationTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CancelPresentationTwoTone'>
 }
 declare module '@material-ui/icons/CancelRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/CancelRounded'>
@@ -23792,9 +23584,7 @@ declare module '@material-ui/icons/CastForEducation.js' {
   declare module.exports: $Exports<'@material-ui/icons/CastForEducation'>
 }
 declare module '@material-ui/icons/CastForEducationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CastForEducationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CastForEducationOutlined'>
 }
 declare module '@material-ui/icons/CastForEducationRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/CastForEducationRounded'>
@@ -23851,22 +23641,16 @@ declare module '@material-ui/icons/CenterFocusStrong.js' {
   declare module.exports: $Exports<'@material-ui/icons/CenterFocusStrong'>
 }
 declare module '@material-ui/icons/CenterFocusStrongOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CenterFocusStrongOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CenterFocusStrongOutlined'>
 }
 declare module '@material-ui/icons/CenterFocusStrongRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CenterFocusStrongRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CenterFocusStrongRounded'>
 }
 declare module '@material-ui/icons/CenterFocusStrongSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/CenterFocusStrongSharp'>
 }
 declare module '@material-ui/icons/CenterFocusStrongTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CenterFocusStrongTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CenterFocusStrongTwoTone'>
 }
 declare module '@material-ui/icons/CenterFocusWeak.js' {
   declare module.exports: $Exports<'@material-ui/icons/CenterFocusWeak'>
@@ -23911,22 +23695,16 @@ declare module '@material-ui/icons/ChatBubbleOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/ChatBubbleOutlined'>
 }
 declare module '@material-ui/icons/ChatBubbleOutlineOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ChatBubbleOutlineOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ChatBubbleOutlineOutlined'>
 }
 declare module '@material-ui/icons/ChatBubbleOutlineRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ChatBubbleOutlineRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ChatBubbleOutlineRounded'>
 }
 declare module '@material-ui/icons/ChatBubbleOutlineSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/ChatBubbleOutlineSharp'>
 }
 declare module '@material-ui/icons/ChatBubbleOutlineTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ChatBubbleOutlineTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ChatBubbleOutlineTwoTone'>
 }
 declare module '@material-ui/icons/ChatBubbleRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/ChatBubbleRounded'>
@@ -23959,24 +23737,16 @@ declare module '@material-ui/icons/CheckBoxOutlineBlank.js' {
   declare module.exports: $Exports<'@material-ui/icons/CheckBoxOutlineBlank'>
 }
 declare module '@material-ui/icons/CheckBoxOutlineBlankOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CheckBoxOutlineBlankOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CheckBoxOutlineBlankOutlined'>
 }
 declare module '@material-ui/icons/CheckBoxOutlineBlankRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CheckBoxOutlineBlankRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CheckBoxOutlineBlankRounded'>
 }
 declare module '@material-ui/icons/CheckBoxOutlineBlankSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CheckBoxOutlineBlankSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CheckBoxOutlineBlankSharp'>
 }
 declare module '@material-ui/icons/CheckBoxOutlineBlankTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CheckBoxOutlineBlankTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CheckBoxOutlineBlankTwoTone'>
 }
 declare module '@material-ui/icons/CheckBoxOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/CheckBoxOutlined'>
@@ -24000,22 +23770,16 @@ declare module '@material-ui/icons/CheckCircleOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/CheckCircleOutlined'>
 }
 declare module '@material-ui/icons/CheckCircleOutlineOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CheckCircleOutlineOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CheckCircleOutlineOutlined'>
 }
 declare module '@material-ui/icons/CheckCircleOutlineRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CheckCircleOutlineRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CheckCircleOutlineRounded'>
 }
 declare module '@material-ui/icons/CheckCircleOutlineSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/CheckCircleOutlineSharp'>
 }
 declare module '@material-ui/icons/CheckCircleOutlineTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CheckCircleOutlineTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CheckCircleOutlineTwoTone'>
 }
 declare module '@material-ui/icons/CheckCircleRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/CheckCircleRounded'>
@@ -24102,9 +23866,7 @@ declare module '@material-ui/icons/ChromeReaderMode.js' {
   declare module.exports: $Exports<'@material-ui/icons/ChromeReaderMode'>
 }
 declare module '@material-ui/icons/ChromeReaderModeOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ChromeReaderModeOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ChromeReaderModeOutlined'>
 }
 declare module '@material-ui/icons/ChromeReaderModeRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/ChromeReaderModeRounded'>
@@ -24317,24 +24079,16 @@ declare module '@material-ui/icons/CollectionsBookmark.js' {
   declare module.exports: $Exports<'@material-ui/icons/CollectionsBookmark'>
 }
 declare module '@material-ui/icons/CollectionsBookmarkOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CollectionsBookmarkOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CollectionsBookmarkOutlined'>
 }
 declare module '@material-ui/icons/CollectionsBookmarkRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CollectionsBookmarkRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CollectionsBookmarkRounded'>
 }
 declare module '@material-ui/icons/CollectionsBookmarkSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CollectionsBookmarkSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CollectionsBookmarkSharp'>
 }
 declare module '@material-ui/icons/CollectionsBookmarkTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CollectionsBookmarkTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CollectionsBookmarkTwoTone'>
 }
 declare module '@material-ui/icons/CollectionsOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/CollectionsOutlined'>
@@ -24442,22 +24196,16 @@ declare module '@material-ui/icons/CompassCalibration.js' {
   declare module.exports: $Exports<'@material-ui/icons/CompassCalibration'>
 }
 declare module '@material-ui/icons/CompassCalibrationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CompassCalibrationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CompassCalibrationOutlined'>
 }
 declare module '@material-ui/icons/CompassCalibrationRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CompassCalibrationRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CompassCalibrationRounded'>
 }
 declare module '@material-ui/icons/CompassCalibrationSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/CompassCalibrationSharp'>
 }
 declare module '@material-ui/icons/CompassCalibrationTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/CompassCalibrationTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/CompassCalibrationTwoTone'>
 }
 declare module '@material-ui/icons/Computer.js' {
   declare module.exports: $Exports<'@material-ui/icons/Computer'>
@@ -24478,22 +24226,16 @@ declare module '@material-ui/icons/ConfirmationNumber.js' {
   declare module.exports: $Exports<'@material-ui/icons/ConfirmationNumber'>
 }
 declare module '@material-ui/icons/ConfirmationNumberOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ConfirmationNumberOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ConfirmationNumberOutlined'>
 }
 declare module '@material-ui/icons/ConfirmationNumberRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ConfirmationNumberRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ConfirmationNumberRounded'>
 }
 declare module '@material-ui/icons/ConfirmationNumberSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/ConfirmationNumberSharp'>
 }
 declare module '@material-ui/icons/ConfirmationNumberTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ConfirmationNumberTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ConfirmationNumberTwoTone'>
 }
 declare module '@material-ui/icons/ContactMail.js' {
   declare module.exports: $Exports<'@material-ui/icons/ContactMail'>
@@ -24577,24 +24319,16 @@ declare module '@material-ui/icons/ControlPointDuplicate.js' {
   declare module.exports: $Exports<'@material-ui/icons/ControlPointDuplicate'>
 }
 declare module '@material-ui/icons/ControlPointDuplicateOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ControlPointDuplicateOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ControlPointDuplicateOutlined'>
 }
 declare module '@material-ui/icons/ControlPointDuplicateRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ControlPointDuplicateRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ControlPointDuplicateRounded'>
 }
 declare module '@material-ui/icons/ControlPointDuplicateSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ControlPointDuplicateSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ControlPointDuplicateSharp'>
 }
 declare module '@material-ui/icons/ControlPointDuplicateTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ControlPointDuplicateTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ControlPointDuplicateTwoTone'>
 }
 declare module '@material-ui/icons/ControlPointOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/ControlPointOutlined'>
@@ -25002,24 +24736,16 @@ declare module '@material-ui/icons/DesktopAccessDisabled.js' {
   declare module.exports: $Exports<'@material-ui/icons/DesktopAccessDisabled'>
 }
 declare module '@material-ui/icons/DesktopAccessDisabledOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DesktopAccessDisabledOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DesktopAccessDisabledOutlined'>
 }
 declare module '@material-ui/icons/DesktopAccessDisabledRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DesktopAccessDisabledRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DesktopAccessDisabledRounded'>
 }
 declare module '@material-ui/icons/DesktopAccessDisabledSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DesktopAccessDisabledSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DesktopAccessDisabledSharp'>
 }
 declare module '@material-ui/icons/DesktopAccessDisabledTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DesktopAccessDisabledTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DesktopAccessDisabledTwoTone'>
 }
 declare module '@material-ui/icons/DesktopMac.js' {
   declare module.exports: $Exports<'@material-ui/icons/DesktopMac'>
@@ -25256,22 +24982,16 @@ declare module '@material-ui/icons/DirectionsRailway.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsRailway'>
 }
 declare module '@material-ui/icons/DirectionsRailwayOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DirectionsRailwayOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DirectionsRailwayOutlined'>
 }
 declare module '@material-ui/icons/DirectionsRailwayRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DirectionsRailwayRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DirectionsRailwayRounded'>
 }
 declare module '@material-ui/icons/DirectionsRailwaySharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsRailwaySharp'>
 }
 declare module '@material-ui/icons/DirectionsRailwayTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DirectionsRailwayTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DirectionsRailwayTwoTone'>
 }
 declare module '@material-ui/icons/DirectionsRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsRounded'>
@@ -25298,9 +25018,7 @@ declare module '@material-ui/icons/DirectionsSubway.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsSubway'>
 }
 declare module '@material-ui/icons/DirectionsSubwayOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DirectionsSubwayOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DirectionsSubwayOutlined'>
 }
 declare module '@material-ui/icons/DirectionsSubwayRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsSubwayRounded'>
@@ -25315,22 +25033,16 @@ declare module '@material-ui/icons/DirectionsTransit.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsTransit'>
 }
 declare module '@material-ui/icons/DirectionsTransitOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DirectionsTransitOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DirectionsTransitOutlined'>
 }
 declare module '@material-ui/icons/DirectionsTransitRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DirectionsTransitRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DirectionsTransitRounded'>
 }
 declare module '@material-ui/icons/DirectionsTransitSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsTransitSharp'>
 }
 declare module '@material-ui/icons/DirectionsTransitTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/DirectionsTransitTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/DirectionsTransitTwoTone'>
 }
 declare module '@material-ui/icons/DirectionsTwoTone.js' {
   declare module.exports: $Exports<'@material-ui/icons/DirectionsTwoTone'>
@@ -25669,22 +25381,16 @@ declare module '@material-ui/icons/EnhancedEncryption.js' {
   declare module.exports: $Exports<'@material-ui/icons/EnhancedEncryption'>
 }
 declare module '@material-ui/icons/EnhancedEncryptionOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/EnhancedEncryptionOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/EnhancedEncryptionOutlined'>
 }
 declare module '@material-ui/icons/EnhancedEncryptionRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/EnhancedEncryptionRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/EnhancedEncryptionRounded'>
 }
 declare module '@material-ui/icons/EnhancedEncryptionSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/EnhancedEncryptionSharp'>
 }
 declare module '@material-ui/icons/EnhancedEncryptionTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/EnhancedEncryptionTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/EnhancedEncryptionTwoTone'>
 }
 declare module '@material-ui/icons/Equalizer.js' {
   declare module.exports: $Exports<'@material-ui/icons/Equalizer'>
@@ -26125,9 +25831,7 @@ declare module '@material-ui/icons/FeaturedPlayList.js' {
   declare module.exports: $Exports<'@material-ui/icons/FeaturedPlayList'>
 }
 declare module '@material-ui/icons/FeaturedPlayListOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FeaturedPlayListOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FeaturedPlayListOutlined'>
 }
 declare module '@material-ui/icons/FeaturedPlayListRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/FeaturedPlayListRounded'>
@@ -26187,22 +25891,16 @@ declare module '@material-ui/icons/FiberManualRecord.js' {
   declare module.exports: $Exports<'@material-ui/icons/FiberManualRecord'>
 }
 declare module '@material-ui/icons/FiberManualRecordOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FiberManualRecordOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FiberManualRecordOutlined'>
 }
 declare module '@material-ui/icons/FiberManualRecordRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FiberManualRecordRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FiberManualRecordRounded'>
 }
 declare module '@material-ui/icons/FiberManualRecordSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/FiberManualRecordSharp'>
 }
 declare module '@material-ui/icons/FiberManualRecordTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FiberManualRecordTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FiberManualRecordTwoTone'>
 }
 declare module '@material-ui/icons/FiberNew.js' {
   declare module.exports: $Exports<'@material-ui/icons/FiberNew'>
@@ -26238,9 +25936,7 @@ declare module '@material-ui/icons/FiberSmartRecord.js' {
   declare module.exports: $Exports<'@material-ui/icons/FiberSmartRecord'>
 }
 declare module '@material-ui/icons/FiberSmartRecordOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FiberSmartRecordOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FiberSmartRecordOutlined'>
 }
 declare module '@material-ui/icons/FiberSmartRecordRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/FiberSmartRecordRounded'>
@@ -26438,22 +26134,16 @@ declare module '@material-ui/icons/FilterCenterFocus.js' {
   declare module.exports: $Exports<'@material-ui/icons/FilterCenterFocus'>
 }
 declare module '@material-ui/icons/FilterCenterFocusOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FilterCenterFocusOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FilterCenterFocusOutlined'>
 }
 declare module '@material-ui/icons/FilterCenterFocusRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FilterCenterFocusRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FilterCenterFocusRounded'>
 }
 declare module '@material-ui/icons/FilterCenterFocusSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/FilterCenterFocusSharp'>
 }
 declare module '@material-ui/icons/FilterCenterFocusTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FilterCenterFocusTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FilterCenterFocusTwoTone'>
 }
 declare module '@material-ui/icons/FilterDrama.js' {
   declare module.exports: $Exports<'@material-ui/icons/FilterDrama'>
@@ -26891,43 +26581,31 @@ declare module '@material-ui/icons/FormatAlignCenter.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatAlignCenter'>
 }
 declare module '@material-ui/icons/FormatAlignCenterOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatAlignCenterOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatAlignCenterOutlined'>
 }
 declare module '@material-ui/icons/FormatAlignCenterRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatAlignCenterRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatAlignCenterRounded'>
 }
 declare module '@material-ui/icons/FormatAlignCenterSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatAlignCenterSharp'>
 }
 declare module '@material-ui/icons/FormatAlignCenterTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatAlignCenterTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatAlignCenterTwoTone'>
 }
 declare module '@material-ui/icons/FormatAlignJustify.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatAlignJustify'>
 }
 declare module '@material-ui/icons/FormatAlignJustifyOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatAlignJustifyOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatAlignJustifyOutlined'>
 }
 declare module '@material-ui/icons/FormatAlignJustifyRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatAlignJustifyRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatAlignJustifyRounded'>
 }
 declare module '@material-ui/icons/FormatAlignJustifySharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatAlignJustifySharp'>
 }
 declare module '@material-ui/icons/FormatAlignJustifyTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatAlignJustifyTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatAlignJustifyTwoTone'>
 }
 declare module '@material-ui/icons/FormatAlignLeft.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatAlignLeft'>
@@ -26948,9 +26626,7 @@ declare module '@material-ui/icons/FormatAlignRight.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatAlignRight'>
 }
 declare module '@material-ui/icons/FormatAlignRightOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatAlignRightOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatAlignRightOutlined'>
 }
 declare module '@material-ui/icons/FormatAlignRightRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatAlignRightRounded'>
@@ -27010,9 +26686,7 @@ declare module '@material-ui/icons/FormatColorReset.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatColorReset'>
 }
 declare module '@material-ui/icons/FormatColorResetOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatColorResetOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatColorResetOutlined'>
 }
 declare module '@material-ui/icons/FormatColorResetRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatColorResetRounded'>
@@ -27042,47 +26716,31 @@ declare module '@material-ui/icons/FormatIndentDecrease.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatIndentDecrease'>
 }
 declare module '@material-ui/icons/FormatIndentDecreaseOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentDecreaseOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentDecreaseOutlined'>
 }
 declare module '@material-ui/icons/FormatIndentDecreaseRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentDecreaseRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentDecreaseRounded'>
 }
 declare module '@material-ui/icons/FormatIndentDecreaseSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentDecreaseSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentDecreaseSharp'>
 }
 declare module '@material-ui/icons/FormatIndentDecreaseTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentDecreaseTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentDecreaseTwoTone'>
 }
 declare module '@material-ui/icons/FormatIndentIncrease.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatIndentIncrease'>
 }
 declare module '@material-ui/icons/FormatIndentIncreaseOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentIncreaseOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentIncreaseOutlined'>
 }
 declare module '@material-ui/icons/FormatIndentIncreaseRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentIncreaseRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentIncreaseRounded'>
 }
 declare module '@material-ui/icons/FormatIndentIncreaseSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentIncreaseSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentIncreaseSharp'>
 }
 declare module '@material-ui/icons/FormatIndentIncreaseTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatIndentIncreaseTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatIndentIncreaseTwoTone'>
 }
 declare module '@material-ui/icons/FormatItalic.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatItalic'>
@@ -27103,87 +26761,61 @@ declare module '@material-ui/icons/FormatLineSpacing.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatLineSpacing'>
 }
 declare module '@material-ui/icons/FormatLineSpacingOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatLineSpacingOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatLineSpacingOutlined'>
 }
 declare module '@material-ui/icons/FormatLineSpacingRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatLineSpacingRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatLineSpacingRounded'>
 }
 declare module '@material-ui/icons/FormatLineSpacingSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatLineSpacingSharp'>
 }
 declare module '@material-ui/icons/FormatLineSpacingTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatLineSpacingTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatLineSpacingTwoTone'>
 }
 declare module '@material-ui/icons/FormatListBulleted.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatListBulleted'>
 }
 declare module '@material-ui/icons/FormatListBulletedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListBulletedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListBulletedOutlined'>
 }
 declare module '@material-ui/icons/FormatListBulletedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListBulletedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListBulletedRounded'>
 }
 declare module '@material-ui/icons/FormatListBulletedSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatListBulletedSharp'>
 }
 declare module '@material-ui/icons/FormatListBulletedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListBulletedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListBulletedTwoTone'>
 }
 declare module '@material-ui/icons/FormatListNumbered.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatListNumbered'>
 }
 declare module '@material-ui/icons/FormatListNumberedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListNumberedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedOutlined'>
 }
 declare module '@material-ui/icons/FormatListNumberedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListNumberedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedRounded'>
 }
 declare module '@material-ui/icons/FormatListNumberedRtl.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedRtl'>
 }
 declare module '@material-ui/icons/FormatListNumberedRtlOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListNumberedRtlOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedRtlOutlined'>
 }
 declare module '@material-ui/icons/FormatListNumberedRtlRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListNumberedRtlRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedRtlRounded'>
 }
 declare module '@material-ui/icons/FormatListNumberedRtlSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListNumberedRtlSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedRtlSharp'>
 }
 declare module '@material-ui/icons/FormatListNumberedRtlTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListNumberedRtlTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedRtlTwoTone'>
 }
 declare module '@material-ui/icons/FormatListNumberedSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedSharp'>
 }
 declare module '@material-ui/icons/FormatListNumberedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatListNumberedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatListNumberedTwoTone'>
 }
 declare module '@material-ui/icons/FormatPaint.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatPaint'>
@@ -27249,78 +26881,52 @@ declare module '@material-ui/icons/FormatStrikethrough.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatStrikethrough'>
 }
 declare module '@material-ui/icons/FormatStrikethroughOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatStrikethroughOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatStrikethroughOutlined'>
 }
 declare module '@material-ui/icons/FormatStrikethroughRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatStrikethroughRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatStrikethroughRounded'>
 }
 declare module '@material-ui/icons/FormatStrikethroughSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatStrikethroughSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatStrikethroughSharp'>
 }
 declare module '@material-ui/icons/FormatStrikethroughTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatStrikethroughTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatStrikethroughTwoTone'>
 }
 declare module '@material-ui/icons/FormatTextdirectionLToR.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionLToR'>
 }
 declare module '@material-ui/icons/FormatTextdirectionLToROutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionLToROutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionLToROutlined'>
 }
 declare module '@material-ui/icons/FormatTextdirectionLToRRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionLToRRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionLToRRounded'>
 }
 declare module '@material-ui/icons/FormatTextdirectionLToRSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionLToRSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionLToRSharp'>
 }
 declare module '@material-ui/icons/FormatTextdirectionLToRTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionLToRTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionLToRTwoTone'>
 }
 declare module '@material-ui/icons/FormatTextdirectionRToL.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionRToL'>
 }
 declare module '@material-ui/icons/FormatTextdirectionRToLOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionRToLOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionRToLOutlined'>
 }
 declare module '@material-ui/icons/FormatTextdirectionRToLRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionRToLRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionRToLRounded'>
 }
 declare module '@material-ui/icons/FormatTextdirectionRToLSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionRToLSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionRToLSharp'>
 }
 declare module '@material-ui/icons/FormatTextdirectionRToLTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatTextdirectionRToLTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatTextdirectionRToLTwoTone'>
 }
 declare module '@material-ui/icons/FormatUnderlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatUnderlined'>
 }
 declare module '@material-ui/icons/FormatUnderlinedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/FormatUnderlinedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/FormatUnderlinedOutlined'>
 }
 declare module '@material-ui/icons/FormatUnderlinedRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/FormatUnderlinedRounded'>
@@ -28163,9 +27769,7 @@ declare module '@material-ui/icons/ImageAspectRatio.js' {
   declare module.exports: $Exports<'@material-ui/icons/ImageAspectRatio'>
 }
 declare module '@material-ui/icons/ImageAspectRatioOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ImageAspectRatioOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ImageAspectRatioOutlined'>
 }
 declare module '@material-ui/icons/ImageAspectRatioRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/ImageAspectRatioRounded'>
@@ -28207,9 +27811,7 @@ declare module '@material-ui/icons/ImportantDevices.js' {
   declare module.exports: $Exports<'@material-ui/icons/ImportantDevices'>
 }
 declare module '@material-ui/icons/ImportantDevicesOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ImportantDevicesOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ImportantDevicesOutlined'>
 }
 declare module '@material-ui/icons/ImportantDevicesRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/ImportantDevicesRounded'>
@@ -28269,24 +27871,16 @@ declare module '@material-ui/icons/IndeterminateCheckBox.js' {
   declare module.exports: $Exports<'@material-ui/icons/IndeterminateCheckBox'>
 }
 declare module '@material-ui/icons/IndeterminateCheckBoxOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/IndeterminateCheckBoxOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/IndeterminateCheckBoxOutlined'>
 }
 declare module '@material-ui/icons/IndeterminateCheckBoxRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/IndeterminateCheckBoxRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/IndeterminateCheckBoxRounded'>
 }
 declare module '@material-ui/icons/IndeterminateCheckBoxSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/IndeterminateCheckBoxSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/IndeterminateCheckBoxSharp'>
 }
 declare module '@material-ui/icons/IndeterminateCheckBoxTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/IndeterminateCheckBoxTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/IndeterminateCheckBoxTwoTone'>
 }
 declare module '@material-ui/icons/index.es.js' {
   declare module.exports: $Exports<'@material-ui/icons/index.es'>
@@ -28334,24 +27928,16 @@ declare module '@material-ui/icons/InsertChartOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/InsertChartOutlined'>
 }
 declare module '@material-ui/icons/InsertChartOutlinedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/InsertChartOutlinedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/InsertChartOutlinedOutlined'>
 }
 declare module '@material-ui/icons/InsertChartOutlinedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/InsertChartOutlinedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/InsertChartOutlinedRounded'>
 }
 declare module '@material-ui/icons/InsertChartOutlinedSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/InsertChartOutlinedSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/InsertChartOutlinedSharp'>
 }
 declare module '@material-ui/icons/InsertChartOutlinedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/InsertChartOutlinedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/InsertChartOutlinedTwoTone'>
 }
 declare module '@material-ui/icons/InsertChartRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/InsertChartRounded'>
@@ -28411,9 +27997,7 @@ declare module '@material-ui/icons/InsertInvitation.js' {
   declare module.exports: $Exports<'@material-ui/icons/InsertInvitation'>
 }
 declare module '@material-ui/icons/InsertInvitationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/InsertInvitationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/InsertInvitationOutlined'>
 }
 declare module '@material-ui/icons/InsertInvitationRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/InsertInvitationRounded'>
@@ -28506,64 +28090,46 @@ declare module '@material-ui/icons/KeyboardArrowDown.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowDown'>
 }
 declare module '@material-ui/icons/KeyboardArrowDownOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowDownOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowDownOutlined'>
 }
 declare module '@material-ui/icons/KeyboardArrowDownRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowDownRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowDownRounded'>
 }
 declare module '@material-ui/icons/KeyboardArrowDownSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowDownSharp'>
 }
 declare module '@material-ui/icons/KeyboardArrowDownTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowDownTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowDownTwoTone'>
 }
 declare module '@material-ui/icons/KeyboardArrowLeft.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowLeft'>
 }
 declare module '@material-ui/icons/KeyboardArrowLeftOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowLeftOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowLeftOutlined'>
 }
 declare module '@material-ui/icons/KeyboardArrowLeftRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowLeftRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowLeftRounded'>
 }
 declare module '@material-ui/icons/KeyboardArrowLeftSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowLeftSharp'>
 }
 declare module '@material-ui/icons/KeyboardArrowLeftTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowLeftTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowLeftTwoTone'>
 }
 declare module '@material-ui/icons/KeyboardArrowRight.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowRight'>
 }
 declare module '@material-ui/icons/KeyboardArrowRightOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowRightOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowRightOutlined'>
 }
 declare module '@material-ui/icons/KeyboardArrowRightRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowRightRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowRightRounded'>
 }
 declare module '@material-ui/icons/KeyboardArrowRightSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowRightSharp'>
 }
 declare module '@material-ui/icons/KeyboardArrowRightTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardArrowRightTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowRightTwoTone'>
 }
 declare module '@material-ui/icons/KeyboardArrowUp.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardArrowUp'>
@@ -28584,30 +28150,22 @@ declare module '@material-ui/icons/KeyboardBackspace.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardBackspace'>
 }
 declare module '@material-ui/icons/KeyboardBackspaceOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardBackspaceOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardBackspaceOutlined'>
 }
 declare module '@material-ui/icons/KeyboardBackspaceRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardBackspaceRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardBackspaceRounded'>
 }
 declare module '@material-ui/icons/KeyboardBackspaceSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardBackspaceSharp'>
 }
 declare module '@material-ui/icons/KeyboardBackspaceTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardBackspaceTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardBackspaceTwoTone'>
 }
 declare module '@material-ui/icons/KeyboardCapslock.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardCapslock'>
 }
 declare module '@material-ui/icons/KeyboardCapslockOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/KeyboardCapslockOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/KeyboardCapslockOutlined'>
 }
 declare module '@material-ui/icons/KeyboardCapslockRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/KeyboardCapslockRounded'>
@@ -28787,9 +28345,7 @@ declare module '@material-ui/icons/LaptopChromebook.js' {
   declare module.exports: $Exports<'@material-ui/icons/LaptopChromebook'>
 }
 declare module '@material-ui/icons/LaptopChromebookOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LaptopChromebookOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LaptopChromebookOutlined'>
 }
 declare module '@material-ui/icons/LaptopChromebookRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/LaptopChromebookRounded'>
@@ -29236,24 +28792,16 @@ declare module '@material-ui/icons/LocalConvenienceStore.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocalConvenienceStore'>
 }
 declare module '@material-ui/icons/LocalConvenienceStoreOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalConvenienceStoreOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalConvenienceStoreOutlined'>
 }
 declare module '@material-ui/icons/LocalConvenienceStoreRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalConvenienceStoreRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalConvenienceStoreRounded'>
 }
 declare module '@material-ui/icons/LocalConvenienceStoreSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalConvenienceStoreSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalConvenienceStoreSharp'>
 }
 declare module '@material-ui/icons/LocalConvenienceStoreTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalConvenienceStoreTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalConvenienceStoreTwoTone'>
 }
 declare module '@material-ui/icons/LocalDining.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocalDining'>
@@ -29319,22 +28867,16 @@ declare module '@material-ui/icons/LocalGroceryStore.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocalGroceryStore'>
 }
 declare module '@material-ui/icons/LocalGroceryStoreOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalGroceryStoreOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalGroceryStoreOutlined'>
 }
 declare module '@material-ui/icons/LocalGroceryStoreRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalGroceryStoreRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalGroceryStoreRounded'>
 }
 declare module '@material-ui/icons/LocalGroceryStoreSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocalGroceryStoreSharp'>
 }
 declare module '@material-ui/icons/LocalGroceryStoreTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalGroceryStoreTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalGroceryStoreTwoTone'>
 }
 declare module '@material-ui/icons/LocalHospital.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocalHospital'>
@@ -29370,24 +28912,16 @@ declare module '@material-ui/icons/LocalLaundryService.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocalLaundryService'>
 }
 declare module '@material-ui/icons/LocalLaundryServiceOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalLaundryServiceOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalLaundryServiceOutlined'>
 }
 declare module '@material-ui/icons/LocalLaundryServiceRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalLaundryServiceRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalLaundryServiceRounded'>
 }
 declare module '@material-ui/icons/LocalLaundryServiceSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalLaundryServiceSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalLaundryServiceSharp'>
 }
 declare module '@material-ui/icons/LocalLaundryServiceTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocalLaundryServiceTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocalLaundryServiceTwoTone'>
 }
 declare module '@material-ui/icons/LocalLibrary.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocalLibrary'>
@@ -29618,9 +29152,7 @@ declare module '@material-ui/icons/LocationDisabled.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocationDisabled'>
 }
 declare module '@material-ui/icons/LocationDisabledOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocationDisabledOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocationDisabledOutlined'>
 }
 declare module '@material-ui/icons/LocationDisabledRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocationDisabledRounded'>
@@ -29665,22 +29197,16 @@ declare module '@material-ui/icons/LocationSearching.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocationSearching'>
 }
 declare module '@material-ui/icons/LocationSearchingOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocationSearchingOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocationSearchingOutlined'>
 }
 declare module '@material-ui/icons/LocationSearchingRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocationSearchingRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocationSearchingRounded'>
 }
 declare module '@material-ui/icons/LocationSearchingSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/LocationSearchingSharp'>
 }
 declare module '@material-ui/icons/LocationSearchingTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/LocationSearchingTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/LocationSearchingTwoTone'>
 }
 declare module '@material-ui/icons/Lock.js' {
   declare module.exports: $Exports<'@material-ui/icons/Lock'>
@@ -29929,22 +29455,16 @@ declare module '@material-ui/icons/MarkunreadMailbox.js' {
   declare module.exports: $Exports<'@material-ui/icons/MarkunreadMailbox'>
 }
 declare module '@material-ui/icons/MarkunreadMailboxOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/MarkunreadMailboxOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/MarkunreadMailboxOutlined'>
 }
 declare module '@material-ui/icons/MarkunreadMailboxRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/MarkunreadMailboxRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/MarkunreadMailboxRounded'>
 }
 declare module '@material-ui/icons/MarkunreadMailboxSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/MarkunreadMailboxSharp'>
 }
 declare module '@material-ui/icons/MarkunreadMailboxTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/MarkunreadMailboxTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/MarkunreadMailboxTwoTone'>
 }
 declare module '@material-ui/icons/MarkunreadOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/MarkunreadOutlined'>
@@ -30172,22 +29692,16 @@ declare module '@material-ui/icons/MobileScreenShare.js' {
   declare module.exports: $Exports<'@material-ui/icons/MobileScreenShare'>
 }
 declare module '@material-ui/icons/MobileScreenShareOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/MobileScreenShareOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/MobileScreenShareOutlined'>
 }
 declare module '@material-ui/icons/MobileScreenShareRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/MobileScreenShareRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/MobileScreenShareRounded'>
 }
 declare module '@material-ui/icons/MobileScreenShareSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/MobileScreenShareSharp'>
 }
 declare module '@material-ui/icons/MobileScreenShareTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/MobileScreenShareTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/MobileScreenShareTwoTone'>
 }
 declare module '@material-ui/icons/ModeComment.js' {
   declare module.exports: $Exports<'@material-ui/icons/ModeComment'>
@@ -30253,9 +29767,7 @@ declare module '@material-ui/icons/MonochromePhotos.js' {
   declare module.exports: $Exports<'@material-ui/icons/MonochromePhotos'>
 }
 declare module '@material-ui/icons/MonochromePhotosOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/MonochromePhotosOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/MonochromePhotosOutlined'>
 }
 declare module '@material-ui/icons/MonochromePhotosRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/MonochromePhotosRounded'>
@@ -30795,24 +30307,16 @@ declare module '@material-ui/icons/NotificationImportant.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationImportant'>
 }
 declare module '@material-ui/icons/NotificationImportantOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationImportantOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationImportantOutlined'>
 }
 declare module '@material-ui/icons/NotificationImportantRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationImportantRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationImportantRounded'>
 }
 declare module '@material-ui/icons/NotificationImportantSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationImportantSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationImportantSharp'>
 }
 declare module '@material-ui/icons/NotificationImportantTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationImportantTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationImportantTwoTone'>
 }
 declare module '@material-ui/icons/Notifications.js' {
   declare module.exports: $Exports<'@material-ui/icons/Notifications'>
@@ -30821,53 +30325,37 @@ declare module '@material-ui/icons/NotificationsActive.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationsActive'>
 }
 declare module '@material-ui/icons/NotificationsActiveOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsActiveOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsActiveOutlined'>
 }
 declare module '@material-ui/icons/NotificationsActiveRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsActiveRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsActiveRounded'>
 }
 declare module '@material-ui/icons/NotificationsActiveSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsActiveSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsActiveSharp'>
 }
 declare module '@material-ui/icons/NotificationsActiveTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsActiveTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsActiveTwoTone'>
 }
 declare module '@material-ui/icons/NotificationsNone.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationsNone'>
 }
 declare module '@material-ui/icons/NotificationsNoneOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsNoneOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsNoneOutlined'>
 }
 declare module '@material-ui/icons/NotificationsNoneRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsNoneRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsNoneRounded'>
 }
 declare module '@material-ui/icons/NotificationsNoneSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationsNoneSharp'>
 }
 declare module '@material-ui/icons/NotificationsNoneTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsNoneTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsNoneTwoTone'>
 }
 declare module '@material-ui/icons/NotificationsOff.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationsOff'>
 }
 declare module '@material-ui/icons/NotificationsOffOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsOffOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsOffOutlined'>
 }
 declare module '@material-ui/icons/NotificationsOffRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationsOffRounded'>
@@ -30885,24 +30373,16 @@ declare module '@material-ui/icons/NotificationsPaused.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationsPaused'>
 }
 declare module '@material-ui/icons/NotificationsPausedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsPausedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsPausedOutlined'>
 }
 declare module '@material-ui/icons/NotificationsPausedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsPausedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsPausedRounded'>
 }
 declare module '@material-ui/icons/NotificationsPausedSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsPausedSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsPausedSharp'>
 }
 declare module '@material-ui/icons/NotificationsPausedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotificationsPausedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotificationsPausedTwoTone'>
 }
 declare module '@material-ui/icons/NotificationsRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotificationsRounded'>
@@ -30932,22 +30412,16 @@ declare module '@material-ui/icons/NotListedLocation.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotListedLocation'>
 }
 declare module '@material-ui/icons/NotListedLocationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotListedLocationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotListedLocationOutlined'>
 }
 declare module '@material-ui/icons/NotListedLocationRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotListedLocationRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotListedLocationRounded'>
 }
 declare module '@material-ui/icons/NotListedLocationSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/NotListedLocationSharp'>
 }
 declare module '@material-ui/icons/NotListedLocationTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/NotListedLocationTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/NotListedLocationTwoTone'>
 }
 declare module '@material-ui/icons/OfflineBolt.js' {
   declare module.exports: $Exports<'@material-ui/icons/OfflineBolt'>
@@ -31136,22 +30610,16 @@ declare module '@material-ui/icons/PanoramaHorizontal.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanoramaHorizontal'>
 }
 declare module '@material-ui/icons/PanoramaHorizontalOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PanoramaHorizontalOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PanoramaHorizontalOutlined'>
 }
 declare module '@material-ui/icons/PanoramaHorizontalRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PanoramaHorizontalRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PanoramaHorizontalRounded'>
 }
 declare module '@material-ui/icons/PanoramaHorizontalSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanoramaHorizontalSharp'>
 }
 declare module '@material-ui/icons/PanoramaHorizontalTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PanoramaHorizontalTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PanoramaHorizontalTwoTone'>
 }
 declare module '@material-ui/icons/PanoramaOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanoramaOutlined'>
@@ -31169,9 +30637,7 @@ declare module '@material-ui/icons/PanoramaVertical.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanoramaVertical'>
 }
 declare module '@material-ui/icons/PanoramaVerticalOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PanoramaVerticalOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PanoramaVerticalOutlined'>
 }
 declare module '@material-ui/icons/PanoramaVerticalRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanoramaVerticalRounded'>
@@ -31186,22 +30652,16 @@ declare module '@material-ui/icons/PanoramaWideAngle.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanoramaWideAngle'>
 }
 declare module '@material-ui/icons/PanoramaWideAngleOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PanoramaWideAngleOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PanoramaWideAngleOutlined'>
 }
 declare module '@material-ui/icons/PanoramaWideAngleRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PanoramaWideAngleRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PanoramaWideAngleRounded'>
 }
 declare module '@material-ui/icons/PanoramaWideAngleSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanoramaWideAngleSharp'>
 }
 declare module '@material-ui/icons/PanoramaWideAngleTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PanoramaWideAngleTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PanoramaWideAngleTwoTone'>
 }
 declare module '@material-ui/icons/PanTool.js' {
   declare module.exports: $Exports<'@material-ui/icons/PanTool'>
@@ -31240,43 +30700,31 @@ declare module '@material-ui/icons/PauseCircleFilled.js' {
   declare module.exports: $Exports<'@material-ui/icons/PauseCircleFilled'>
 }
 declare module '@material-ui/icons/PauseCircleFilledOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PauseCircleFilledOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PauseCircleFilledOutlined'>
 }
 declare module '@material-ui/icons/PauseCircleFilledRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PauseCircleFilledRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PauseCircleFilledRounded'>
 }
 declare module '@material-ui/icons/PauseCircleFilledSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/PauseCircleFilledSharp'>
 }
 declare module '@material-ui/icons/PauseCircleFilledTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PauseCircleFilledTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PauseCircleFilledTwoTone'>
 }
 declare module '@material-ui/icons/PauseCircleOutline.js' {
   declare module.exports: $Exports<'@material-ui/icons/PauseCircleOutline'>
 }
 declare module '@material-ui/icons/PauseCircleOutlineOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PauseCircleOutlineOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PauseCircleOutlineOutlined'>
 }
 declare module '@material-ui/icons/PauseCircleOutlineRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PauseCircleOutlineRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PauseCircleOutlineRounded'>
 }
 declare module '@material-ui/icons/PauseCircleOutlineSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/PauseCircleOutlineSharp'>
 }
 declare module '@material-ui/icons/PauseCircleOutlineTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PauseCircleOutlineTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PauseCircleOutlineTwoTone'>
 }
 declare module '@material-ui/icons/PauseOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/PauseOutlined'>
@@ -31285,22 +30733,16 @@ declare module '@material-ui/icons/PausePresentation.js' {
   declare module.exports: $Exports<'@material-ui/icons/PausePresentation'>
 }
 declare module '@material-ui/icons/PausePresentationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PausePresentationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PausePresentationOutlined'>
 }
 declare module '@material-ui/icons/PausePresentationRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PausePresentationRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PausePresentationRounded'>
 }
 declare module '@material-ui/icons/PausePresentationSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/PausePresentationSharp'>
 }
 declare module '@material-ui/icons/PausePresentationTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PausePresentationTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PausePresentationTwoTone'>
 }
 declare module '@material-ui/icons/PauseRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/PauseRounded'>
@@ -31375,24 +30817,16 @@ declare module '@material-ui/icons/PermContactCalendar.js' {
   declare module.exports: $Exports<'@material-ui/icons/PermContactCalendar'>
 }
 declare module '@material-ui/icons/PermContactCalendarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermContactCalendarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermContactCalendarOutlined'>
 }
 declare module '@material-ui/icons/PermContactCalendarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermContactCalendarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermContactCalendarRounded'>
 }
 declare module '@material-ui/icons/PermContactCalendarSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermContactCalendarSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermContactCalendarSharp'>
 }
 declare module '@material-ui/icons/PermContactCalendarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermContactCalendarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermContactCalendarTwoTone'>
 }
 declare module '@material-ui/icons/PermDataSetting.js' {
   declare module.exports: $Exports<'@material-ui/icons/PermDataSetting'>
@@ -31413,24 +30847,16 @@ declare module '@material-ui/icons/PermDeviceInformation.js' {
   declare module.exports: $Exports<'@material-ui/icons/PermDeviceInformation'>
 }
 declare module '@material-ui/icons/PermDeviceInformationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermDeviceInformationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermDeviceInformationOutlined'>
 }
 declare module '@material-ui/icons/PermDeviceInformationRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermDeviceInformationRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermDeviceInformationRounded'>
 }
 declare module '@material-ui/icons/PermDeviceInformationSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermDeviceInformationSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermDeviceInformationSharp'>
 }
 declare module '@material-ui/icons/PermDeviceInformationTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PermDeviceInformationTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PermDeviceInformationTwoTone'>
 }
 declare module '@material-ui/icons/PermIdentity.js' {
   declare module.exports: $Exports<'@material-ui/icons/PermIdentity'>
@@ -31502,22 +30928,16 @@ declare module '@material-ui/icons/PersonAddDisabled.js' {
   declare module.exports: $Exports<'@material-ui/icons/PersonAddDisabled'>
 }
 declare module '@material-ui/icons/PersonAddDisabledOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PersonAddDisabledOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PersonAddDisabledOutlined'>
 }
 declare module '@material-ui/icons/PersonAddDisabledRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PersonAddDisabledRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PersonAddDisabledRounded'>
 }
 declare module '@material-ui/icons/PersonAddDisabledSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/PersonAddDisabledSharp'>
 }
 declare module '@material-ui/icons/PersonAddDisabledTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PersonAddDisabledTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PersonAddDisabledTwoTone'>
 }
 declare module '@material-ui/icons/PersonAddOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/PersonAddOutlined'>
@@ -31640,24 +31060,16 @@ declare module '@material-ui/icons/PhoneBluetoothSpeaker.js' {
   declare module.exports: $Exports<'@material-ui/icons/PhoneBluetoothSpeaker'>
 }
 declare module '@material-ui/icons/PhoneBluetoothSpeakerOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhoneBluetoothSpeakerOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhoneBluetoothSpeakerOutlined'>
 }
 declare module '@material-ui/icons/PhoneBluetoothSpeakerRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhoneBluetoothSpeakerRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhoneBluetoothSpeakerRounded'>
 }
 declare module '@material-ui/icons/PhoneBluetoothSpeakerSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhoneBluetoothSpeakerSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhoneBluetoothSpeakerSharp'>
 }
 declare module '@material-ui/icons/PhoneBluetoothSpeakerTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhoneBluetoothSpeakerTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhoneBluetoothSpeakerTwoTone'>
 }
 declare module '@material-ui/icons/PhoneCallback.js' {
   declare module.exports: $Exports<'@material-ui/icons/PhoneCallback'>
@@ -31942,70 +31354,46 @@ declare module '@material-ui/icons/PhotoSizeSelectActual.js' {
   declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectActual'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectActualOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectActualOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectActualOutlined'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectActualRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectActualRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectActualRounded'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectActualSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectActualSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectActualSharp'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectActualTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectActualTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectActualTwoTone'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectLarge.js' {
   declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectLarge'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectLargeOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectLargeOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectLargeOutlined'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectLargeRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectLargeRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectLargeRounded'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectLargeSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectLargeSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectLargeSharp'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectLargeTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectLargeTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectLargeTwoTone'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectSmall.js' {
   declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectSmall'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectSmallOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectSmallOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectSmallOutlined'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectSmallRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectSmallRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectSmallRounded'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectSmallSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectSmallSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectSmallSharp'>
 }
 declare module '@material-ui/icons/PhotoSizeSelectSmallTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PhotoSizeSelectSmallTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PhotoSizeSelectSmallTwoTone'>
 }
 declare module '@material-ui/icons/PhotoTwoTone.js' {
   declare module.exports: $Exports<'@material-ui/icons/PhotoTwoTone'>
@@ -32032,29 +31420,19 @@ declare module '@material-ui/icons/PictureInPictureAlt.js' {
   declare module.exports: $Exports<'@material-ui/icons/PictureInPictureAlt'>
 }
 declare module '@material-ui/icons/PictureInPictureAltOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PictureInPictureAltOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PictureInPictureAltOutlined'>
 }
 declare module '@material-ui/icons/PictureInPictureAltRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PictureInPictureAltRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PictureInPictureAltRounded'>
 }
 declare module '@material-ui/icons/PictureInPictureAltSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PictureInPictureAltSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PictureInPictureAltSharp'>
 }
 declare module '@material-ui/icons/PictureInPictureAltTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PictureInPictureAltTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PictureInPictureAltTwoTone'>
 }
 declare module '@material-ui/icons/PictureInPictureOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PictureInPictureOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PictureInPictureOutlined'>
 }
 declare module '@material-ui/icons/PictureInPictureRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/PictureInPictureRounded'>
@@ -32129,9 +31507,7 @@ declare module '@material-ui/icons/PlayCircleFilled.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilled'>
 }
 declare module '@material-ui/icons/PlayCircleFilledOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleFilledOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilledOutlined'>
 }
 declare module '@material-ui/icons/PlayCircleFilledRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilledRounded'>
@@ -32146,45 +31522,31 @@ declare module '@material-ui/icons/PlayCircleFilledWhite.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilledWhite'>
 }
 declare module '@material-ui/icons/PlayCircleFilledWhiteOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleFilledWhiteOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilledWhiteOutlined'>
 }
 declare module '@material-ui/icons/PlayCircleFilledWhiteRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleFilledWhiteRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilledWhiteRounded'>
 }
 declare module '@material-ui/icons/PlayCircleFilledWhiteSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleFilledWhiteSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilledWhiteSharp'>
 }
 declare module '@material-ui/icons/PlayCircleFilledWhiteTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleFilledWhiteTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleFilledWhiteTwoTone'>
 }
 declare module '@material-ui/icons/PlayCircleOutline.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlayCircleOutline'>
 }
 declare module '@material-ui/icons/PlayCircleOutlineOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleOutlineOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleOutlineOutlined'>
 }
 declare module '@material-ui/icons/PlayCircleOutlineRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleOutlineRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleOutlineRounded'>
 }
 declare module '@material-ui/icons/PlayCircleOutlineSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlayCircleOutlineSharp'>
 }
 declare module '@material-ui/icons/PlayCircleOutlineTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlayCircleOutlineTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlayCircleOutlineTwoTone'>
 }
 declare module '@material-ui/icons/PlayForWork.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlayForWork'>
@@ -32208,9 +31570,7 @@ declare module '@material-ui/icons/PlaylistAddCheck.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlaylistAddCheck'>
 }
 declare module '@material-ui/icons/PlaylistAddCheckOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PlaylistAddCheckOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PlaylistAddCheckOutlined'>
 }
 declare module '@material-ui/icons/PlaylistAddCheckRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/PlaylistAddCheckRounded'>
@@ -32381,9 +31741,7 @@ declare module '@material-ui/icons/PowerSettingsNew.js' {
   declare module.exports: $Exports<'@material-ui/icons/PowerSettingsNew'>
 }
 declare module '@material-ui/icons/PowerSettingsNewOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/PowerSettingsNewOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/PowerSettingsNewOutlined'>
 }
 declare module '@material-ui/icons/PowerSettingsNewRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/PowerSettingsNewRounded'>
@@ -32587,45 +31945,31 @@ declare module '@material-ui/icons/RadioButtonChecked.js' {
   declare module.exports: $Exports<'@material-ui/icons/RadioButtonChecked'>
 }
 declare module '@material-ui/icons/RadioButtonCheckedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RadioButtonCheckedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RadioButtonCheckedOutlined'>
 }
 declare module '@material-ui/icons/RadioButtonCheckedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RadioButtonCheckedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RadioButtonCheckedRounded'>
 }
 declare module '@material-ui/icons/RadioButtonCheckedSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/RadioButtonCheckedSharp'>
 }
 declare module '@material-ui/icons/RadioButtonCheckedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RadioButtonCheckedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RadioButtonCheckedTwoTone'>
 }
 declare module '@material-ui/icons/RadioButtonUnchecked.js' {
   declare module.exports: $Exports<'@material-ui/icons/RadioButtonUnchecked'>
 }
 declare module '@material-ui/icons/RadioButtonUncheckedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RadioButtonUncheckedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RadioButtonUncheckedOutlined'>
 }
 declare module '@material-ui/icons/RadioButtonUncheckedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RadioButtonUncheckedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RadioButtonUncheckedRounded'>
 }
 declare module '@material-ui/icons/RadioButtonUncheckedSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RadioButtonUncheckedSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RadioButtonUncheckedSharp'>
 }
 declare module '@material-ui/icons/RadioButtonUncheckedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RadioButtonUncheckedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RadioButtonUncheckedTwoTone'>
 }
 declare module '@material-ui/icons/RadioOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/RadioOutlined'>
@@ -32757,24 +32101,16 @@ declare module '@material-ui/icons/RemoveCircleOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/RemoveCircleOutlined'>
 }
 declare module '@material-ui/icons/RemoveCircleOutlineOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RemoveCircleOutlineOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RemoveCircleOutlineOutlined'>
 }
 declare module '@material-ui/icons/RemoveCircleOutlineRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RemoveCircleOutlineRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RemoveCircleOutlineRounded'>
 }
 declare module '@material-ui/icons/RemoveCircleOutlineSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RemoveCircleOutlineSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RemoveCircleOutlineSharp'>
 }
 declare module '@material-ui/icons/RemoveCircleOutlineTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RemoveCircleOutlineTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RemoveCircleOutlineTwoTone'>
 }
 declare module '@material-ui/icons/RemoveCircleRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/RemoveCircleRounded'>
@@ -32828,22 +32164,16 @@ declare module '@material-ui/icons/RemoveShoppingCart.js' {
   declare module.exports: $Exports<'@material-ui/icons/RemoveShoppingCart'>
 }
 declare module '@material-ui/icons/RemoveShoppingCartOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RemoveShoppingCartOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RemoveShoppingCartOutlined'>
 }
 declare module '@material-ui/icons/RemoveShoppingCartRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RemoveShoppingCartRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RemoveShoppingCartRounded'>
 }
 declare module '@material-ui/icons/RemoveShoppingCartSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/RemoveShoppingCartSharp'>
 }
 declare module '@material-ui/icons/RemoveShoppingCartTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RemoveShoppingCartTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RemoveShoppingCartTwoTone'>
 }
 declare module '@material-ui/icons/RemoveTwoTone.js' {
   declare module.exports: $Exports<'@material-ui/icons/RemoveTwoTone'>
@@ -33065,9 +32395,7 @@ declare module '@material-ui/icons/RestoreFromTrash.js' {
   declare module.exports: $Exports<'@material-ui/icons/RestoreFromTrash'>
 }
 declare module '@material-ui/icons/RestoreFromTrashOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/RestoreFromTrashOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/RestoreFromTrashOutlined'>
 }
 declare module '@material-ui/icons/RestoreFromTrashRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/RestoreFromTrashRounded'>
@@ -33154,22 +32482,16 @@ declare module '@material-ui/icons/Rotate90DegreesCcw.js' {
   declare module.exports: $Exports<'@material-ui/icons/Rotate90DegreesCcw'>
 }
 declare module '@material-ui/icons/Rotate90DegreesCcwOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/Rotate90DegreesCcwOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/Rotate90DegreesCcwOutlined'>
 }
 declare module '@material-ui/icons/Rotate90DegreesCcwRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/Rotate90DegreesCcwRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/Rotate90DegreesCcwRounded'>
 }
 declare module '@material-ui/icons/Rotate90DegreesCcwSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/Rotate90DegreesCcwSharp'>
 }
 declare module '@material-ui/icons/Rotate90DegreesCcwTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/Rotate90DegreesCcwTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/Rotate90DegreesCcwTwoTone'>
 }
 declare module '@material-ui/icons/RotateLeft.js' {
   declare module.exports: $Exports<'@material-ui/icons/RotateLeft'>
@@ -33400,66 +32722,46 @@ declare module '@material-ui/icons/ScreenLockLandscape.js' {
   declare module.exports: $Exports<'@material-ui/icons/ScreenLockLandscape'>
 }
 declare module '@material-ui/icons/ScreenLockLandscapeOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockLandscapeOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockLandscapeOutlined'>
 }
 declare module '@material-ui/icons/ScreenLockLandscapeRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockLandscapeRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockLandscapeRounded'>
 }
 declare module '@material-ui/icons/ScreenLockLandscapeSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockLandscapeSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockLandscapeSharp'>
 }
 declare module '@material-ui/icons/ScreenLockLandscapeTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockLandscapeTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockLandscapeTwoTone'>
 }
 declare module '@material-ui/icons/ScreenLockPortrait.js' {
   declare module.exports: $Exports<'@material-ui/icons/ScreenLockPortrait'>
 }
 declare module '@material-ui/icons/ScreenLockPortraitOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockPortraitOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockPortraitOutlined'>
 }
 declare module '@material-ui/icons/ScreenLockPortraitRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockPortraitRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockPortraitRounded'>
 }
 declare module '@material-ui/icons/ScreenLockPortraitSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/ScreenLockPortraitSharp'>
 }
 declare module '@material-ui/icons/ScreenLockPortraitTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockPortraitTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockPortraitTwoTone'>
 }
 declare module '@material-ui/icons/ScreenLockRotation.js' {
   declare module.exports: $Exports<'@material-ui/icons/ScreenLockRotation'>
 }
 declare module '@material-ui/icons/ScreenLockRotationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockRotationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockRotationOutlined'>
 }
 declare module '@material-ui/icons/ScreenLockRotationRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockRotationRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockRotationRounded'>
 }
 declare module '@material-ui/icons/ScreenLockRotationSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/ScreenLockRotationSharp'>
 }
 declare module '@material-ui/icons/ScreenLockRotationTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/ScreenLockRotationTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/ScreenLockRotationTwoTone'>
 }
 declare module '@material-ui/icons/ScreenRotation.js' {
   declare module.exports: $Exports<'@material-ui/icons/ScreenRotation'>
@@ -33585,24 +32887,16 @@ declare module '@material-ui/icons/SentimentDissatisfied.js' {
   declare module.exports: $Exports<'@material-ui/icons/SentimentDissatisfied'>
 }
 declare module '@material-ui/icons/SentimentDissatisfiedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentDissatisfiedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentDissatisfiedOutlined'>
 }
 declare module '@material-ui/icons/SentimentDissatisfiedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentDissatisfiedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentDissatisfiedRounded'>
 }
 declare module '@material-ui/icons/SentimentDissatisfiedSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentDissatisfiedSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentDissatisfiedSharp'>
 }
 declare module '@material-ui/icons/SentimentDissatisfiedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentDissatisfiedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentDissatisfiedTwoTone'>
 }
 declare module '@material-ui/icons/SentimentSatisfied.js' {
   declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfied'>
@@ -33611,90 +32905,58 @@ declare module '@material-ui/icons/SentimentSatisfiedAlt.js' {
   declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedAlt'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedAltOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentSatisfiedAltOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedAltOutlined'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedAltRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentSatisfiedAltRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedAltRounded'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedAltSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentSatisfiedAltSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedAltSharp'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedAltTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentSatisfiedAltTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedAltTwoTone'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentSatisfiedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedOutlined'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentSatisfiedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedRounded'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedSharp'>
 }
 declare module '@material-ui/icons/SentimentSatisfiedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentSatisfiedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentSatisfiedTwoTone'>
 }
 declare module '@material-ui/icons/SentimentVeryDissatisfied.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVeryDissatisfied'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVeryDissatisfied'>
 }
 declare module '@material-ui/icons/SentimentVeryDissatisfiedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVeryDissatisfiedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVeryDissatisfiedOutlined'>
 }
 declare module '@material-ui/icons/SentimentVeryDissatisfiedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVeryDissatisfiedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVeryDissatisfiedRounded'>
 }
 declare module '@material-ui/icons/SentimentVeryDissatisfiedSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVeryDissatisfiedSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVeryDissatisfiedSharp'>
 }
 declare module '@material-ui/icons/SentimentVeryDissatisfiedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVeryDissatisfiedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVeryDissatisfiedTwoTone'>
 }
 declare module '@material-ui/icons/SentimentVerySatisfied.js' {
   declare module.exports: $Exports<'@material-ui/icons/SentimentVerySatisfied'>
 }
 declare module '@material-ui/icons/SentimentVerySatisfiedOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVerySatisfiedOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVerySatisfiedOutlined'>
 }
 declare module '@material-ui/icons/SentimentVerySatisfiedRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVerySatisfiedRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVerySatisfiedRounded'>
 }
 declare module '@material-ui/icons/SentimentVerySatisfiedSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVerySatisfiedSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVerySatisfiedSharp'>
 }
 declare module '@material-ui/icons/SentimentVerySatisfiedTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SentimentVerySatisfiedTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SentimentVerySatisfiedTwoTone'>
 }
 declare module '@material-ui/icons/Settings.js' {
   declare module.exports: $Exports<'@material-ui/icons/Settings'>
@@ -33703,89 +32965,61 @@ declare module '@material-ui/icons/SettingsApplications.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsApplications'>
 }
 declare module '@material-ui/icons/SettingsApplicationsOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsApplicationsOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsApplicationsOutlined'>
 }
 declare module '@material-ui/icons/SettingsApplicationsRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsApplicationsRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsApplicationsRounded'>
 }
 declare module '@material-ui/icons/SettingsApplicationsSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsApplicationsSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsApplicationsSharp'>
 }
 declare module '@material-ui/icons/SettingsApplicationsTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsApplicationsTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsApplicationsTwoTone'>
 }
 declare module '@material-ui/icons/SettingsBackupRestore.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsBackupRestore'>
 }
 declare module '@material-ui/icons/SettingsBackupRestoreOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBackupRestoreOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBackupRestoreOutlined'>
 }
 declare module '@material-ui/icons/SettingsBackupRestoreRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBackupRestoreRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBackupRestoreRounded'>
 }
 declare module '@material-ui/icons/SettingsBackupRestoreSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBackupRestoreSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBackupRestoreSharp'>
 }
 declare module '@material-ui/icons/SettingsBackupRestoreTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBackupRestoreTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBackupRestoreTwoTone'>
 }
 declare module '@material-ui/icons/SettingsBluetooth.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsBluetooth'>
 }
 declare module '@material-ui/icons/SettingsBluetoothOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBluetoothOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBluetoothOutlined'>
 }
 declare module '@material-ui/icons/SettingsBluetoothRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBluetoothRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBluetoothRounded'>
 }
 declare module '@material-ui/icons/SettingsBluetoothSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsBluetoothSharp'>
 }
 declare module '@material-ui/icons/SettingsBluetoothTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBluetoothTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBluetoothTwoTone'>
 }
 declare module '@material-ui/icons/SettingsBrightness.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsBrightness'>
 }
 declare module '@material-ui/icons/SettingsBrightnessOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBrightnessOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBrightnessOutlined'>
 }
 declare module '@material-ui/icons/SettingsBrightnessRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBrightnessRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBrightnessRounded'>
 }
 declare module '@material-ui/icons/SettingsBrightnessSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsBrightnessSharp'>
 }
 declare module '@material-ui/icons/SettingsBrightnessTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsBrightnessTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsBrightnessTwoTone'>
 }
 declare module '@material-ui/icons/SettingsCell.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsCell'>
@@ -33806,9 +33040,7 @@ declare module '@material-ui/icons/SettingsEthernet.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsEthernet'>
 }
 declare module '@material-ui/icons/SettingsEthernetOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsEthernetOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsEthernetOutlined'>
 }
 declare module '@material-ui/icons/SettingsEthernetRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsEthernetRounded'>
@@ -33823,114 +33055,76 @@ declare module '@material-ui/icons/SettingsInputAntenna.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsInputAntenna'>
 }
 declare module '@material-ui/icons/SettingsInputAntennaOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputAntennaOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputAntennaOutlined'>
 }
 declare module '@material-ui/icons/SettingsInputAntennaRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputAntennaRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputAntennaRounded'>
 }
 declare module '@material-ui/icons/SettingsInputAntennaSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputAntennaSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputAntennaSharp'>
 }
 declare module '@material-ui/icons/SettingsInputAntennaTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputAntennaTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputAntennaTwoTone'>
 }
 declare module '@material-ui/icons/SettingsInputComponent.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsInputComponent'>
 }
 declare module '@material-ui/icons/SettingsInputComponentOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputComponentOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputComponentOutlined'>
 }
 declare module '@material-ui/icons/SettingsInputComponentRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputComponentRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputComponentRounded'>
 }
 declare module '@material-ui/icons/SettingsInputComponentSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputComponentSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputComponentSharp'>
 }
 declare module '@material-ui/icons/SettingsInputComponentTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputComponentTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputComponentTwoTone'>
 }
 declare module '@material-ui/icons/SettingsInputComposite.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsInputComposite'>
 }
 declare module '@material-ui/icons/SettingsInputCompositeOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputCompositeOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputCompositeOutlined'>
 }
 declare module '@material-ui/icons/SettingsInputCompositeRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputCompositeRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputCompositeRounded'>
 }
 declare module '@material-ui/icons/SettingsInputCompositeSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputCompositeSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputCompositeSharp'>
 }
 declare module '@material-ui/icons/SettingsInputCompositeTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputCompositeTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputCompositeTwoTone'>
 }
 declare module '@material-ui/icons/SettingsInputHdmi.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsInputHdmi'>
 }
 declare module '@material-ui/icons/SettingsInputHdmiOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputHdmiOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputHdmiOutlined'>
 }
 declare module '@material-ui/icons/SettingsInputHdmiRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputHdmiRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputHdmiRounded'>
 }
 declare module '@material-ui/icons/SettingsInputHdmiSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsInputHdmiSharp'>
 }
 declare module '@material-ui/icons/SettingsInputHdmiTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputHdmiTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputHdmiTwoTone'>
 }
 declare module '@material-ui/icons/SettingsInputSvideo.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsInputSvideo'>
 }
 declare module '@material-ui/icons/SettingsInputSvideoOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputSvideoOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputSvideoOutlined'>
 }
 declare module '@material-ui/icons/SettingsInputSvideoRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputSvideoRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputSvideoRounded'>
 }
 declare module '@material-ui/icons/SettingsInputSvideoSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputSvideoSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputSvideoSharp'>
 }
 declare module '@material-ui/icons/SettingsInputSvideoTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsInputSvideoTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsInputSvideoTwoTone'>
 }
 declare module '@material-ui/icons/SettingsOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsOutlined'>
@@ -33939,9 +33133,7 @@ declare module '@material-ui/icons/SettingsOverscan.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsOverscan'>
 }
 declare module '@material-ui/icons/SettingsOverscanOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsOverscanOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsOverscanOutlined'>
 }
 declare module '@material-ui/icons/SettingsOverscanRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsOverscanRounded'>
@@ -34007,24 +33199,16 @@ declare module '@material-ui/icons/SettingsSystemDaydream.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsSystemDaydream'>
 }
 declare module '@material-ui/icons/SettingsSystemDaydreamOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsSystemDaydreamOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsSystemDaydreamOutlined'>
 }
 declare module '@material-ui/icons/SettingsSystemDaydreamRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsSystemDaydreamRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsSystemDaydreamRounded'>
 }
 declare module '@material-ui/icons/SettingsSystemDaydreamSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsSystemDaydreamSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsSystemDaydreamSharp'>
 }
 declare module '@material-ui/icons/SettingsSystemDaydreamTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SettingsSystemDaydreamTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SettingsSystemDaydreamTwoTone'>
 }
 declare module '@material-ui/icons/SettingsTwoTone.js' {
   declare module.exports: $Exports<'@material-ui/icons/SettingsTwoTone'>
@@ -34183,317 +33367,211 @@ declare module '@material-ui/icons/SignalCellular0Bar.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular0Bar'>
 }
 declare module '@material-ui/icons/SignalCellular0BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular0BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular0BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellular0BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular0BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular0BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellular0BarSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular0BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellular0BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular0BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular0BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellular1Bar.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular1Bar'>
 }
 declare module '@material-ui/icons/SignalCellular1BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular1BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular1BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellular1BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular1BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular1BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellular1BarSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular1BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellular1BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular1BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular1BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellular2Bar.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular2Bar'>
 }
 declare module '@material-ui/icons/SignalCellular2BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular2BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular2BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellular2BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular2BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular2BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellular2BarSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular2BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellular2BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular2BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular2BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellular3Bar.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular3Bar'>
 }
 declare module '@material-ui/icons/SignalCellular3BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular3BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular3BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellular3BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular3BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular3BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellular3BarSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular3BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellular3BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular3BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular3BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellular4Bar.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular4Bar'>
 }
 declare module '@material-ui/icons/SignalCellular4BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular4BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular4BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellular4BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular4BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular4BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellular4BarSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellular4BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellular4BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellular4BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellular4BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularAlt.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellularAlt'>
 }
 declare module '@material-ui/icons/SignalCellularAltOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularAltOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularAltOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularAltRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularAltRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularAltRounded'>
 }
 declare module '@material-ui/icons/SignalCellularAltSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellularAltSharp'>
 }
 declare module '@material-ui/icons/SignalCellularAltTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularAltTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularAltTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet0Bar.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet0Bar'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet0Bar'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet0BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet0BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet0BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet0BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet0BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet0BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet0BarSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet0BarSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet0BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet0BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet0BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet0BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet1Bar.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet1Bar'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet1Bar'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet1BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet1BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet1BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet1BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet1BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet1BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet1BarSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet1BarSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet1BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet1BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet1BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet1BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet2Bar.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet2Bar'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet2Bar'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet2BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet2BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet2BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet2BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet2BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet2BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet2BarSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet2BarSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet2BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet2BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet2BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet2BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet3Bar.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet3Bar'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet3Bar'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet3BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet3BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet3BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet3BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet3BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet3BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet3BarSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet3BarSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet3BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet3BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet3BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet3BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet4Bar.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet4Bar'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet4Bar'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet4BarOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet4BarOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet4BarOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet4BarRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet4BarRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet4BarRounded'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet4BarSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet4BarSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet4BarSharp'>
 }
 declare module '@material-ui/icons/SignalCellularConnectedNoInternet4BarTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularConnectedNoInternet4BarTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularConnectedNoInternet4BarTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularNoSim.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellularNoSim'>
 }
 declare module '@material-ui/icons/SignalCellularNoSimOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularNoSimOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularNoSimOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularNoSimRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularNoSimRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularNoSimRounded'>
 }
 declare module '@material-ui/icons/SignalCellularNoSimSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularNoSimSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularNoSimSharp'>
 }
 declare module '@material-ui/icons/SignalCellularNoSimTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularNoSimTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularNoSimTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularNull.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellularNull'>
 }
 declare module '@material-ui/icons/SignalCellularNullOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularNullOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularNullOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularNullRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularNullRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularNullRounded'>
 }
 declare module '@material-ui/icons/SignalCellularNullSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellularNullSharp'>
 }
 declare module '@material-ui/icons/SignalCellularNullTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularNullTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularNullTwoTone'>
 }
 declare module '@material-ui/icons/SignalCellularOff.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellularOff'>
 }
 declare module '@material-ui/icons/SignalCellularOffOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularOffOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularOffOutlined'>
 }
 declare module '@material-ui/icons/SignalCellularOffRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularOffRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularOffRounded'>
 }
 declare module '@material-ui/icons/SignalCellularOffSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalCellularOffSharp'>
 }
 declare module '@material-ui/icons/SignalCellularOffTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalCellularOffTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalCellularOffTwoTone'>
 }
 declare module '@material-ui/icons/SignalWifi0Bar.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi0Bar'>
@@ -34517,22 +33595,16 @@ declare module '@material-ui/icons/SignalWifi1BarLock.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi1BarLock'>
 }
 declare module '@material-ui/icons/SignalWifi1BarLockOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi1BarLockOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi1BarLockOutlined'>
 }
 declare module '@material-ui/icons/SignalWifi1BarLockRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi1BarLockRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi1BarLockRounded'>
 }
 declare module '@material-ui/icons/SignalWifi1BarLockSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi1BarLockSharp'>
 }
 declare module '@material-ui/icons/SignalWifi1BarLockTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi1BarLockTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi1BarLockTwoTone'>
 }
 declare module '@material-ui/icons/SignalWifi1BarOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi1BarOutlined'>
@@ -34553,22 +33625,16 @@ declare module '@material-ui/icons/SignalWifi2BarLock.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi2BarLock'>
 }
 declare module '@material-ui/icons/SignalWifi2BarLockOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi2BarLockOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi2BarLockOutlined'>
 }
 declare module '@material-ui/icons/SignalWifi2BarLockRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi2BarLockRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi2BarLockRounded'>
 }
 declare module '@material-ui/icons/SignalWifi2BarLockSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi2BarLockSharp'>
 }
 declare module '@material-ui/icons/SignalWifi2BarLockTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi2BarLockTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi2BarLockTwoTone'>
 }
 declare module '@material-ui/icons/SignalWifi2BarOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi2BarOutlined'>
@@ -34589,22 +33655,16 @@ declare module '@material-ui/icons/SignalWifi3BarLock.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi3BarLock'>
 }
 declare module '@material-ui/icons/SignalWifi3BarLockOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi3BarLockOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi3BarLockOutlined'>
 }
 declare module '@material-ui/icons/SignalWifi3BarLockRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi3BarLockRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi3BarLockRounded'>
 }
 declare module '@material-ui/icons/SignalWifi3BarLockSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi3BarLockSharp'>
 }
 declare module '@material-ui/icons/SignalWifi3BarLockTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi3BarLockTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi3BarLockTwoTone'>
 }
 declare module '@material-ui/icons/SignalWifi3BarOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi3BarOutlined'>
@@ -34625,22 +33685,16 @@ declare module '@material-ui/icons/SignalWifi4BarLock.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi4BarLock'>
 }
 declare module '@material-ui/icons/SignalWifi4BarLockOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi4BarLockOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi4BarLockOutlined'>
 }
 declare module '@material-ui/icons/SignalWifi4BarLockRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi4BarLockRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi4BarLockRounded'>
 }
 declare module '@material-ui/icons/SignalWifi4BarLockSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi4BarLockSharp'>
 }
 declare module '@material-ui/icons/SignalWifi4BarLockTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SignalWifi4BarLockTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SignalWifi4BarLockTwoTone'>
 }
 declare module '@material-ui/icons/SignalWifi4BarOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/SignalWifi4BarOutlined'>
@@ -35063,93 +34117,61 @@ declare module '@material-ui/icons/StayCurrentLandscape.js' {
   declare module.exports: $Exports<'@material-ui/icons/StayCurrentLandscape'>
 }
 declare module '@material-ui/icons/StayCurrentLandscapeOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentLandscapeOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentLandscapeOutlined'>
 }
 declare module '@material-ui/icons/StayCurrentLandscapeRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentLandscapeRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentLandscapeRounded'>
 }
 declare module '@material-ui/icons/StayCurrentLandscapeSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentLandscapeSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentLandscapeSharp'>
 }
 declare module '@material-ui/icons/StayCurrentLandscapeTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentLandscapeTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentLandscapeTwoTone'>
 }
 declare module '@material-ui/icons/StayCurrentPortrait.js' {
   declare module.exports: $Exports<'@material-ui/icons/StayCurrentPortrait'>
 }
 declare module '@material-ui/icons/StayCurrentPortraitOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentPortraitOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentPortraitOutlined'>
 }
 declare module '@material-ui/icons/StayCurrentPortraitRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentPortraitRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentPortraitRounded'>
 }
 declare module '@material-ui/icons/StayCurrentPortraitSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentPortraitSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentPortraitSharp'>
 }
 declare module '@material-ui/icons/StayCurrentPortraitTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayCurrentPortraitTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayCurrentPortraitTwoTone'>
 }
 declare module '@material-ui/icons/StayPrimaryLandscape.js' {
   declare module.exports: $Exports<'@material-ui/icons/StayPrimaryLandscape'>
 }
 declare module '@material-ui/icons/StayPrimaryLandscapeOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryLandscapeOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryLandscapeOutlined'>
 }
 declare module '@material-ui/icons/StayPrimaryLandscapeRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryLandscapeRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryLandscapeRounded'>
 }
 declare module '@material-ui/icons/StayPrimaryLandscapeSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryLandscapeSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryLandscapeSharp'>
 }
 declare module '@material-ui/icons/StayPrimaryLandscapeTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryLandscapeTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryLandscapeTwoTone'>
 }
 declare module '@material-ui/icons/StayPrimaryPortrait.js' {
   declare module.exports: $Exports<'@material-ui/icons/StayPrimaryPortrait'>
 }
 declare module '@material-ui/icons/StayPrimaryPortraitOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryPortraitOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryPortraitOutlined'>
 }
 declare module '@material-ui/icons/StayPrimaryPortraitRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryPortraitRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryPortraitRounded'>
 }
 declare module '@material-ui/icons/StayPrimaryPortraitSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryPortraitSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryPortraitSharp'>
 }
 declare module '@material-ui/icons/StayPrimaryPortraitTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StayPrimaryPortraitTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StayPrimaryPortraitTwoTone'>
 }
 declare module '@material-ui/icons/Stop.js' {
   declare module.exports: $Exports<'@material-ui/icons/Stop'>
@@ -35203,22 +34225,16 @@ declare module '@material-ui/icons/StoreMallDirectory.js' {
   declare module.exports: $Exports<'@material-ui/icons/StoreMallDirectory'>
 }
 declare module '@material-ui/icons/StoreMallDirectoryOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StoreMallDirectoryOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StoreMallDirectoryOutlined'>
 }
 declare module '@material-ui/icons/StoreMallDirectoryRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StoreMallDirectoryRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StoreMallDirectoryRounded'>
 }
 declare module '@material-ui/icons/StoreMallDirectorySharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/StoreMallDirectorySharp'>
 }
 declare module '@material-ui/icons/StoreMallDirectoryTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/StoreMallDirectoryTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/StoreMallDirectoryTwoTone'>
 }
 declare module '@material-ui/icons/StoreOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/StoreOutlined'>
@@ -35296,47 +34312,31 @@ declare module '@material-ui/icons/SubdirectoryArrowLeft.js' {
   declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowLeft'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowLeftOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowLeftOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowLeftOutlined'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowLeftRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowLeftRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowLeftRounded'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowLeftSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowLeftSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowLeftSharp'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowLeftTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowLeftTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowLeftTwoTone'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowRight.js' {
   declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowRight'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowRightOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowRightOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowRightOutlined'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowRightRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowRightRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowRightRounded'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowRightSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowRightSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowRightSharp'>
 }
 declare module '@material-ui/icons/SubdirectoryArrowRightTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SubdirectoryArrowRightTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SubdirectoryArrowRightTwoTone'>
 }
 declare module '@material-ui/icons/Subject.js' {
   declare module.exports: $Exports<'@material-ui/icons/Subject'>
@@ -35402,45 +34402,31 @@ declare module '@material-ui/icons/SupervisedUserCircle.js' {
   declare module.exports: $Exports<'@material-ui/icons/SupervisedUserCircle'>
 }
 declare module '@material-ui/icons/SupervisedUserCircleOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SupervisedUserCircleOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SupervisedUserCircleOutlined'>
 }
 declare module '@material-ui/icons/SupervisedUserCircleRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SupervisedUserCircleRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SupervisedUserCircleRounded'>
 }
 declare module '@material-ui/icons/SupervisedUserCircleSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SupervisedUserCircleSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SupervisedUserCircleSharp'>
 }
 declare module '@material-ui/icons/SupervisedUserCircleTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SupervisedUserCircleTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SupervisedUserCircleTwoTone'>
 }
 declare module '@material-ui/icons/SupervisorAccount.js' {
   declare module.exports: $Exports<'@material-ui/icons/SupervisorAccount'>
 }
 declare module '@material-ui/icons/SupervisorAccountOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SupervisorAccountOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SupervisorAccountOutlined'>
 }
 declare module '@material-ui/icons/SupervisorAccountRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SupervisorAccountRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SupervisorAccountRounded'>
 }
 declare module '@material-ui/icons/SupervisorAccountSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SupervisorAccountSharp'>
 }
 declare module '@material-ui/icons/SupervisorAccountTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SupervisorAccountTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SupervisorAccountTwoTone'>
 }
 declare module '@material-ui/icons/SurroundSound.js' {
   declare module.exports: $Exports<'@material-ui/icons/SurroundSound'>
@@ -35479,24 +34465,16 @@ declare module '@material-ui/icons/SwapHorizontalCircle.js' {
   declare module.exports: $Exports<'@material-ui/icons/SwapHorizontalCircle'>
 }
 declare module '@material-ui/icons/SwapHorizontalCircleOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SwapHorizontalCircleOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SwapHorizontalCircleOutlined'>
 }
 declare module '@material-ui/icons/SwapHorizontalCircleRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SwapHorizontalCircleRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SwapHorizontalCircleRounded'>
 }
 declare module '@material-ui/icons/SwapHorizontalCircleSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SwapHorizontalCircleSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SwapHorizontalCircleSharp'>
 }
 declare module '@material-ui/icons/SwapHorizontalCircleTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SwapHorizontalCircleTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SwapHorizontalCircleTwoTone'>
 }
 declare module '@material-ui/icons/SwapHorizOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/SwapHorizOutlined'>
@@ -35517,22 +34495,16 @@ declare module '@material-ui/icons/SwapVerticalCircle.js' {
   declare module.exports: $Exports<'@material-ui/icons/SwapVerticalCircle'>
 }
 declare module '@material-ui/icons/SwapVerticalCircleOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SwapVerticalCircleOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SwapVerticalCircleOutlined'>
 }
 declare module '@material-ui/icons/SwapVerticalCircleRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SwapVerticalCircleRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SwapVerticalCircleRounded'>
 }
 declare module '@material-ui/icons/SwapVerticalCircleSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/SwapVerticalCircleSharp'>
 }
 declare module '@material-ui/icons/SwapVerticalCircleTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/SwapVerticalCircleTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/SwapVerticalCircleTwoTone'>
 }
 declare module '@material-ui/icons/SwapVertOutlined.js' {
   declare module.exports: $Exports<'@material-ui/icons/SwapVertOutlined'>
@@ -35820,30 +34792,22 @@ declare module '@material-ui/icons/TextRotateVertical.js' {
   declare module.exports: $Exports<'@material-ui/icons/TextRotateVertical'>
 }
 declare module '@material-ui/icons/TextRotateVerticalOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TextRotateVerticalOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TextRotateVerticalOutlined'>
 }
 declare module '@material-ui/icons/TextRotateVerticalRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TextRotateVerticalRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TextRotateVerticalRounded'>
 }
 declare module '@material-ui/icons/TextRotateVerticalSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/TextRotateVerticalSharp'>
 }
 declare module '@material-ui/icons/TextRotateVerticalTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TextRotateVerticalTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TextRotateVerticalTwoTone'>
 }
 declare module '@material-ui/icons/TextRotationDown.js' {
   declare module.exports: $Exports<'@material-ui/icons/TextRotationDown'>
 }
 declare module '@material-ui/icons/TextRotationDownOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TextRotationDownOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TextRotationDownOutlined'>
 }
 declare module '@material-ui/icons/TextRotationDownRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/TextRotationDownRounded'>
@@ -35858,9 +34822,7 @@ declare module '@material-ui/icons/TextRotationNone.js' {
   declare module.exports: $Exports<'@material-ui/icons/TextRotationNone'>
 }
 declare module '@material-ui/icons/TextRotationNoneOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TextRotationNoneOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TextRotationNoneOutlined'>
 }
 declare module '@material-ui/icons/TextRotationNoneRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/TextRotationNoneRounded'>
@@ -36325,24 +35287,16 @@ declare module '@material-ui/icons/TransferWithinAStation.js' {
   declare module.exports: $Exports<'@material-ui/icons/TransferWithinAStation'>
 }
 declare module '@material-ui/icons/TransferWithinAStationOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TransferWithinAStationOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TransferWithinAStationOutlined'>
 }
 declare module '@material-ui/icons/TransferWithinAStationRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TransferWithinAStationRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TransferWithinAStationRounded'>
 }
 declare module '@material-ui/icons/TransferWithinAStationSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TransferWithinAStationSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TransferWithinAStationSharp'>
 }
 declare module '@material-ui/icons/TransferWithinAStationTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TransferWithinAStationTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TransferWithinAStationTwoTone'>
 }
 declare module '@material-ui/icons/Transform.js' {
   declare module.exports: $Exports<'@material-ui/icons/Transform'>
@@ -36363,9 +35317,7 @@ declare module '@material-ui/icons/TransitEnterexit.js' {
   declare module.exports: $Exports<'@material-ui/icons/TransitEnterexit'>
 }
 declare module '@material-ui/icons/TransitEnterexitOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/TransitEnterexitOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/TransitEnterexitOutlined'>
 }
 declare module '@material-ui/icons/TransitEnterexitRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/TransitEnterexitRounded'>
@@ -36653,55 +35605,37 @@ declare module '@material-ui/icons/VerticalAlignBottom.js' {
   declare module.exports: $Exports<'@material-ui/icons/VerticalAlignBottom'>
 }
 declare module '@material-ui/icons/VerticalAlignBottomOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignBottomOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignBottomOutlined'>
 }
 declare module '@material-ui/icons/VerticalAlignBottomRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignBottomRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignBottomRounded'>
 }
 declare module '@material-ui/icons/VerticalAlignBottomSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignBottomSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignBottomSharp'>
 }
 declare module '@material-ui/icons/VerticalAlignBottomTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignBottomTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignBottomTwoTone'>
 }
 declare module '@material-ui/icons/VerticalAlignCenter.js' {
   declare module.exports: $Exports<'@material-ui/icons/VerticalAlignCenter'>
 }
 declare module '@material-ui/icons/VerticalAlignCenterOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignCenterOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignCenterOutlined'>
 }
 declare module '@material-ui/icons/VerticalAlignCenterRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignCenterRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignCenterRounded'>
 }
 declare module '@material-ui/icons/VerticalAlignCenterSharp.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignCenterSharp'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignCenterSharp'>
 }
 declare module '@material-ui/icons/VerticalAlignCenterTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignCenterTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignCenterTwoTone'>
 }
 declare module '@material-ui/icons/VerticalAlignTop.js' {
   declare module.exports: $Exports<'@material-ui/icons/VerticalAlignTop'>
 }
 declare module '@material-ui/icons/VerticalAlignTopOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/VerticalAlignTopOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/VerticalAlignTopOutlined'>
 }
 declare module '@material-ui/icons/VerticalAlignTopRounded.js' {
   declare module.exports: $Exports<'@material-ui/icons/VerticalAlignTopRounded'>
@@ -37586,22 +36520,16 @@ declare module '@material-ui/icons/YoutubeSearchedFor.js' {
   declare module.exports: $Exports<'@material-ui/icons/YoutubeSearchedFor'>
 }
 declare module '@material-ui/icons/YoutubeSearchedForOutlined.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/YoutubeSearchedForOutlined'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/YoutubeSearchedForOutlined'>
 }
 declare module '@material-ui/icons/YoutubeSearchedForRounded.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/YoutubeSearchedForRounded'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/YoutubeSearchedForRounded'>
 }
 declare module '@material-ui/icons/YoutubeSearchedForSharp.js' {
   declare module.exports: $Exports<'@material-ui/icons/YoutubeSearchedForSharp'>
 }
 declare module '@material-ui/icons/YoutubeSearchedForTwoTone.js' {
-  declare module.exports: $Exports<
-    '@material-ui/icons/YoutubeSearchedForTwoTone'
-  >
+  declare module.exports: $Exports<'@material-ui/icons/YoutubeSearchedForTwoTone'>
 }
 declare module '@material-ui/icons/ZoomIn.js' {
   declare module.exports: $Exports<'@material-ui/icons/ZoomIn'>

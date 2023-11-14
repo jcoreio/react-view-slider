@@ -28,12 +28,8 @@ declare module '@babel/plugin-proposal-object-rest-spread/lib' {
 
 // Filename aliases
 declare module '@babel/plugin-proposal-object-rest-spread/lib/index' {
-  declare module.exports: $Exports<
-    '@babel/plugin-proposal-object-rest-spread/lib'
-  >
+  declare module.exports: $Exports<'@babel/plugin-proposal-object-rest-spread/lib'>
 }
 declare module '@babel/plugin-proposal-object-rest-spread/lib/index.js' {
-  declare module.exports: $Exports<
-    '@babel/plugin-proposal-object-rest-spread/lib'
-  >
+  declare module.exports: $Exports<'@babel/plugin-proposal-object-rest-spread/lib'>
 }

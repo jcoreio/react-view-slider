@@ -44,25 +44,17 @@ declare module 'get-node-dimensions/lib/get-node-dimensions' {
 
 // Filename aliases
 declare module 'get-node-dimensions/dist/get-node-dimensions.js' {
-  declare module.exports: $Exports<
-    'get-node-dimensions/dist/get-node-dimensions'
-  >
+  declare module.exports: $Exports<'get-node-dimensions/dist/get-node-dimensions'>
 }
 declare module 'get-node-dimensions/dist/get-node-dimensions.min.js' {
-  declare module.exports: $Exports<
-    'get-node-dimensions/dist/get-node-dimensions.min'
-  >
+  declare module.exports: $Exports<'get-node-dimensions/dist/get-node-dimensions.min'>
 }
 declare module 'get-node-dimensions/lib/get-clone-dimensions.js' {
-  declare module.exports: $Exports<
-    'get-node-dimensions/lib/get-clone-dimensions'
-  >
+  declare module.exports: $Exports<'get-node-dimensions/lib/get-clone-dimensions'>
 }
 declare module 'get-node-dimensions/lib/get-margin.js' {
   declare module.exports: $Exports<'get-node-dimensions/lib/get-margin'>
 }
 declare module 'get-node-dimensions/lib/get-node-dimensions.js' {
-  declare module.exports: $Exports<
-    'get-node-dimensions/lib/get-node-dimensions'
-  >
+  declare module.exports: $Exports<'get-node-dimensions/lib/get-node-dimensions'>
 }

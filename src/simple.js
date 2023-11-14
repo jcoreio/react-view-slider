@@ -93,6 +93,7 @@ export function createSimpleViewSlider(
         ...props
       } = this.props
       const { activeView, views } = this.state
+
       return (
         <ViewSlider
           {...props}
