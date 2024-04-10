@@ -81,7 +81,8 @@ describe('ViewSlider', () => {
     }
 
     expectHasFillStyle(root)
-    expectHasFillStyle(viewport)
+    expect(viewport.style.position).to.equal('relative')
+    expect(viewport.style.height).to.equal('100%')
     expectHasFillStyle(views[0].parentElement.parentElement, '0%')
 
     comp.rerender(

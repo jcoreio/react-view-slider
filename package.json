@@ -1,6 +1,6 @@
 {
   "name": "react-view-slider",
-  "version": "0.0.0-development",
+  "version": "4.6.1",
   "description": "animates horizontal slide transitions between steps of a wizard or levels of a drilldown",
   "sideEffects": false,
   "scripts": {
