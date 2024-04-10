@@ -320,6 +320,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       transitionTimingFunction,
       overflow: 'hidden',
       height: animateHeight && height != null ? height : undefined,
+      ...(fillParent ? fillStyle : {}),
       ...style,
     }
 
@@ -327,18 +328,13 @@ export default class ViewSlider extends React.Component<Props, State> {
       position: 'relative',
       left: `${activeView * spacing * (rtl ? 100 : -100)}%`,
       whiteSpace: 'nowrap',
-      minHeight: '100%',
       direction: rtl ? 'rtl' : 'ltr',
       transition: transitioning
         ? `left ${transitionTimingFunction} ${transitionDuration}ms`
         : undefined,
+      ...(fillParent ? { height: '100%' } : { minHeight: '100%' }),
       ...viewportStyle,
     }
-    if (fillParent) {
-      Object.assign(finalOuterStyle, fillStyle)
-      Object.assign(finalViewportStyle, fillStyle)
-    }
-
     // when not transitioning, render empty placeholder divs before the active view to push it into the right
     // horizontal position
     const views = []
