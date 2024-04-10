@@ -1,0 +1,5 @@
+/dist
+.nyc_output
+node_modules
+/coverage
+/demo/bundle.js

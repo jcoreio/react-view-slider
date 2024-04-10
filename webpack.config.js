@@ -2,19 +2,13 @@
 
 /* eslint-env node */
 
-const webpack = require('webpack')
 const path = require('path')
 const ProgressPlugin = require('webpack/lib/ProgressPlugin')
 const env = process.env.NODE_ENV
 const isTest = env === 'test'
 const isProd = env === 'production'
 
-const plugins = [
-  new webpack.DefinePlugin({
-    'process.env.NODE_ENV': JSON.stringify(env),
-  }),
-  new ProgressPlugin({ profile: false }),
-]
+const plugins = [new ProgressPlugin({ profile: false })]
 
 const externals = isTest
   ? {
@@ -50,14 +44,6 @@ module.exports = {
         exclude: /node_modules/,
         options: {
           cacheDirectory: true,
-          plugins: [
-            '@babel/plugin-transform-flow-strip-types',
-            '@babel/plugin-syntax-dynamic-import',
-            '@babel/plugin-proposal-export-default-from',
-            '@babel/plugin-proposal-export-namespace-from',
-            '@babel/plugin-proposal-object-rest-spread',
-            '@babel/plugin-proposal-class-properties',
-          ],
           presets: [
             ['@babel/preset-env', { targets: { browsers: 'last 2 versions' } }],
             '@babel/preset-react',
@@ -72,9 +58,11 @@ module.exports = {
 }
 
 if (!isTest) {
-  module.exports.entry = ['@babel/polyfill', './demo/index.js']
+  module.exports.entry = ['core-js/stable', './demo/index.js']
   module.exports.devServer = {
     port: 3000,
-    contentBase: path.join(__dirname, 'demo'),
+    static: {
+      directory: path.join(__dirname, 'demo'),
+    },
   }
 }
