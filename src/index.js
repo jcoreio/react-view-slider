@@ -325,14 +325,12 @@ export default class ViewSlider extends React.Component<Props, State> {
 
     const finalViewportStyle = {
       position: 'relative',
-      transform: `translateX(calc(${
-        activeView * spacing * (rtl ? 100 : -100)
-      }% + 0px))`,
+      left: `${activeView * spacing * (rtl ? 100 : -100)}%`,
       whiteSpace: 'nowrap',
       minHeight: '100%',
       direction: rtl ? 'rtl' : 'ltr',
       transition: transitioning
-        ? `transform ${transitionTimingFunction} ${transitionDuration}ms`
+        ? `left ${transitionTimingFunction} ${transitionDuration}ms`
         : undefined,
       ...viewportStyle,
     }
