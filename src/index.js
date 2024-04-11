@@ -171,6 +171,7 @@ export default class ViewSlider extends React.Component<Props, State> {
       // phase 1: set current height
       newState = {
         height: this.measureHeight(this.views[this.state.activeView]),
+        numViews: Math.max(this.state.numViews, activeView + 1),
       }
     } else if (this.state.height !== undefined && !this.state.transitioning) {
       // phase 2: enable transitions
@@ -253,6 +254,10 @@ export default class ViewSlider extends React.Component<Props, State> {
       if (rtl) style.marginRight = `${(spacing - 1) * 100}%`
       else style.marginLeft = `${(spacing - 1) * 100}%`
     }
+    if (!transitioning && activeView !== index) {
+      style.height = 0
+      style.overflow = 'hidden'
+    }
 
     // when not transitioning, render empty placeholder divs before the active view to push it into the right
     // horizontal position
@@ -281,9 +286,8 @@ export default class ViewSlider extends React.Component<Props, State> {
   }
 
   animateHeight = (): boolean => {
-    const { animateHeight, fillParent, keepViewsMounted } =
-      this.getDefaultedProps()
-    return animateHeight && !fillParent && !keepViewsMounted
+    const { animateHeight, fillParent } = this.getDefaultedProps()
+    return animateHeight && !fillParent
   }
 
   rootRef = (node: ?React.ElementRef<'div'>) => {

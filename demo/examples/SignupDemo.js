@@ -82,7 +82,7 @@ const SignupDemo = ({ classes }: Props): React.Node => {
       </Button>
       <div className={classes.contentHolder}>
         <Paper className={classes.paper}>
-          <ViewSlider animateHeight spacing={1.2}>
+          <ViewSlider animateHeight keepViewsMounted spacing={1.2}>
             {content}
           </ViewSlider>
         </Paper>
